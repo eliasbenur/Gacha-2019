@@ -31,15 +31,36 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586464446339630275
-    List: []
+    m_lastTime: -8586464394433930705
+    List:
+    - name: Soundbank
+      guid: 490718225536904da76031f4f17372df
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Soundbank
+        ObjectType: 7
+      Path: Default Work Unit\Soundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586464446339967629
-    List: []
+    m_lastTime: -8586464394433890544
+    List:
+    - name: Blank
+      guid: 0d45e168c0992145869056842562d21f
+      id: 3915427281
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Blank
+        ObjectType: 3
+      Path: Default Work Unit\Blank
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
