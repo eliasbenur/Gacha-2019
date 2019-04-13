@@ -3,7 +3,20 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Blank" ID="{68E1450D-99C0-4521-8690-56842562D21F}"/>
+				<Event Name="Play_Amb" ID="{68E1450D-99C0-4521-8690-56842562D21F}">
+					<ChildrenList>
+						<Action Name="" ID="{6C73FDE9-C647-42EA-B631-40E1111F885C}" ShortID="1019028932">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Weather_Wind_Low" ID="{CB417E32-7D56-4C75-BAA6-ABC6B2F6A442}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
