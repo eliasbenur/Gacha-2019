@@ -13,7 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BLANK = 3915427281U;
+        static const AkUniqueID PLAY_AMB = 2959533290U;
     } // namespace EVENTS
 
     namespace BANKS

@@ -21,8 +21,14 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3915427281" Name="Blank" ObjectPath="\Events\Default Work Unit\Blank" MaxAttenuation="0.000000"/>
+				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="697803136" Language="SFX">
+					<ShortName>AMB_Weather_Wind_Low.wav</ShortName>
+					<Path>SFX\AMB_Weather_Wind_Low_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
