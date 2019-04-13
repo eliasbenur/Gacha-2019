@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586464394433930705
+    m_lastTime: -8586464208896103663
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -47,17 +47,17 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586464394433890544
+    m_lastTime: -8586464208750225747
     List:
-    - name: Blank
+    - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
-      id: 3915427281
+      id: 2959533290
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Blank
+      - ElementName: Play_Amb
         ObjectType: 3
-      Path: Default Work Unit\Blank
+      Path: Default Work Unit\Play_Amb
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -91,5 +91,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Gacha-2019_WwiseProject
+  - /Gacha-2019_WwiseProject/Events
+  - /Gacha-2019_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
