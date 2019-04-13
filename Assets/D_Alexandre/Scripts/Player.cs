@@ -25,11 +25,24 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rBody;
 
+    private List<Joycon> joycons;
+
+    public float[] stick;
+
+    public Vector3 gyro;
+
+    public Vector3 accel;
+
+    public int jc_ind = 0;
+
+    public Quaternion orientation;
+
     // Start is called before the first frame update
     void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
         rBody.freezeRotation = true ;
+        joycons = JoyconManager.Instance.j;
     }
 
     // Update is called once per frame
@@ -37,44 +50,63 @@ public class Player : MonoBehaviour
     {
         this.ProceedJump();
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (joycons.Count > 0)
         {
-            this.isJumping = true;
+            CheckShake();
+            Joycon j = joycons[jc_ind];
+            stick = j.GetStick();
+            if (j.GetButton(Joycon.Button.DPAD_UP))
+            {
+                this.isJumping = true;
+            }
+            else
+            {
+                this.isJumping = false;
+            }
+
+            //Basic impulsion
+            if (j.GetButton(Joycon.Button.DPAD_UP) && rBody.velocity.y == 0)
+            {
+                rBody.velocity += Vector2.up * jumpVelocity;
+            }
+
+            if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
+            if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
+
+            if (this.transform.position.y <= -10) this.transform.position = new Vector3();
+
+            if (j.GetStick()[1] < -0.6f)
+            {
+                rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+            }
+
+            if (j.GetStick()[1] > 0.6f)
+            {
+                rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+
+            }
+
+            //MaxSpeed
+            if (Mathf.Abs(rBody.velocity.x) > maxSpeed)
+            {
+                rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
+
+            }
         }
-        else
+    }
+
+    bool CheckShake()
+    {
+        Joycon j = joycons[jc_ind];
+        if (joycons.Count > 0)
         {
-            this.isJumping = false;
+            if (j.GetAccel().y > 1.5f || j.GetAccel().x > 1.5f || j.GetAccel().z > 1.5f)
+            {
+                Debug.Log("SHAKE IT OFF !");
+                return true;
+            }
         }
-
-        //Basic impulsion
-        if (Input.GetKey(KeyCode.UpArrow) && rBody.velocity.y == 0 )
-        {
-            rBody.velocity += Vector2.up * jumpVelocity;
-        }
-
-        if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
-        if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
-
-        if (this.transform.position.y <= -10) this.transform.position = new Vector3();
-
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            rBody.velocity += Vector2.right * acceleration *  Time.deltaTime;
-           
-        }
-        
-        //MaxSpeed
-        if (Mathf.Abs(rBody.velocity.x) > maxSpeed)
-        {
-            rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0?1:-1), rBody.velocity.y);
-
-        }
-
-
+        return false;
     }
 
     //Kinectic jump modulation
