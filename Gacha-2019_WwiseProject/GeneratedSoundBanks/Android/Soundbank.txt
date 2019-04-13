@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3915427281	Blank			\Default Work Unit\Blank	
+	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	697803136	AMB_Weather_Wind_Low	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\AMB_Weather_Wind_Low_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Weather_Wind_Low		1920064
 
