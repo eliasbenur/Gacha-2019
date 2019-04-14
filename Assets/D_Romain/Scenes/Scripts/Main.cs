@@ -67,6 +67,8 @@ public class Main : MonoBehaviour
 
             ResetScene();
 
+            FindObjectOfType<GeneracionAle_ale>().New_Generation();
+
             this.isSwapping = false;
         }
     }
