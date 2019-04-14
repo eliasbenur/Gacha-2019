@@ -30,6 +30,17 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC_STATE
 
+        namespace PLAYER_MUSIC
+        {
+            static const AkUniqueID GROUP = 889723386U;
+
+            namespace STATE
+            {
+                static const AkUniqueID PLAYER1 = 2188949039U;
+                static const AkUniqueID PLAYER2 = 2188949036U;
+            } // namespace STATE
+        } // namespace PLAYER_MUSIC
+
     } // namespace STATES
 
     namespace BANKS
