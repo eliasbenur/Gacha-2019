@@ -20,7 +20,9 @@ public class Transition : MonoBehaviour
     [Range(0.1f,0.5f)]
     public float smoothTransition;
 
+    private bool cameraIsOnInitialPosition;
     private bool player1IsHunter;
+    private bool cameraIsReset;
     public bool inTransition;
     private Vector3 vecVelocitySmooth;
     private float velocitySmooth;
@@ -44,7 +46,8 @@ public class Transition : MonoBehaviour
         cam = Camera.main;
         camPosition = cam.transform.position;
         camFieldOfView = cam.fieldOfView;
-
+        cameraIsOnInitialPosition = true;
+        cameraIsReset = true;
         p1Renderer = player1.GetComponent<Renderer>();
         p2Renderer1 = player2.transform.GetChild(0).GetComponent<Renderer>();
         p2Renderer2 = player2.transform.GetChild(1).GetComponent<Renderer>();
@@ -59,22 +62,32 @@ public class Transition : MonoBehaviour
         //Zoom in
         if (inTransition == true)
         {
-
+            cameraIsReset = false;
+            cameraIsOnInitialPosition = false;
             float newFieldOfView = 0.2f;
             Vector3 camTargetPosition;
             camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
             transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
-            
+
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
                 ChangePlayerColor();
                 //charger la map
             }
-            
+
         }
-        //Zoom out
+        else if (!cameraIsOnInitialPosition)
+        {
+            if(cameraIsReset == false) ResetCamera();
+            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
+        }
+
+        
+        
+
+        /*//Zoom out
         else
         {
 
@@ -91,13 +104,21 @@ public class Transition : MonoBehaviour
                     Debug.Log(camFieldOfView);
                     transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition);
             }
-        }     
+        }  */
     }
 
     public void StartTransition()
     {
         StartCoroutine("delay");
     }
+    private void ResetCamera()
+    {
+        cam.fieldOfView = camFieldOfView+5;
+        cam.transform.position = camPosition;
+        cameraIsReset = true;
+
+    }
+
     private void ChangePlayerColor()
     {
         if (player1IsHunter)

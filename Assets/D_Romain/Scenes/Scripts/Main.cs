@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-
+    private Camera cam;
     public int currentJoyconPlayer = 0;
     public int currentJoyconMouth = 1;
 
@@ -13,6 +13,7 @@ public class Main : MonoBehaviour
     public bool isSwapping = false;
     public bool isFreezing = false;
 
+    public AkSoundEngine Wwise;
     public Plane plane;
     public Player player;
     public Transition transition;
@@ -22,6 +23,7 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = Camera.main;
         player = FindObjectOfType<Player>();
         plane = FindObjectOfType<Plane>();
         rs = new ResourceLoader();
@@ -67,6 +69,7 @@ public class Main : MonoBehaviour
             this.isGameUp = false;
             transition.StartTransition();
             player.Freeze();
+            AkSoundEngine.SetState("Player1", "Player_Music");
            // this.freezeTimeElapsed = 0;
             CameraShake.Shake(0.1f, 0.75f);
         }
