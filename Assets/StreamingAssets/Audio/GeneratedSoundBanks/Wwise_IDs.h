@@ -14,7 +14,23 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB = 2959533290U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
+    } // namespace STATES
 
     namespace BANKS
     {
