@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     [Range(1f, 100f)]
     public float maxSpeed;
 
-    private readonly float velocityThreshold = 0.1f;
+    private readonly float velocityThreshold = 0.001f;
 
     public bool isJumping = false;
     public bool isFrozen = false;
