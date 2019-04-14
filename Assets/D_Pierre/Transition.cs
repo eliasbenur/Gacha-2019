@@ -28,7 +28,12 @@ public class Transition : MonoBehaviour
     private Vector3 camPosition;
     private float camFieldOfView;
 
- 
+    public IEnumerator delay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        inTransition = true;
+    }
+
     void Start()
     {
         main = FindObjectOfType<Main>();
@@ -54,6 +59,7 @@ public class Transition : MonoBehaviour
         //Zoom in
         if (inTransition == true)
         {
+
             float newFieldOfView = 0.2f;
             Vector3 camTargetPosition;
             camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
@@ -88,6 +94,10 @@ public class Transition : MonoBehaviour
         }     
     }
 
+    public void StartTransition()
+    {
+        StartCoroutine("delay");
+    }
     private void ChangePlayerColor()
     {
         if (player1IsHunter)

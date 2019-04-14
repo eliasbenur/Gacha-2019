@@ -34,6 +34,11 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            TriggerFreeze();
+        }
         if (isFreezing)
         {
             if(freezeTimeElapsed < freezeTimeDuration)
@@ -73,7 +78,7 @@ public class Main : MonoBehaviour
             //Debug.Log("startFreeze");
             this.isFreezing = true;
             this.isGameUp = false;
-            //transition.inTransition = true;
+            transition.StartTransition();
             player.Freeze();
             this.freezeTimeElapsed = 0;
             CameraShake.Shake(0.1f, 0.75f);
