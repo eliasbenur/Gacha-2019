@@ -13,6 +13,8 @@ public class Transition : MonoBehaviour
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
+    public Material white;
+    public Material black;
 
     [Tooltip("increase value for slow transtion")]
     [Range(0.1f,0.5f)]
@@ -46,9 +48,9 @@ public class Transition : MonoBehaviour
         p1Renderer = player1.GetComponent<Renderer>();
         p2Renderer1 = player2.transform.GetChild(0).GetComponent<Renderer>();
         p2Renderer2 = player2.transform.GetChild(1).GetComponent<Renderer>();
-        p1Renderer.material = main.rs.whiteMat;
-        p2Renderer1.material = main.rs.blackMat;
-        p2Renderer2.material = main.rs.blackMat;
+        p1Renderer.material = black;
+        p2Renderer1.material = white;
+        p2Renderer2.material = white;
     }
 
     // Update is called once per frame
@@ -100,16 +102,15 @@ public class Transition : MonoBehaviour
     {
         if (player1IsHunter)
         {
-            p1Renderer.material = main.rs.whiteMat;
-            p2Renderer1.material = main.rs.blackMat;
-            p2Renderer2.material = main.rs.blackMat;
-
+            p1Renderer.material = white;
+            p2Renderer1.material = black;
+            p2Renderer2.material = black;
         }
         else
         {
-            p1Renderer.material = main.rs.blackMat;
-            p2Renderer1.material = main.rs.whiteMat;
-            p2Renderer2.material = main.rs.whiteMat;
+            p1Renderer.material = black;
+            p2Renderer1.material = white;
+            p2Renderer2.material = white;
         }
         inTransition = false;
         player1IsHunter = !player1IsHunter;
