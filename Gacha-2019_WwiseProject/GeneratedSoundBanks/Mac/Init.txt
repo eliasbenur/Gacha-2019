@@ -11,6 +11,7 @@ State	ID	Name	State Group			Notes
 	2607556080	Menu	Music_state			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	187937321	Players_music			\Default Work Unit\Master Audio Bus\Players_music	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes
