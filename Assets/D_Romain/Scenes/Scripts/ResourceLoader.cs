@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceLoader : MonoBehaviour
+public class ResourceLoader
 {
+
+    public Material whiteMat;
+    public Material blackMat;
+    public Material skyMatWhite;
+
     // Start is called before the first frame update
-    void Start()
+    public ResourceLoader()
     {
-        
+        whiteMat = Resources.Load<Material>("WhiteMat");
+        blackMat = Resources.Load<Material>("BlackMat");
+        skyMatWhite = Resources.Load<Material>("SkyWhite");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -17,11 +17,7 @@ public class Main : MonoBehaviour
     public Player player;
     public Transition transition;
 
-    [Range(0.05f, 1f)]
-    public float freezeTimeDuration;
-    private float freezeTimeElapsed = 0;
-
-    private ResourceLoader rs;
+    public ResourceLoader rs;
 
     // Start is called before the first frame update
     void Start()
@@ -39,18 +35,6 @@ public class Main : MonoBehaviour
         {
             TriggerFreeze();
         }
-        if (isFreezing)
-        {
-            if(freezeTimeElapsed < freezeTimeDuration)
-            {
-                freezeTimeElapsed += Time.deltaTime;
-            }
-            else
-            {
-                this.TriggerSwap();
-                this.isFreezing = false;
-            }
-        }
     }
 
     public void TriggerSwap()
@@ -58,6 +42,7 @@ public class Main : MonoBehaviour
         if(!isSwapping)
         {
             this.isSwapping = true;
+            this.isFreezing = false;
 
             player.UnFreeze();
 
@@ -82,7 +67,7 @@ public class Main : MonoBehaviour
             this.isGameUp = false;
             transition.StartTransition();
             player.Freeze();
-            this.freezeTimeElapsed = 0;
+           // this.freezeTimeElapsed = 0;
             CameraShake.Shake(0.1f, 0.75f);
         }
         

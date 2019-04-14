@@ -37,6 +37,10 @@ public class Player : MonoBehaviour
 
     public Vector3 accel;
 
+
+    public Vector3[] v3Spawns;
+    public float spawnDistSquare = 2;
+
     public int jc_ind = 0;
 
     public Quaternion orientation;
@@ -50,6 +54,13 @@ public class Player : MonoBehaviour
         rBody.freezeRotation = true ;
         joycons = JoyconManager.Instance.j;
         main = FindObjectOfType<Main>();
+
+        v3Spawns = new Vector3[5];
+        v3Spawns[0] = new Vector3(0, 0, 0);
+        v3Spawns[1] = new Vector3(-spawnDistSquare, -spawnDistSquare, 0);
+        v3Spawns[2] = new Vector3(-spawnDistSquare, spawnDistSquare, 0);
+        v3Spawns[3] = new Vector3(spawnDistSquare, -spawnDistSquare, 0);
+        v3Spawns[4] = new Vector3(spawnDistSquare, spawnDistSquare, 0);
     }
 
     // Update is called once per frame
@@ -154,7 +165,7 @@ public class Player : MonoBehaviour
 
     public void ResetPos()
     {
-        this.transform.position = new Vector3();
+        this.transform.position = v3Spawns[Random.Range(0, 5)];
     }
 
     public void Freeze()
