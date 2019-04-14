@@ -63,12 +63,17 @@ public class Main : MonoBehaviour
         if(!isFreezing)
         {
             //Debug.Log("startFreeze");
+            plane.GetComponentInChildren<ParticleSystem>().Play();
             this.isFreezing = true;
             this.isGameUp = false;
-            transition.StartTransition();
-            player.Freeze();
-           // this.freezeTimeElapsed = 0;
             CameraShake.Shake(0.1f, 0.75f);
+            player.Freeze();
+
+
+            transition.StartTransition();
+            
+           // this.freezeTimeElapsed = 0;
+           
         }
         
     }
