@@ -11,6 +11,7 @@ public class Transition : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject colorInversor;
+    public GameObject planeForBlackSfx;
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
@@ -56,6 +57,7 @@ public class Transition : MonoBehaviour
         main.whitePlBack.SetActive(true);
         cam.backgroundColor = new Color(255, 255, 255);
         p1Renderer.material = black;
+        planeForBlackSfx.SetActive(true);
     }
 
     // Update is called once per frame
@@ -113,6 +115,7 @@ public class Transition : MonoBehaviour
             main.whitePlBack.SetActive(false);
             cam.backgroundColor = new Color(0, 0, 0);
             p1Renderer.material = white;
+            planeForBlackSfx.SetActive(false);
         }
         else
         {
@@ -122,6 +125,7 @@ public class Transition : MonoBehaviour
             main.whitePlBack.SetActive(true);
             cam.backgroundColor = new Color(255, 255, 255);
             p1Renderer.material = black;
+            planeForBlackSfx.SetActive(true);
         }
         inTransition = false;
         player1IsHunter = !player1IsHunter;

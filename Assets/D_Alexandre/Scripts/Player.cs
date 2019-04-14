@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
             if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
             {
                 rBody.velocity += Vector2.up * jumpVelocity;
-                this.GetComponentsInChildren<ParticleSystem>()[1].Play();
+                this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0 ? 2 : 1].Play();
             }
 
             if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
@@ -186,11 +186,14 @@ public class Player : MonoBehaviour
         this.GetComponent<Rigidbody2D>().isKinematic = true;
         this.isFrozen = true;
         this.rBody.velocity = new Vector3();
+        this.GetComponentsInChildren<ParticleSystem>()[0].Pause();
+        this.GetComponentsInChildren<ParticleSystem>()[4].Pause();
     }
 
     public void UnFreeze()
     {
         this.GetComponent<Rigidbody2D>().isKinematic = false;
         this.isFrozen = false;
+        this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0?0:3].Play();
     }
 }
