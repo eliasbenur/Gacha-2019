@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
             if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
             {
                 rBody.velocity += Vector2.up * jumpVelocity;
+                this.GetComponentsInChildren<ParticleSystem>()[0].Play();
             }
 
             if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
@@ -125,7 +126,7 @@ public class Player : MonoBehaviour
             }
 
             //Descente
-            if((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.6f) || (main.currentJoyconPlayer == 1 && j.GetStick()[0] < -0.6f))
+            if((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.8f) || (main.currentJoyconPlayer == 0 && j.GetStick()[0] < -0.8f))
             {
                 this.GetComponent<BoxCollider2D>().enabled = false;
             }
