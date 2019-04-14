@@ -394,7 +394,7 @@ MonoBehaviour:
   orientation: {x: 0, y: 0, z: 0, w: 0}
   plane: {fileID: 2074669281}
   main: {fileID: 0}
-  originalZ: -4
+  cooldownAfterSwap: 0.5
 --- !u!65 &621361256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
   orientation: {x: 0, y: 0, z: 0, w: 0}
   plane: {fileID: 2074669281}
   main: {fileID: 0}
-  originalZ: 4
+  cooldownAfterSwap: 0.5
 --- !u!65 &634737618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2154,6 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e301c4435b6469c438bf1a05f47b8cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 125
   stick: []
   gyro: {x: 0, y: 0, z: 0}
   accel: {x: 0, y: 0, z: 0}

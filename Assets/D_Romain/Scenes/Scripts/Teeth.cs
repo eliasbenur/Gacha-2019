@@ -26,9 +26,8 @@ public class Teeth : MonoBehaviour
 
     public Main main;
 
-    public int originalZ;
-
-    private readonly float cooldownAfterSwap = 0.5f;
+    [Range (0.1f, 1f)]
+    public float cooldownAfterSwap = 0.5f;
 
     private float cooldown;
 

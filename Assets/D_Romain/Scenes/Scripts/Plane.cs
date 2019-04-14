@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Plane : MonoBehaviour
 {
+    [Range(50f, 200f)]
+    public float rotationSpeed;
+
     // Start is called before the first frame update
     private List<Joycon> joycons;
 
