@@ -400,7 +400,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -418,17 +418,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61907ac31757b340a90b2773b998820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 6.4
+  fallMultiplier: 8
   lowJumpMultiplier: 3.46
-  jumpVelocity: 23
+  jumpVelocity: 20
   directionMultiplier: 1.58
-  acceleration: 56
-  maxSpeed: 18
+  acceleration: 50
+  maxSpeed: 10
   isJumping: 0
   isFrozen: 0
   stick: []
   gyro: {x: 0, y: 0, z: 0}
   accel: {x: 0, y: 0, z: 0}
+  v3Spawns: []
+  spawnDistSquare: 2
   jc_ind: 0
   orientation: {x: 0, y: 0, z: 0, w: 0}
   main: {fileID: 0}
@@ -759,8 +761,6 @@ MonoBehaviour:
   main: {fileID: 1741784019}
   player1: {fileID: 705885640}
   player2: {fileID: 2074669281}
-  white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}
-  black: {fileID: 2100000, guid: 9d3b7e277148ab7419fafd18e5110d31, type: 2}
   smoothTransition: 0.2
   inTransition: 0
 --- !u!1 &1741784016
@@ -830,7 +830,6 @@ MonoBehaviour:
   plane: {fileID: 2074669282}
   player: {fileID: 705885643}
   transition: {fileID: 1717198039}
-  freezeTimeDuration: 0.3
 --- !u!114 &1741784020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e301c4435b6469c438bf1a05f47b8cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 125
+  rotationSpeed: 200
   stick: []
   gyro: {x: 0, y: 0, z: 0}
   accel: {x: 0, y: 0, z: 0}
