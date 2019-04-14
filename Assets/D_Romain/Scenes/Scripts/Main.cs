@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {
@@ -52,6 +53,10 @@ public class Main : MonoBehaviour
 
     public ResourceLoader rs;
 
+    public float delay_Max_ToShake;
+    public float delay_Max_ToShake_tmp;
+    public Text delay_txt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,13 +68,23 @@ public class Main : MonoBehaviour
         joycons = JoyconManager.Instance.j;
         animBTooth = blackT.GetComponent<Animator>();
         animWTooth = whiteT.GetComponent<Animator>();
+
+        delay_Max_ToShake_tmp = delay_Max_ToShake;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.A))
+        delay_Max_ToShake_tmp -= Time.deltaTime;
+        delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
+        if (delay_Max_ToShake_tmp < 0)
+        {
+            delay_Max_ToShake_tmp = delay_Max_ToShake;
+            TriggerFreeze();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();
         }
