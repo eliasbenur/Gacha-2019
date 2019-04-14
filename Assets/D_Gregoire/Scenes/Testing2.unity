@@ -761,6 +761,8 @@ MonoBehaviour:
   main: {fileID: 1741784019}
   player1: {fileID: 705885640}
   player2: {fileID: 2074669281}
+  white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}
+  black: {fileID: 2100000, guid: 9d3b7e277148ab7419fafd18e5110d31, type: 2}
   smoothTransition: 0.2
   inTransition: 0
 --- !u!1 &1741784016

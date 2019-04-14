@@ -44,11 +44,11 @@ public class Plane : MonoBehaviour
             {
                 if (/*Droite*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
                 {
-                    transform.Rotate(0, transform.rotation.y + (rotationSpeed * Time.deltaTime), 0);
+                    transform.Rotate(0, rotationSpeed * Time.deltaTime, 0, Space.Self);
                 }
                 if (/*Gauche*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
                 {
-                    transform.Rotate(0, transform.rotation.y - (rotationSpeed * Time.deltaTime), 0);
+                    transform.Rotate(0, rotationSpeed * Time.deltaTime * -1, 0, Space.Self);
                 }
             }
 
