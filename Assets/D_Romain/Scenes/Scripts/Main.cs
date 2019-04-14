@@ -116,7 +116,7 @@ public class Main : MonoBehaviour
             Invoke("playFeedbacks", 0.23f);
             this.isFreezing = true;
             this.isGameUp = false;
-            player.Freeze();
+           
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
 
@@ -135,6 +135,7 @@ public class Main : MonoBehaviour
         plane.GetComponentInChildren<ParticleSystem>().Play();
         AkSoundEngine.PostEvent("Play_jawclose", cam.gameObject);
         CameraShake.Shake(0.1f, 0.75f);
+        player.Freeze();
     }
 
     public void PlayerEaten()

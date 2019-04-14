@@ -77,8 +77,8 @@ public class Transition : MonoBehaviour
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
                 ChangePlayerColor();
-                if(colorInversor.activeSelf) colorInversor.SetActive(false);
-                else colorInversor.SetActive(true);
+               // if(colorInversor.activeSelf) colorInversor.SetActive(false);
+                //else colorInversor.SetActive(true);
 
                 //charger la map
             }
