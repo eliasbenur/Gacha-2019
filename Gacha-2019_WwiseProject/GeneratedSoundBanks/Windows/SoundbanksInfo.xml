@@ -25,6 +25,10 @@
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="36852275" Language="SFX">
+					<ShortName>GA_MUSIC_v1_Player1.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_Player1_8956FC97.wem</Path>
+				</File>
 				<File Id="53033994" Language="SFX">
 					<ShortName>GA_MUSIC_v1_menu_02.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_menu_02_8956FC97.wem</Path>
@@ -68,6 +72,10 @@
 				<File Id="961190498" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_02.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_02_8956FC97.wem</Path>
+				</File>
+				<File Id="975651553" Language="SFX">
+					<ShortName>GA_MUSIC_v1_Player2.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_Player2_8956FC97.wem</Path>
 				</File>
 				<File Id="1025773147" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_01.wav</ShortName>
