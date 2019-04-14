@@ -14,11 +14,11 @@ public class GeneracionAle_ale : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerationProcedural();
+        GenerationProcedural(FindObjectOfType<Main>().black);
 
     }
 
-    void GenerationProcedural()
+    void GenerationProcedural(Material mat)
     {
         for (int x = 0; x < 5; x++)
         {
@@ -78,6 +78,7 @@ public class GeneracionAle_ale : MonoBehaviour
 
             GameObject inst_tmp = Instantiate(prefab_Platforme, new Vector3(-(x_pos)/2, y_pos, 0) + new Vector3(IniSpace, 0, 0), Quaternion.identity);
             inst_tmp.transform.parent = transform;
+            inst_tmp.GetComponent<Renderer>().material = mat;
 
             int Taille_inst = 0;
 
@@ -112,6 +113,7 @@ public class GeneracionAle_ale : MonoBehaviour
                 {
                     inst_tmp = Instantiate(prefab_Platforme, new Vector3(-(x_pos/2), y_pos, 0) + new Vector3(x_pos , 0, 0), Quaternion.identity);
                     inst_tmp.transform.parent = transform;
+                    inst_tmp.GetComponent<Renderer>().material = mat;
 
                     Taille_inst = Cubes;
 
@@ -125,6 +127,7 @@ public class GeneracionAle_ale : MonoBehaviour
                 {
                     inst_tmp = Instantiate(prefab_Platforme, new Vector3(-(x_pos / 2), y_pos, 0) + new Vector3(x_pos, 0, 0), Quaternion.identity);
                     inst_tmp.transform.parent = transform;
+                    inst_tmp.GetComponent<Renderer>().material = mat;
 
                     Taille_inst = Cubes;
 
@@ -141,6 +144,7 @@ public class GeneracionAle_ale : MonoBehaviour
 
                     inst_tmp = Instantiate(prefab_Platforme, new Vector3(-(x_pos / 2), y_pos, 0) + new Vector3(NumSpaceUsed + IniSpace, 0, 0), Quaternion.identity);
                     inst_tmp.transform.parent = transform;
+                    inst_tmp.GetComponent<Renderer>().material = mat;
 
                     if (NumCubes == 1)
                     {
@@ -164,13 +168,13 @@ public class GeneracionAle_ale : MonoBehaviour
         }
     }
 
-    public void New_Generation()
+    public void New_Generation( Material mat )
     {
         foreach (Transform child in transform)
         {
             GameObject.Destroy(child.gameObject);
         }
-        GenerationProcedural();
+        GenerationProcedural(mat);
     }
 
     // Update is called once per frame

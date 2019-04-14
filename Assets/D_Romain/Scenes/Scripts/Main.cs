@@ -13,16 +13,42 @@ public class Main : MonoBehaviour
     public bool isSwapping = false;
     public bool isFreezing = false;
 
+    public Animator animWTooth;
+    public Animator animBTooth;
+    public GameObject blackT;
+    public GameObject whiteT;
+    public GameObject whitePlBack;
+    public GameObject blackPlBack;
+    public Material black;
+    public Material white;
+
     public AkSoundEngine Wwise;
     public Plane plane;
     public Player player;
     public Transition transition;
 
+
+
     public float confrontationScore = 0;
+
+    private List<Joycon> joycons;
+
+    public float[] stick;
+
+    public Vector3 gyro;
+
+    public Vector3 accel;
+
+    public int jc_ind = 0;
+
+    public Quaternion orientation;
 
     [Range(0.2f, 5f)]
     public float speedGameModifier;
     public int nbGames = 0;
+
+    [SerializeField]
+    public float ShakeSensitivity = 1.4f;
 
     public ResourceLoader rs;
 
@@ -34,6 +60,9 @@ public class Main : MonoBehaviour
         plane = FindObjectOfType<Plane>();
         rs = new ResourceLoader();
         plane.GetComponentInChildren<ParticleSystem>().Stop();
+        joycons = JoyconManager.Instance.j;
+        animBTooth = blackT.GetComponent<Animator>();
+        animWTooth = whiteT.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,6 +72,13 @@ public class Main : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();
+        }
+
+        if(CheckShake() && !this.isFreezing)
+        {
+            Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
+            a.SetTrigger("Gnack");
+            this.TriggerFreeze();
         }
     }
 
@@ -62,7 +98,7 @@ public class Main : MonoBehaviour
 
             ResetScene();
 
-            FindObjectOfType<GeneracionAle_ale>().New_Generation();
+            FindObjectOfType<GeneracionAle_ale>().New_Generation(this.currentJoyconPlayer == 0 ? black : white);
 
             this.isSwapping = false;
         }
@@ -73,10 +109,9 @@ public class Main : MonoBehaviour
         if(!isFreezing)
         {
             //Debug.Log("startFreeze");
-            plane.GetComponentInChildren<ParticleSystem>().Play();
+            Invoke("playFeedbacks", 0.23f);
             this.isFreezing = true;
             this.isGameUp = false;
-            CameraShake.Shake(0.1f, 0.75f);
             player.Freeze();
             AkSoundEngine.SetState("Player_Music", "Player1");
             transition.StartTransition();
@@ -91,6 +126,12 @@ public class Main : MonoBehaviour
     {
         player.ResetPos();
         plane.Reset();
+    }
+
+    void playFeedbacks()
+    {
+        plane.GetComponentInChildren<ParticleSystem>().Play();
+        CameraShake.Shake(0.1f, 0.75f);
     }
 
     public void PlayerEaten()
@@ -110,4 +151,19 @@ public class Main : MonoBehaviour
             Debug.Log("White wins");
         }
     }
+
+    bool CheckShake()
+    {
+        Joycon j = joycons[this.currentJoyconMouth];
+        if (joycons.Count > 0)
+        {
+            if (j.GetAccel().y > ShakeSensitivity || j.GetAccel().x > ShakeSensitivity || j.GetAccel().z > ShakeSensitivity)
+            {
+                Debug.Log("SHAKE IT OFF !");
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

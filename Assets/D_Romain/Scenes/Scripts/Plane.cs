@@ -63,8 +63,6 @@ public class Plane : MonoBehaviour
 
     public void Reset()
     {
-        t1.ResetPositionAndScale();
-        t2.ResetPositionAndScale();
         this.planeCanRotate = true;
     }
 }

@@ -94,6 +94,8 @@ public class Player : MonoBehaviour
 
             if (this.transform.position.y <= -10) this.ResetPos();
 
+
+            //Gauche
             if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
             {
                 if(rBody.velocity.x < 0)
@@ -107,6 +109,7 @@ public class Player : MonoBehaviour
                 
             }
 
+            //Droite
             if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
             {
 
@@ -119,6 +122,15 @@ public class Player : MonoBehaviour
                     rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
                 }
 
+            }
+
+            //Descente
+            if((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.6f) || (main.currentJoyconPlayer == 1 && j.GetStick()[0] < -0.6f))
+            {
+                this.GetComponent<BoxCollider2D>().enabled = false;
+            }
+            else {
+                this.GetComponent<BoxCollider2D>().enabled = true;
             }
 
             //MaxSpeed
