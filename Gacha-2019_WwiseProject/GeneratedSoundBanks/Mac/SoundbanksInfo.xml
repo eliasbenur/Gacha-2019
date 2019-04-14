@@ -22,11 +22,56 @@
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="53033994" Language="SFX">
+					<ShortName>GA_MUSIC_v1_menu_02.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_menu_02_8956FC97.wem</Path>
+				</File>
+				<File Id="58704475" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_08.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_08_8956FC97.wem</Path>
+				</File>
+				<File Id="97042972" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_04.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_04_8956FC97.wem</Path>
+				</File>
+				<File Id="178620403" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_01.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_01_8956FC97.wem</Path>
+				</File>
+				<File Id="400563250" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_06.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_06_8956FC97.wem</Path>
+				</File>
 				<File Id="697803136" Language="SFX">
 					<ShortName>AMB_Weather_Wind_Low.wav</ShortName>
 					<Path>SFX\AMB_Weather_Wind_Low_8956FC97.wem</Path>
+				</File>
+				<File Id="733781981" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_07.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_07_8956FC97.wem</Path>
+				</File>
+				<File Id="893421024" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_03.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_03_8956FC97.wem</Path>
+				</File>
+				<File Id="955665088" Language="SFX">
+					<ShortName>GA_MUSIC_v1_menu_01.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_menu_01_8956FC97.wem</Path>
+				</File>
+				<File Id="958391167" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_05.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_05_8956FC97.wem</Path>
+				</File>
+				<File Id="961190498" Language="SFX">
+					<ShortName>GA_MUSIC_v1_in_02.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_in_02_8956FC97.wem</Path>
+				</File>
+				<File Id="1025773147" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_01.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_01_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
