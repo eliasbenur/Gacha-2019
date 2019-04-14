@@ -9,6 +9,17 @@
 							<ObjectRef Name="System" ID="{9251CBC6-38B5-4508-8455-B1D25C70418D}" WorkUnitID="{0D449AF8-4AD4-4A5A-9FAF-4A8D47D35CD9}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Players_music" ID="{17A5E417-36FC-445E-8D62-AB4C0FC5E3BD}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

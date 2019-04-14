@@ -45,9 +45,17 @@
 					<ShortName>GA_MUSIC_v1_in_01.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_01_8956FC97.wem</Path>
 				</File>
+				<File Id="285680283" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_05.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_05_8956FC97.wem</Path>
+				</File>
 				<File Id="400563250" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_06.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_06_8956FC97.wem</Path>
+				</File>
+				<File Id="611297345" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_04.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_04_8956FC97.wem</Path>
 				</File>
 				<File Id="697803136" Language="SFX">
 					<ShortName>AMB_Weather_Wind_Low.wav</ShortName>
@@ -56,6 +64,10 @@
 				<File Id="733781981" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_07.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_07_8956FC97.wem</Path>
+				</File>
+				<File Id="840522946" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_03.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_03_8956FC97.wem</Path>
 				</File>
 				<File Id="893421024" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_03.wav</ShortName>
@@ -76,6 +88,10 @@
 				<File Id="975651553" Language="SFX">
 					<ShortName>GA_MUSIC_v1_Player2.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_Player2_8956FC97.wem</Path>
+				</File>
+				<File Id="1006458871" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_02.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_02_8956FC97.wem</Path>
 				</File>
 				<File Id="1025773147" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_01.wav</ShortName>
