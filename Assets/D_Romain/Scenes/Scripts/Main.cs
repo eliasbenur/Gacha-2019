@@ -18,6 +18,12 @@ public class Main : MonoBehaviour
     public Player player;
     public Transition transition;
 
+    public float confrontationScore = 0;
+
+    [Range(0.2f, 5f)]
+    public float speedGameModifier;
+    public int nbGames = 0;
+
     public ResourceLoader rs;
 
     // Start is called before the first frame update
@@ -27,6 +33,7 @@ public class Main : MonoBehaviour
         player = FindObjectOfType<Player>();
         plane = FindObjectOfType<Plane>();
         rs = new ResourceLoader();
+        plane.GetComponentInChildren<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -47,6 +54,7 @@ public class Main : MonoBehaviour
             this.isFreezing = false;
 
             player.UnFreeze();
+            this.nbGames++;
 
             //Echange players
             currentJoyconMouth = (currentJoyconMouth == 1 ? 0 : 1);
@@ -83,5 +91,23 @@ public class Main : MonoBehaviour
     {
         player.ResetPos();
         plane.Reset();
+    }
+
+    public void PlayerEaten()
+    {
+        this.confrontationScore += (20 + (speedGameModifier)) * (-1 * currentJoyconMouth);
+    }
+
+    private void CheckVictory()
+    {
+        if(this.confrontationScore<=-100 )
+        {
+            Debug.Log("Black wins");
+        }
+
+        if (this.confrontationScore >= 100)
+        {
+            Debug.Log("White wins");
+        }
     }
 }
