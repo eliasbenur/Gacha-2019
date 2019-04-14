@@ -70,7 +70,7 @@ public class Main : MonoBehaviour
             this.isGameUp = false;
             CameraShake.Shake(0.1f, 0.75f);
             player.Freeze();
-            AkSoundEngine.SetState("Player1", "Player_Music");
+            AkSoundEngine.SetState("Player_Music", "Player1");
             transition.StartTransition();
             
            // this.freezeTimeElapsed = 0;
