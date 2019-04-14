@@ -1808,6 +1808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1717198037}
+  - component: {fileID: 1717198039}
   - component: {fileID: 1717198038}
   - component: {fileID: 1717198036}
   - component: {fileID: 1717198035}
@@ -1923,6 +1924,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d733502ab394d79498d1fe45e73b0269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1717198039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717198033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f4460d06ed7d746b17aeb4fc9eb0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 1741784019}
+  player1: {fileID: 705885640}
+  player2: {fileID: 2074669281}
+  white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}
+  black: {fileID: 2100000, guid: 9d3b7e277148ab7419fafd18e5110d31, type: 2}
+  smoothTransition: 0.15
+  inTransition: 0
 --- !u!1 &1741784016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,6 +2008,7 @@ MonoBehaviour:
   isFreezing: 0
   plane: {fileID: 2074669282}
   player: {fileID: 705885643}
+  transition: {fileID: 1717198039}
   freezeTimeDuration: 0.3
 --- !u!1 &1879809267
 GameObject:

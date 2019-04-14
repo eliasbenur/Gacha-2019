@@ -58,7 +58,7 @@ public class Transition : MonoBehaviour
             camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
-            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, 0.2f, 5);
+            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition/4, 5);
             
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
@@ -67,12 +67,26 @@ public class Transition : MonoBehaviour
             }
             
         }
-
-        if(cam.transform.position != camPosition && !inTransition)
+        else
         {
-            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
-            transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, 0.2f, 5);
+
+            if (cam.fieldOfView >= camFieldOfView - 3f)
+            {
+                Debug.Log(camFieldOfView);
+                cam.fieldOfView = camFieldOfView;
+            }
+            else {
+                if (cam.transform.position != camPosition)
+                {
+                    cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
+                    transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition / 4, 5);
+                }
+            }
         }
+
+        
+
+        
     }
 
     private void ChangePlayerColor()
