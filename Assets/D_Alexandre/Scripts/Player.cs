@@ -199,10 +199,16 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Si ça touche une dent
-        if(collision.otherCollider.gameObject.name == "Tooth_UP" || collision.otherCollider.gameObject.name == "Tooth_DOWN")
+        Debug.Log("OUT");
+        if (collision.gameObject.name == "Tooth_UP" || collision.gameObject.name == "Tooth_DOWN")
         {
-            Debug.Log("Lol t mor");
+            Debug.Log("IN");
+            if (main.isFreezing || main.isSwapping)
+            {
+                main.PlayerEaten();
+            }
+
         }
+
     }
 }

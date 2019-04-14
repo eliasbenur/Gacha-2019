@@ -682,6 +682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705885646}
   - component: {fileID: 705885645}
+  - component: {fileID: 705885647}
   - component: {fileID: 705885644}
   - component: {fileID: 705885643}
   - component: {fileID: 705885642}
@@ -738,7 +739,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &705885643
 MonoBehaviour:
@@ -821,7 +822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705885640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73, y: 0.34, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 287581590}
@@ -831,6 +832,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705885647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705885640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551fad1b03e70dd498538262e6cbafb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendTriggerMessage: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  skinWidth: 0.1
 --- !u!1001 &907747509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1027,7 +1045,7 @@ PrefabInstance:
     - target: {fileID: 8361238034884740050, guid: 78f320dca18b0c7459396f4503b659cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8361238034884740050, guid: 78f320dca18b0c7459396f4503b659cf,
         type: 3}
@@ -1092,12 +1110,42 @@ PrefabInstance:
     - target: {fileID: 1844195824965135213, guid: 78f320dca18b0c7459396f4503b659cf,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844195824965135213, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.089999914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844195824965135213, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17832637
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844195824965135213, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 9.723347
       objectReference: {fileID: 0}
     - target: {fileID: 5818858278359180487, guid: 78f320dca18b0c7459396f4503b659cf,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818858278359180487, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818858278359180487, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.30192828
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818858278359180487, guid: 78f320dca18b0c7459396f4503b659cf,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 11.076143
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f320dca18b0c7459396f4503b659cf, type: 3}
@@ -1208,6 +1256,72 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &1365421915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1365421918}
+  - component: {fileID: 1365421917}
+  - component: {fileID: 1365421916}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1365421916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365421915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1365421917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365421915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1365421918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365421915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1370609425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1482,7 @@ PrefabInstance:
     - target: {fileID: 1962950911625238539, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1962950911625238539, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
         type: 3}
@@ -1433,12 +1547,47 @@ PrefabInstance:
     - target: {fileID: 1541138610870517265, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541138610870517265, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.089999914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541138610870517265, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08996081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541138610870517265, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 9.900078
       objectReference: {fileID: 0}
     - target: {fileID: 4328368415651790470, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328368415651790470, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.15095818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328368415651790470, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2970934
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328368415651790470, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 11.0858135
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328368415651790470, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.39573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dba4bc9ca8e9dc42a79a83b02e46624, type: 3}
@@ -1682,11 +1831,11 @@ MonoBehaviour:
   accel: {x: 0, y: 0, z: 0}
   jc_ind: 0
   orientation: {x: 0, y: 0, z: 0, w: 0}
-  speedGameModifier: 0
+  speedGameModifier: 2
   nbGames: 0
   ShakeSensitivity: 1.4
-  delay_Max_ToShake: 0
-  delay_Max_ToShake_tmp: 0
+  delay_Max_ToShake: 60
+  delay_Max_ToShake_tmp: 60
   delay_txt: {fileID: 0}
 --- !u!114 &1741784020
 MonoBehaviour:

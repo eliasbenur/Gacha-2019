@@ -75,15 +75,17 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+       
         delay_Max_ToShake_tmp -= Time.deltaTime;
-        delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
+        //delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
         if (delay_Max_ToShake_tmp < 0)
         {
             delay_Max_ToShake_tmp = delay_Max_ToShake;
+            Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
+            a.SetTrigger("Gnack");
             TriggerFreeze();
         }
-        */
+        
         if (Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();
@@ -103,6 +105,8 @@ public class Main : MonoBehaviour
         {
             this.isSwapping = true;
             this.isFreezing = false;
+
+            delay_Max_ToShake_tmp = delay_Max_ToShake;
 
             player.UnFreeze();
             this.nbGames++;
@@ -155,19 +159,21 @@ public class Main : MonoBehaviour
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (20 + (speedGameModifier)) * (-1 * currentJoyconMouth);
+        this.confrontationScore += (20 + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        Debug.Log("Advancement : " + confrontationScore);
+        CheckVictory();
     }
 
     private void CheckVictory()
     {
         if(this.confrontationScore<=-100 )
         {
-            Debug.Log("Black wins");
+            Debug.Log("White wins");
         }
 
         if (this.confrontationScore >= 100)
         {
-            Debug.Log("White wins");
+            Debug.Log("Black wins");
         }
     }
 
