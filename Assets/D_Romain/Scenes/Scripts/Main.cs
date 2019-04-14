@@ -52,6 +52,10 @@ public class Main : MonoBehaviour
             currentJoyconMouth = (currentJoyconMouth == 1 ? 0 : 1);
             currentJoyconPlayer = (currentJoyconPlayer == 1 ? 0 : 1);
 
+            //change player music
+            string state = (currentJoyconPlayer == 1 ? "player1" : "player2");
+            AkSoundEngine.SetState("Player_Music", state);
+
             ResetScene();
 
             FindObjectOfType<GeneracionAle_ale>().New_Generation();
@@ -70,11 +74,9 @@ public class Main : MonoBehaviour
             this.isGameUp = false;
             CameraShake.Shake(0.1f, 0.75f);
             player.Freeze();
-            AkSoundEngine.SetState("Player_Music", "Player1");
             transition.StartTransition();
-            
-           // this.freezeTimeElapsed = 0;
-           
+            // this.freezeTimeElapsed = 0;
+
         }
         
     }

@@ -10,6 +10,7 @@ public class Transition : MonoBehaviour
     public Main main;
     public GameObject player1;
     public GameObject player2;
+    public GameObject colorInversor;
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
@@ -74,37 +75,19 @@ public class Transition : MonoBehaviour
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
                 ChangePlayerColor();
+                if(colorInversor.activeSelf) colorInversor.SetActive(false);
+                else colorInversor.SetActive(true);
+
                 //charger la map
             }
 
         }
         else if (!cameraIsOnInitialPosition)
         {
+
             if(cameraIsReset == false) ResetCamera();
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
         }
-
-        
-        
-
-        /*//Zoom out
-        else
-        {
-
-            if (cam.fieldOfView >= camFieldOfView - 0.5f)
-            {
-                cam.fieldOfView = camFieldOfView;
-            }
-            else
-            {
-                cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
-            }
-            if (cam.transform.position != camPosition)
-            {
-                    Debug.Log(camFieldOfView);
-                    transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition);
-            }
-        }  */
     }
 
     public void StartTransition()
