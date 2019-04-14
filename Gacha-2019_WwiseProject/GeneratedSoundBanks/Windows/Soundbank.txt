@@ -2,7 +2,34 @@ Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	889723386	Player_Music			\Default Work Unit\Player_Music	
+
+State	ID	Name	State Group			Notes
+	0	None	Player_Music			
+	2188949036	Player2	Player_Music			
+	2188949039	Player1	Player_Music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	80552359	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_Player1		
+	96283968	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_02\GA_MUSIC_v1_Player2		
+	211362249	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_06\GA_MUSIC_v1_Player2		
+	233333645	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_07\GA_MUSIC_v1_Player1		
+	237591539	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_07\GA_MUSIC_v1_Player2		
+	272974135	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_Player2		
+	631091136	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_Player2		
+	638813805	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_Player2		
+	645473759	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_05\GA_MUSIC_v1_Player2		
+	667701923	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_05\GA_MUSIC_v1_Player1		
+	682033792	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_02\GA_MUSIC_v1_Player1		
+	692019874	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_Player1		
+	749033768	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_06\GA_MUSIC_v1_Player1		
+	755965461	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player1		
+	801538531	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player2		
+	893328576	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_Player1		
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	36852275	GA_MUSIC_v1_Player1	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_Player1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player1		829504
 	53033994	GA_MUSIC_v1_menu_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_menu_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_02\GA_MUSIC_v1_menu_02		1658944
 	58704475	GA_MUSIC_v1_in_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_in_08_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_in_08		944704
 	97042972	GA_MUSIC_v1_in_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_in_04_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_in_04		898624
@@ -14,5 +41,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	955665088	GA_MUSIC_v1_menu_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_menu_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_01\GA_MUSIC_v1_menu_01		2396224
 	958391167	GA_MUSIC_v1_in_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_in_05_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_05\GA_MUSIC_v1_in_05		921664
 	961190498	GA_MUSIC_v1_in_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_in_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_02\GA_MUSIC_v1_in_02		898624
+	975651553	GA_MUSIC_v1_Player2	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_Player2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player2		829504
 	1025773147	GA_MUSIC_v1_transition_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Windows\SFX\GA_MUSIC_v1_transition_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_01\GA_MUSIC_v1_transition_01		1474624
 

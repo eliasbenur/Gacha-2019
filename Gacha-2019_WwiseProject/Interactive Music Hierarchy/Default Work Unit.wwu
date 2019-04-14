@@ -8,7 +8,7 @@
 						<Property Name="Tempo" Type="Real64" Value="125"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -241,6 +241,118 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{B02E978F-6CA3-4FC3-B275-7926A271EC85}" ShortID="176360868">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{48D30436-022F-4967-8F73-7F231F7B6B0A}" ShortID="36852275">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{B32A7FC3-69F8-4E1B-BB9F-67BC23EE7459}" ShortID="755965461">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{3575AD5D-EEB4-4F2F-8D0F-5DCCB550EF98}" ShortID="957516649"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1AD854BD-3A2B-4940-AC0C-D6CD4EF526DD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EA57D424-AB87-4059-9EF3-3ADDA58BE755}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{825DB970-F1BF-43FA-804B-35F247B89FAF}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{48D30436-022F-4967-8F73-7F231F7B6B0A}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{C2E57CB7-A739-4089-BF05-1E5F2747C635}" ShortID="189786273">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{DB18DC67-F039-4903-B4B7-7FE002CC1582}" ShortID="975651553">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{7F96033C-0D26-443E-9305-BB15A77D9B88}" ShortID="359134640"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{EDCCF31B-78BE-484C-A313-84198182DB89}" ShortID="801538531">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DEB18BCD-0487-47F8-8C13-FA1032692240}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{9F491674-2A9E-4490-AFCA-F1D83B83C6D6}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{1F224874-EEEB-430D-9543-E462BA3B0ED0}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{DB18DC67-F039-4903-B4B7-7FE002CC1582}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
 									</ChildrenList>
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{2BF0E37A-1D02-49A0-9307-A79473F6E4BD}"/>
@@ -295,6 +407,124 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="GA_MUSIC_v1_in_02" ID="{FC6400DB-7810-461F-972D-47C854C12945}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{BD4FECE8-8B53-467D-8243-1CB9CC4FA866}" ShortID="249981613">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{1CB6567E-A30E-4719-B2C5-FEEDFE5DC010}" ShortID="58651044">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{733FA20B-6D10-4653-8B63-9F3A03B902B2}" ShortID="682033792">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{93F7F051-A52C-451A-8830-D23111FBA188}" ShortID="976186707"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B3859DFE-BD16-4658-935D-8A215D1CD788}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{68518E8D-B771-43E4-9D58-88DEE66E7E40}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{0A13746B-4597-498E-B4AA-A408C9AB88CB}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{1CB6567E-A30E-4719-B2C5-FEEDFE5DC010}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{647C0CBC-8210-419D-A1FA-372F4C6B2C0D}" ShortID="85652569">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{0FF0024F-B2EA-4908-A554-C9448B765E94}" ShortID="771692708">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{D0EA76AE-B6D3-48F2-943C-E566F7D5FFC5}" ShortID="768579245"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{464485E5-B107-40C3-8AAA-7C266AF7B8FA}" ShortID="96283968">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{9167133D-4E88-4FB9-8A69-E39CE0D60D45}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{0F6E698D-B1B4-4BDC-B85D-A2CF55C4BF82}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{81FB5004-174A-4608-B63A-B639034B7A53}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{0FF0024F-B2EA-4908-A554-C9448B765E94}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -359,6 +589,124 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{B4A5177A-FAC6-45F0-8CC4-7FB26CD21D60}" ShortID="873922249">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{1C5D1B0A-6A8D-459C-BE23-DD1F3EB5B754}" ShortID="606285687">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{E6FAF5FA-F578-4607-AB1F-A8C1D0A8D361}" ShortID="893328576">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{875ACA80-C4FC-4A64-896A-772CE12EF7E2}" ShortID="57481900"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5732ABC9-E3D9-480F-9F7C-92C4AE40DF22}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{357B220A-EC1C-4977-B325-91D3CC7AFCDA}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{8E693F6C-632E-491C-AE3C-D28302EFD775}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{1C5D1B0A-6A8D-459C-BE23-DD1F3EB5B754}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{5D97553F-2B46-461B-933B-E05ABCF0ECC6}" ShortID="97657854">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{6C8416B7-F69B-4499-A50F-984D7FC5EAD7}" ShortID="667853095">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{36B8B001-CACE-4604-8E36-305E7167B350}" ShortID="915704337"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{D58766DA-ADA3-44EC-8424-9990B4BB65F1}" ShortID="272974135">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AFE69117-E6C7-40B5-8394-F2F849B8B23E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{7E319B32-BE66-4012-9AC4-D58B4426243C}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{A22CB324-8D26-43CD-A387-8172843B4CCE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{6C8416B7-F69B-4499-A50F-984D7FC5EAD7}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
 									</ChildrenList>
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{A4CC4895-F1B5-4548-B1FF-3D35F6A09153}"/>
@@ -413,6 +761,124 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="GA_MUSIC_v1_in_04" ID="{F6742901-F08B-46EE-A915-D671F7BA38CA}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{66BD9CE7-C9DE-44CE-9DFD-6E31A9CEFE34}" ShortID="432463491">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{829DF1C5-04A7-45F5-9521-81AE0E618319}" ShortID="53756619">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{229748CD-7573-4CFD-B61B-C4743FCD8B07}" ShortID="692019874">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{747265A1-2739-4C8A-96C0-1DFF71369637}" ShortID="447680601"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AB740A17-39F7-4117-937C-9DA68B1C10BD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{8999F679-8835-46E5-9589-8188784BBEE9}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{32129D8F-FAAE-44FF-A8D4-1550BC7ADEA7}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{829DF1C5-04A7-45F5-9521-81AE0E618319}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{FB474846-6EB0-4FCA-AE4C-7FE2470B194D}" ShortID="691941818">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{AE456CBC-898E-47B4-B608-A33213A025D3}" ShortID="894533354">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{BB5E2C4C-31CE-42E2-BA4E-A7738334D475}" ShortID="202557883"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{E8686B3B-EDB6-45E1-B278-F556169D084D}" ShortID="631091136">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5E26C383-5455-4710-B31E-7E7A805951F3}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{46CFB2FA-2515-4542-98A4-D1FB3DD73D2D}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{46813505-7E11-4F8A-9DF9-5AF23DC1B14F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{AE456CBC-898E-47B4-B608-A33213A025D3}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -477,6 +943,124 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{C20C7CA0-64CE-4DF2-AA84-CFEC49E024EB}" ShortID="247081809">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{5BBB070F-19C7-4667-9EA4-D85525110633}" ShortID="841732785">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{FA509429-47B3-4293-B362-EDC7FB114380}" ShortID="667701923">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{5CBD61CA-CA64-489B-8B06-D965ADFDAD32}" ShortID="457914306"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E0B0E6BA-D09A-49C9-B677-57CC4872769D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{C2ABF0E1-A1B4-42BB-9E33-7542CC325AC1}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{0687AEDC-0EDE-4A7F-BD9C-2E7C2A2A3EFC}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{5BBB070F-19C7-4667-9EA4-D85525110633}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{DEBD9AD9-6BAF-4202-B923-ABE0146E6CFB}" ShortID="810341541">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{0AB167EB-026E-4874-988F-F2755BA17F0A}" ShortID="409544242">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{34F15302-7F7B-46CD-A865-F1530F0F7042}" ShortID="128139932"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{B0963AAF-5DB3-4A42-97C3-AA60D23A99B8}" ShortID="645473759">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{C84862B4-53DC-4C6E-B794-97A481A223AF}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{550C80B3-4BD1-4A4C-8337-AF727E2B5919}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{1DA764A8-FF27-48AD-8880-303FD16DB22D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{0AB167EB-026E-4874-988F-F2755BA17F0A}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
 									</ChildrenList>
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{93C212E9-8A2C-4006-8CFE-333BA9608779}"/>
@@ -531,6 +1115,124 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="GA_MUSIC_v1_in_06" ID="{B7A7592F-3F0C-4733-9D15-3AE8EA8AD6A3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{B7514175-7FF9-4720-8995-640B8C1FA61F}" ShortID="964667407">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{4013E36B-649A-4AE8-B9AF-E96E5A165ED0}" ShortID="977194818">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{4B6AE8E1-9F80-4951-A863-2708B6745214}" ShortID="749033768">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{7CC9BFD7-FC6D-4BA3-96E2-6DD133175E50}" ShortID="424057535"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{3FC2572C-09E4-4139-AB2D-40ED55851F7E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F36FFA0E-ACA5-4E9C-9ADE-509E4F718DCF}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{D113E339-F4F4-46E9-B36D-9E13C5777EC9}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{4013E36B-649A-4AE8-B9AF-E96E5A165ED0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{60205E21-7ABE-47CD-BBA1-396101BC6FC1}" ShortID="876307907">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{2890AB33-FF74-42D9-A251-B0BB8723116B}" ShortID="89672363">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{6192AD5D-53B8-40C7-AD45-CEECBDD55FBD}" ShortID="862670277"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{8F002FB0-3FD5-4D99-AABE-DACCF7DC0237}" ShortID="211362249">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{571C68EA-2F95-4FA6-AED2-F2FABFA3C787}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{BE16649B-6FC7-4F0C-AF2A-95AE870551ED}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{0CB1B2C1-0645-49FD-A0B4-F25B32A1F739}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{2890AB33-FF74-42D9-A251-B0BB8723116B}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -595,6 +1297,124 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{382962B1-B9D2-4506-B8F2-90982E381282}" ShortID="855826713">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{63229C67-AFFD-412E-B30F-66AF928E38CC}" ShortID="753380085">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{D1FEE5A6-5232-46A1-ADFC-9DC707C973D7}" ShortID="233333645">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{566C4DC8-B491-4FBD-823F-C0378F717C6B}" ShortID="396542152"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DD0A0753-812F-4054-9D05-CA24A542210A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{0A090E52-8D62-4441-B189-AD3FAEDB21A8}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{19B711A3-E5A0-421A-9D89-189BDAB4D0C5}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{63229C67-AFFD-412E-B30F-66AF928E38CC}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{CF3DC941-46AF-4A2A-BF39-C096697F9350}" ShortID="19013092">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{CE007AC1-D672-4854-A330-5941B70717B6}" ShortID="123560195">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{8839CAF5-70D2-4FBD-A63A-1913EE1A2314}" ShortID="461901090"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{4F085111-F5FA-4F9C-A2C5-2867F24092A9}" ShortID="237591539">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{992146A7-3CA4-4EB3-86AA-BFF17307FD4C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{E16DCF34-CC8F-4904-9FAB-EDC8A6B32F32}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{2EDC77A1-57BB-46CA-AEE0-DCC07B976958}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{CE007AC1-D672-4854-A330-5941B70717B6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
 									</ChildrenList>
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{320A0A8A-754F-4CAD-829D-E9DD07DB5889}"/>
@@ -649,6 +1469,124 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="GA_MUSIC_v1_in_08" ID="{1AE5065C-09E5-4198-B870-CF37349DBCC7}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player1" ID="{7B2BEC8A-181A-42BA-9963-123FF3E34AA4}" ShortID="1038549910">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player1" ID="{72465CD6-657B-46C0-936A-80586B63B7F4}" ShortID="873420219">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="36852275"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{2BB7CEA9-945D-4E45-89F8-32AE43C12F5E}" ShortID="80552359">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{96A4AAFB-16AD-4362-9C36-D8195AC06AA3}" ShortID="774236182"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{11FA9E0B-2151-4417-BD53-9781AA6C2B1B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D3D05FA1-C9F9-4EEE-A1D9-311B2E928280}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player1" ID="{FDD81651-6A65-4B1C-B692-D826CCFCA56B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player1" ID="{72465CD6-657B-46C0-936A-80586B63B7F4}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="GA_MUSIC_v1_Player2" ID="{71773933-D35A-4E2A-9F4D-F4C435C2A584}" ShortID="608170737">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GA_MUSIC_v1_Player2" ID="{5E2FF15E-7969-438E-A9DF-34B2C3ABA98A}" ShortID="208741254">
+													<Language>SFX</Language>
+													<AudioFile>GA_MUSIC_v1_Player2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="975651553"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player2" ID="{CE6414EF-68DB-470F-A646-CE79855FC03B}"/>
+														<State Name="" ID="{070F18D3-FF96-4861-9291-922180D31C55}" ShortID="816966812"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
+														<State Name="" ID="{5DDCEAF6-BEDF-4FDF-A9FC-C0AADC8D5E6E}" ShortID="638813805">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-200"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DE919ACB-F8D4-4DA4-92E1-C726D05026C5}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{561F18FF-6CE6-43D7-B18D-2896D742B90B}">
+													<ClipList>
+														<MusicClip Name="GA_MUSIC_v1_Player2" ID="{7ACC261C-10C1-49EC-A735-164D20FD8D1E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4320"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="GA_MUSIC_v1_Player2" ID="{5E2FF15E-7969-438E-A9DF-34B2C3ABA98A}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -856,11 +1794,13 @@
 					</TransitionList>
 					<ArgumentList>
 						<ArgumentRef Name="Music_state" ID="{323A346C-108A-4615-9EBE-CBF523DAB12D}"/>
+						<ArgumentRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
 								<PathElementRef Name="Menu" ID="{BE5E4E48-247F-47A8-A2A0-5B57B69B95CE}"/>
+								<PathElementRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Menu" ID="{9D0601F0-8FBE-4AE2-BF06-81695DFDFA2D}" WorkUnitID="{7675B3DF-349F-46DE-A2DE-418457093840}" Platform="Linked"/>
@@ -869,6 +1809,7 @@
 						<Entry>
 							<Path>
 								<PathElementRef Name="InGame" ID="{78AC626B-7E62-4D7B-92F7-9D5D906F63E9}"/>
+								<PathElementRef Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="InGame" ID="{C6C3B9B8-7A21-4D04-B781-5E84DD7F324B}" WorkUnitID="{7675B3DF-349F-46DE-A2DE-418457093840}" Platform="Linked"/>
