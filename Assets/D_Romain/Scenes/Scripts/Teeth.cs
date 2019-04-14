@@ -26,6 +26,9 @@ public class Teeth : MonoBehaviour
 
     public Main main;
 
+    [SerializeField]
+    public float ShakeSensitivity = 1.4f;
+
     [Range (0.1f, 1f)]
     public float cooldownAfterSwap = 0.5f;
 
@@ -94,7 +97,7 @@ public class Teeth : MonoBehaviour
         Joycon j = joycons[main.currentJoyconMouth];
         if (joycons.Count > 0)
         {
-            if (j.GetAccel().y > 1.4f || j.GetAccel().x > 1.4f || j.GetAccel().z > 1.4f)
+            if (j.GetAccel().y > ShakeSensitivity || j.GetAccel().x > ShakeSensitivity || j.GetAccel().z > ShakeSensitivity)
             {
                 Debug.Log("SHAKE IT OFF !");
                 return true;
