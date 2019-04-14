@@ -24,14 +24,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 570724c09653754890f9bff5d11c5376
     GuidInternal: 
-    m_lastTime: -8586464405080712658
+    m_lastTime: -8586463496277998071
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586463622805194243
+    m_lastTime: -8586463486006377017
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586463622813154236
+    m_lastTime: -8586463486014027414
     List:
     - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
@@ -58,6 +58,42 @@ MonoBehaviour:
       - ElementName: Play_Amb
         ObjectType: 3
       Path: Default Work Unit\Play_Amb
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_FTPS
+      guid: 0a9b6cd6fe530046adc0a8efc1eb767d
+      id: 3079036743
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_FTPS
+        ObjectType: 3
+      Path: Default Work Unit\Play_FTPS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_jawclose
+      guid: d765cae2aa7ca34aa72155516e611cdc
+      id: 3061594324
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_jawclose
+        ObjectType: 3
+      Path: Default Work Unit\Play_jawclose
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_mouth_transition
+      guid: 5681b80168780048879b7287c505952b
+      id: 4273929195
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_mouth_transition
+        ObjectType: 3
+      Path: Default Work Unit\Play_mouth_transition
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -73,19 +109,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_player_killed
+      guid: 2f2256a63e37c941bb8d6a616b2a48bf
+      id: 1115105435
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_player_killed
+        ObjectType: 3
+      Path: Default Work Unit\Play_player_killed
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4a538b85f00ee843b118efdcc674b9ff
     GuidInternal: 
-    m_lastTime: -8586464405080722885
-    List: []
+    m_lastTime: -8586463486014007451
+    List:
+    - name: music_speed
+      guid: 7b9f711013822c4a86b0e15737e5f2a2
+      id: 2537816454
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_speed
+        ObjectType: 13
+      Path: Default Work Unit\music_speed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 20efeab33ecb7045a486bdfddbcad94b
     GuidInternal: 
-    m_lastTime: -8586463622805184377
+    m_lastTime: -8586463496277978108
     List:
     - name: Music_state
       guid: 6c343a328a1015469ebecbf523dab12d
@@ -118,6 +175,37 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Player_Music
+      guid: d829e124986f89428e7730261741fb84
+      id: 889723386
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Music
+        ObjectType: 9
+      Path: Default Work Unit\Player_Music
+      values:
+      - name: None
+        guid: 1613746f0ed8fe43af66aacc4ecaef82
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Player1
+        guid: 9b819315c092e949876382dbf684e38b
+        id: 2188949039
+        PathAndIcons:
+        - ElementName: Player1
+          ObjectType: 8
+      - name: Player2
+        guid: ef1464cedb680f47a646ce79855fc03b
+        id: 2188949036
+        PathAndIcons:
+        - ElementName: Player2
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -136,8 +224,5 @@ MonoBehaviour:
   - /Gacha-2019_WwiseProject
   - /Gacha-2019_WwiseProject/Events
   - /Gacha-2019_WwiseProject/Events/Default Work Unit
-  - /Gacha-2019_WwiseProject/States
-  - /Gacha-2019_WwiseProject/States/Default Work Unit
-  - /Gacha-2019_WwiseProject/States/Default Work Unit/Music_state
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

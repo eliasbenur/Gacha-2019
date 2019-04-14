@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Bounce : MonoBehaviour
+{
+    public float bang;
+    // Start is called before the first frame update
+    void Start()
+    {
+        bang = 70;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "PlayerCube")
+        {
+            float xTarget = Random.Range(-2f, 2f);
+            float yTarget = Random.Range(-2f, 2f);
+            Vector3 target = new Vector3(xTarget, yTarget, 0);
+
+            collision.GetComponent<Rigidbody2D>().velocity = (target - collision.transform.position).normalized*bang;
+            Debug.Log("Pepito fromito");
+        }
+        
+    }
+
+
+}
