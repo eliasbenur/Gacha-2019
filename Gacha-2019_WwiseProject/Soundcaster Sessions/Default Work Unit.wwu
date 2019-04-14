@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Amb" ID="{68E1450D-99C0-4521-8690-56842562D21F}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_jawclose" ID="{E2CA65D7-7CAA-4AA3-A721-55516E611CDC}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -23,7 +27,11 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_FTPS" ID="{D66C9B0A-53FE-4600-ADC0-A8EFC1EB767D}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
-							<Position X="2" Y="1"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_jump" ID="{AAAA5180-C958-4CBC-99B5-FFB30C5DA0BD}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="2" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -34,7 +42,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
-						<CurrentStateRef Name="Menu" ID="{BE5E4E48-247F-47A8-A2A0-5B57B69B95CE}"/>
+						<CurrentStateRef Name="InGame" ID="{78AC626B-7E62-4D7B-92F7-9D5D906F63E9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
