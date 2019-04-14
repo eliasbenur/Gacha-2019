@@ -64,6 +64,7 @@ public class Transition : MonoBehaviour
         //Zoom in
         if (inTransition == true)
         {
+            AkSoundEngine.PostEvent("Play_mouth_transition", cam.gameObject);
             cameraIsReset = false;
             cameraIsOnInitialPosition = false;
             float newFieldOfView = 0.2f;
