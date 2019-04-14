@@ -14,6 +14,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_miss" ID="{3D89A825-DD94-486A-A6DA-ACE2A8610B6D}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_jawclose" ID="{E2CA65D7-7CAA-4AA3-A721-55516E611CDC}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -45,8 +49,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Player1" ID="{1593819B-92C0-49E9-8763-82DBF684E38B}"/>
-						<CurrentStateRef Name="InGame" ID="{78AC626B-7E62-4D7B-92F7-9D5D906F63E9}"/>
+						<CurrentStateRef Name="None" ID="{6F741316-D80E-43FE-AF66-AACC4ECAEF82}"/>
+						<CurrentStateRef Name="None" ID="{271BC312-25D4-4E6F-B0B1-0DB8F3D6FEAF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
