@@ -51,6 +51,7 @@ public class Transition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Zoom in
         if (inTransition == true)
         {
             float newFieldOfView = 0.2f;
@@ -58,7 +59,7 @@ public class Transition : MonoBehaviour
             camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
-            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition/4, 5);
+            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
             
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
@@ -67,26 +68,24 @@ public class Transition : MonoBehaviour
             }
             
         }
+        //Zoom out
         else
         {
 
-            if (cam.fieldOfView >= camFieldOfView - 3f)
+            if (cam.fieldOfView >= camFieldOfView - 0.5f)
             {
-                Debug.Log(camFieldOfView);
                 cam.fieldOfView = camFieldOfView;
             }
-            else {
-                if (cam.transform.position != camPosition)
-                {
-                    cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
-                    transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition / 4, 5);
-                }
+            else
+            {
+                cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
             }
-        }
-
-        
-
-        
+            if (cam.transform.position != camPosition)
+            {
+                    Debug.Log(camFieldOfView);
+                    transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition);
+            }
+        }     
     }
 
     private void ChangePlayerColor()
