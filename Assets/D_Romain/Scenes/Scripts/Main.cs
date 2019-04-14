@@ -75,7 +75,7 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        /*
         delay_Max_ToShake_tmp -= Time.deltaTime;
         delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
         if (delay_Max_ToShake_tmp < 0)
@@ -83,7 +83,7 @@ public class Main : MonoBehaviour
             delay_Max_ToShake_tmp = delay_Max_ToShake;
             TriggerFreeze();
         }
-
+        */
         if (Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();

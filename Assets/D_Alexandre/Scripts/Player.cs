@@ -187,7 +187,7 @@ public class Player : MonoBehaviour
         this.isFrozen = true;
         this.rBody.velocity = new Vector3();
         this.GetComponentsInChildren<ParticleSystem>()[0].Pause();
-        this.GetComponentsInChildren<ParticleSystem>()[4].Pause();
+        this.GetComponentsInChildren<ParticleSystem>()[3].Pause();
     }
 
     public void UnFreeze()
