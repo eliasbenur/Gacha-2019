@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e32a22d65601b64f9942a41d6edab287
     GuidInternal: 
-    m_lastTime: -8586464446339550250
+    m_lastTime: -8586464405080672760
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 570724c09653754890f9bff5d11c5376
     GuidInternal: 
-    m_lastTime: -8586464446339818025
+    m_lastTime: -8586464405080712658
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586464208896103663
+    m_lastTime: -8586463622805194243
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586464208750225747
+    m_lastTime: -8586463622813154236
     List:
     - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
@@ -61,37 +61,83 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Music
+      guid: afa96360431d3f45b3c663732a75e2d9
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: Default Work Unit\Play_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4a538b85f00ee843b118efdcc674b9ff
     GuidInternal: 
-    m_lastTime: -8586464446339877863
+    m_lastTime: -8586464405080722885
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 20efeab33ecb7045a486bdfddbcad94b
     GuidInternal: 
-    m_lastTime: -8586464446339580163
-    List: []
+    m_lastTime: -8586463622805184377
+    List:
+    - name: Music_state
+      guid: 6c343a328a1015469ebecbf523dab12d
+      id: 3826569560
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_state
+        ObjectType: 9
+      Path: Default Work Unit\Music_state
+      values:
+      - name: InGame
+        guid: 6b62ac78627e7b4d92f79d5d906f63e9
+        id: 984691642
+        PathAndIcons:
+        - ElementName: InGame
+          ObjectType: 8
+      - name: Menu
+        guid: 484e5ebe7f24a847a2a05b57b69b95ce
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 8
+      - name: None
+        guid: 12c31b27d4256f4eb0b10db8f3d6feaf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 48d807216ab52e45a89043555f234dc5
     GuidInternal: 
-    m_lastTime: -8586464446339907789
+    m_lastTime: -8586464405080682996
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8a1c6c2e5de0ca4193d59b61e0f25f9e
     GuidInternal: 
-    m_lastTime: -8586464446339937686
+    m_lastTime: -8586464405080682996
     List: []
   ExpandedItems:
   - /Gacha-2019_WwiseProject
   - /Gacha-2019_WwiseProject/Events
   - /Gacha-2019_WwiseProject/Events/Default Work Unit
+  - /Gacha-2019_WwiseProject/States
+  - /Gacha-2019_WwiseProject/States/Default Work Unit
+  - /Gacha-2019_WwiseProject/States/Default Work Unit/Music_state
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

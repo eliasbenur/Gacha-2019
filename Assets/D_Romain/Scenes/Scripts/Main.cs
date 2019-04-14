@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-
+    private Camera cam;
     public int currentJoyconPlayer = 0;
     public int currentJoyconMouth = 1;
 
@@ -13,18 +13,27 @@ public class Main : MonoBehaviour
     public bool isSwapping = false;
     public bool isFreezing = false;
 
+    public AkSoundEngine Wwise;
     public Plane plane;
     public Player player;
     public Transition transition;
+
+    public float confrontationScore = 0;
+
+    [Range(0.2f, 5f)]
+    public float speedGameModifier;
+    public int nbGames = 0;
 
     public ResourceLoader rs;
 
     // Start is called before the first frame update
     void Start()
     {
+        cam = Camera.main;
         player = FindObjectOfType<Player>();
         plane = FindObjectOfType<Plane>();
         rs = new ResourceLoader();
+        plane.GetComponentInChildren<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -45,6 +54,7 @@ public class Main : MonoBehaviour
             this.isFreezing = false;
 
             player.UnFreeze();
+            this.nbGames++;
 
             //Echange players
             currentJoyconMouth = (currentJoyconMouth == 1 ? 0 : 1);
@@ -68,8 +78,7 @@ public class Main : MonoBehaviour
             this.isGameUp = false;
             CameraShake.Shake(0.1f, 0.75f);
             player.Freeze();
-
-
+            AkSoundEngine.SetState("Player_Music", "Player1");
             transition.StartTransition();
             
            // this.freezeTimeElapsed = 0;
@@ -82,5 +91,23 @@ public class Main : MonoBehaviour
     {
         player.ResetPos();
         plane.Reset();
+    }
+
+    public void PlayerEaten()
+    {
+        this.confrontationScore += (20 + (speedGameModifier)) * (-1 * currentJoyconMouth);
+    }
+
+    private void CheckVictory()
+    {
+        if(this.confrontationScore<=-100 )
+        {
+            Debug.Log("Black wins");
+        }
+
+        if (this.confrontationScore >= 100)
+        {
+            Debug.Log("White wins");
+        }
     }
 }
