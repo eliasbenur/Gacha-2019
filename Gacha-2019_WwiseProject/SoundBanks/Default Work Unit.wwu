@@ -10,6 +10,7 @@
 						<ObjectRef Name="Play_Music" ID="{6063A9AF-1D43-453F-B3C6-63732A75E2D9}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_FTPS" ID="{D66C9B0A-53FE-4600-ADC0-A8EFC1EB767D}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_mouth_transition" ID="{01B88156-7868-4800-879B-7287C505952B}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_bounce" ID="{BF71ECE7-51B2-482A-AEE8-1C056E9B7248}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_jawclose" ID="{E2CA65D7-7CAA-4AA3-A721-55516E611CDC}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_jump" ID="{AAAA5180-C958-4CBC-99B5-FFB30C5DA0BD}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

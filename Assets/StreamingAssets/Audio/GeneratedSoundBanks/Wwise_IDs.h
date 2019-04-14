@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB = 2959533290U;
+        static const AkUniqueID PLAY_BOUNCE = 3465618802U;
         static const AkUniqueID PLAY_FTPS = 3079036743U;
         static const AkUniqueID PLAY_JAWCLOSE = 3061594324U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;

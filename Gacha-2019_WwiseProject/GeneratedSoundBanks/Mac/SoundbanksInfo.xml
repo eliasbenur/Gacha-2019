@@ -22,6 +22,7 @@
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
+				<Event Id="3465618802" Name="Play_bounce" ObjectPath="\Events\Default Work Unit\Play_bounce"/>
 				<Event Id="3079036743" Name="Play_FTPS" ObjectPath="\Events\Default Work Unit\Play_FTPS"/>
 				<Event Id="3061594324" Name="Play_jawclose" ObjectPath="\Events\Default Work Unit\Play_jawclose"/>
 				<Event Id="3689126666" Name="Play_jump" ObjectPath="\Events\Default Work Unit\Play_jump"/>
