@@ -19,13 +19,13 @@ public class Bounce : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.name == "PlayerCube")
+        if (collision.name == "BounceCollider")
         {
             float xTarget = Random.Range(-2f, 2f);
             float yTarget = Random.Range(-2f, 2f);
             Vector3 target = new Vector3(xTarget, yTarget, 0);
 
-            collision.GetComponent<Rigidbody2D>().velocity = (target - collision.transform.position).normalized*bang;
+            collision.transform.parent.GetComponent<Rigidbody2D>().velocity = (target - collision.transform.position).normalized*bang;
             Debug.Log("Pepito fromito");
         }
         

@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AMB_Weather_Wind_Low" ID="{CB417E32-7D56-4C75-BAA6-ABC6B2F6A442}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+									<ObjectRef Name="GA_Amb" ID="{5FBC17BE-8281-42AA-85FC-925BEA85272E}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,7 +53,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GA_PlayerKilled" ID="{74E70F6D-2E4B-4869-B46A-B2B08FAC873D}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+									<ObjectRef Name="GA_PlayerKilled" ID="{77DA9E36-40DA-444F-8787-D0C9D86760CA}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -81,7 +81,35 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GA_TransitionWhoosh" ID="{6F9435EF-31B4-41EE-B44B-12CA1C9C86ED}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+									<ObjectRef Name="GA_Transition" ID="{B5085666-77DE-49A5-910C-F1E7AE1BB894}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_jump" ID="{AAAA5180-C958-4CBC-99B5-FFB30C5DA0BD}">
+					<ChildrenList>
+						<Action Name="" ID="{BA1F664D-D2FD-4618-B9E1-9D159A15278C}" ShortID="103916127">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_Jump" ID="{1D573635-4947-4685-9CC8-746BAA2C46E3}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_bounce" ID="{BF71ECE7-51B2-482A-AEE8-1C056E9B7248}">
+					<ChildrenList>
+						<Action Name="" ID="{A24F91D8-D474-49AF-9145-74DB652EEDC0}" ShortID="739995659">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_bounce" ID="{CB0800FC-8D1C-4AD1-986A-55B4F4849048}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
