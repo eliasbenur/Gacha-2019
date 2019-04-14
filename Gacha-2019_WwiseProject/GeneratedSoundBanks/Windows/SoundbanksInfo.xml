@@ -22,7 +22,11 @@
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
+				<Event Id="3079036743" Name="Play_FTPS" ObjectPath="\Events\Default Work Unit\Play_FTPS"/>
+				<Event Id="3061594324" Name="Play_jawclose" ObjectPath="\Events\Default Work Unit\Play_jawclose"/>
+				<Event Id="4273929195" Name="Play_mouth_transition" ObjectPath="\Events\Default Work Unit\Play_mouth_transition"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="1115105435" Name="Play_player_killed" ObjectPath="\Events\Default Work Unit\Play_player_killed"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="36852275" Language="SFX">
@@ -41,25 +45,77 @@
 					<ShortName>GA_MUSIC_v1_in_04.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_04_8956FC97.wem</Path>
 				</File>
+				<File Id="170212737" Language="SFX">
+					<ShortName>GA_SFX_FTPS_02.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_02_FF107FF4.wem</Path>
+				</File>
 				<File Id="178620403" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_01.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_01_8956FC97.wem</Path>
+				</File>
+				<File Id="245330878" Language="SFX">
+					<ShortName>GA_SFX_FTPS_04.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_04_FF107FF4.wem</Path>
+				</File>
+				<File Id="285680283" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_05.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_05_0593455E.wem</Path>
 				</File>
 				<File Id="400563250" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_06.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_06_8956FC97.wem</Path>
 				</File>
+				<File Id="501454262" Language="SFX">
+					<ShortName>GA_SFX_Transition_01.wav</ShortName>
+					<Path>SFX\GA_SFX_Transition_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="532852529" Language="SFX">
+					<ShortName>GA_SFX_PlayerKilled_01.wav</ShortName>
+					<Path>SFX\GA_SFX_PlayerKilled_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="539702168" Language="SFX">
+					<ShortName>GA_SFX_JawClose_01.wav</ShortName>
+					<Path>SFX\GA_SFX_JawClose_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="611297345" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_04.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_04_0593455E.wem</Path>
+				</File>
+				<File Id="667452568" Language="SFX">
+					<ShortName>GA_SFX_Transition_04.wav</ShortName>
+					<Path>SFX\GA_SFX_Transition_04_FF107FF4.wem</Path>
+				</File>
 				<File Id="697803136" Language="SFX">
 					<ShortName>AMB_Weather_Wind_Low.wav</ShortName>
-					<Path>SFX\AMB_Weather_Wind_Low_8956FC97.wem</Path>
+					<Path>SFX\AMB_Weather_Wind_Low_0593455E.wem</Path>
+				</File>
+				<File Id="719292701" Language="SFX">
+					<ShortName>GA_SFX_FTPS_01.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_01_FF107FF4.wem</Path>
 				</File>
 				<File Id="733781981" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_07.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_07_8956FC97.wem</Path>
 				</File>
+				<File Id="805908936" Language="SFX">
+					<ShortName>GA_SFX_FTPS_05.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_05_FF107FF4.wem</Path>
+				</File>
+				<File Id="837608740" Language="SFX">
+					<ShortName>GA_SFX_Transition_03.wav</ShortName>
+					<Path>SFX\GA_SFX_Transition_03_FF107FF4.wem</Path>
+				</File>
+				<File Id="840522946" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_03.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_03_0593455E.wem</Path>
+				</File>
 				<File Id="893421024" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_03.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_03_8956FC97.wem</Path>
+				</File>
+				<File Id="947657869" Language="SFX">
+					<ShortName>GA_SFX_Transition_02.wav</ShortName>
+					<Path>SFX\GA_SFX_Transition_02_FF107FF4.wem</Path>
 				</File>
 				<File Id="955665088" Language="SFX">
 					<ShortName>GA_MUSIC_v1_menu_01.wav</ShortName>
@@ -73,13 +129,25 @@
 					<ShortName>GA_MUSIC_v1_in_02.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_02_8956FC97.wem</Path>
 				</File>
+				<File Id="964357775" Language="SFX">
+					<ShortName>GA_SFX_FTPS_03.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_03_FF107FF4.wem</Path>
+				</File>
 				<File Id="975651553" Language="SFX">
 					<ShortName>GA_MUSIC_v1_Player2.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_Player2_8956FC97.wem</Path>
 				</File>
+				<File Id="1006458871" Language="SFX">
+					<ShortName>GA_MUSIC_v1_transition_02.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_transition_02_0593455E.wem</Path>
+				</File>
+				<File Id="1024214974" Language="SFX">
+					<ShortName>GA_SFX_FTPS_06.wav</ShortName>
+					<Path>SFX\GA_SFX_FTPS_06_FF107FF4.wem</Path>
+				</File>
 				<File Id="1025773147" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_01.wav</ShortName>
-					<Path>SFX\GA_MUSIC_v1_transition_01_8956FC97.wem</Path>
+					<Path>SFX\GA_MUSIC_v1_transition_01_0593455E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
