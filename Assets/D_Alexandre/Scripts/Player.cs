@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     [Range(1f, 40f)]
     public float jumpVelocity;
 
+    [Range(0.5f, 3f)]
+    public float directionMultiplier;
+
     [Range(0.5f, 100f)]
     public float acceleration;
 
@@ -22,6 +25,7 @@ public class Player : MonoBehaviour
     private readonly float velocityThreshold = 0.1f;
 
     public bool isJumping = false;
+    public bool isFrozen = false;
 
     private Rigidbody2D rBody;
 
@@ -37,25 +41,29 @@ public class Player : MonoBehaviour
 
     public Quaternion orientation;
 
+    public Main main;
+
     // Start is called before the first frame update
     void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
         rBody.freezeRotation = true ;
         joycons = JoyconManager.Instance.j;
+        main = FindObjectOfType<Main>();
     }
 
     // Update is called once per frame
     void Update()
     {
         this.ProceedJump();
+        Joycon j = joycons[main.currentJoyconPlayer];
 
-        if (joycons.Count > 0)
+        if (joycons.Count > 0 && !isFrozen)
         {
             CheckShake();
-            Joycon j = joycons[jc_ind];
+            
             stick = j.GetStick();
-            if (j.GetButton(Joycon.Button.DPAD_UP))
+            if ((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || (j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))
             {
                 this.isJumping = true;
             }
@@ -65,7 +73,7 @@ public class Player : MonoBehaviour
             }
 
             //Basic impulsion
-            if (j.GetButton(Joycon.Button.DPAD_UP) && rBody.velocity.y == 0)
+            if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
             {
                 rBody.velocity += Vector2.up * jumpVelocity;
             }
@@ -73,16 +81,32 @@ public class Player : MonoBehaviour
             if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
             if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
 
-            if (this.transform.position.y <= -10) this.transform.position = new Vector3();
+            if (this.transform.position.y <= -10) this.ResetPos();
 
-            if (j.GetStick()[1] < -0.6f)
+            if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
             {
-                rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+                if(rBody.velocity.x < 0)
+                {
+                    rBody.velocity += Vector2.left * acceleration * Time.deltaTime * directionMultiplier;
+                }
+                else
+                {
+                    rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+                }
+                
             }
 
-            if (j.GetStick()[1] > 0.6f)
+            if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
             {
-                rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+
+                if (rBody.velocity.x > 0)
+                {
+                    rBody.velocity += Vector2.right * acceleration * Time.deltaTime * directionMultiplier;
+                }
+                else
+                {
+                    rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+                }
 
             }
 
@@ -113,14 +137,36 @@ public class Player : MonoBehaviour
     private void ProceedJump()
     {
         //Debug.Log("Y = "+ rBody.velocity.y);
+        if(!isFrozen)
+        {
+            if (rBody.velocity.y < 0)
+            {
+                rBody.velocity += Vector2.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            else if (rBody.velocity.y > 0 && !this.isJumping)
+            {
+                rBody.velocity += Vector2.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }
+
+        }
         
-        if (rBody.velocity.y < 0)
-        {
-            rBody.velocity += Vector2.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rBody.velocity.y > 0 && !this.isJumping)
-        {
-            rBody.velocity += Vector2.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
+    }
+
+    public void ResetPos()
+    {
+        this.transform.position = new Vector3();
+    }
+
+    public void Freeze()
+    {
+        this.GetComponent<Rigidbody2D>().isKinematic = true;
+        this.isFrozen = true;
+        this.rBody.velocity = new Vector3();
+    }
+
+    public void UnFreeze()
+    {
+        this.GetComponent<Rigidbody2D>().isKinematic = false;
+        this.isFrozen = false;
     }
 }

@@ -20,15 +20,23 @@ public class Teeth : MonoBehaviour
 
     public Quaternion orientation;
 
-    private bool CanShake;
+    private bool canSnap;
 
     public GameObject plane;
+
+    public Main main;
+
+    public int originalZ;
+
+    private readonly float cooldownAfterSwap = 0.5f;
+
+    private float cooldown;
 
 
     void Start()
     {
         joycons = JoyconManager.Instance.j;
-        
+        main = FindObjectOfType<Main>();
     }
 
     // Update is called once per frame
@@ -36,19 +44,26 @@ public class Teeth : MonoBehaviour
     {
         if (joycons.Count > 0)
         {
-            CheckShake();
-            Joycon j = joycons[jc_ind];
-            if (CanShake == true)
+            Joycon j = joycons[main.currentJoyconMouth];
+            
+            if (CheckShake() && canSnap)
             {
                 snaping = true;
             }
 
-            if (snaping)
+            if (snaping && canSnap)
             {
                 Snap();
             }
+        }
 
-
+        if(cooldown < cooldownAfterSwap)
+        {
+            cooldown += Time.deltaTime;
+        }
+        else
+        {
+            canSnap = true;
         }
     }
 
@@ -59,6 +74,16 @@ public class Teeth : MonoBehaviour
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + Time.deltaTime*7*(1/snapTravelTime), transform.localScale.z);
         }
+        else
+        {
+            if(snaping)
+            {
+                snaping = false;
+                canSnap = false;
+                main.TriggerFreeze();
+            }
+            
+        }
     }
 
     void ResetTeeth()
@@ -67,18 +92,23 @@ public class Teeth : MonoBehaviour
     }
     bool CheckShake()
     {
-        Joycon j = joycons[jc_ind];
+        Joycon j = joycons[main.currentJoyconMouth];
         if (joycons.Count > 0)
         {
-            if (j.GetAccel().y > 1.5f || j.GetAccel().x > 1.5f || j.GetAccel().z > 1.5f)
+            if (j.GetAccel().y > 1.4f || j.GetAccel().x > 1.4f || j.GetAccel().z > 1.4f)
             {
                 Debug.Log("SHAKE IT OFF !");
-                CanShake = true;
                 return true;
             }
         }
-        CanShake = false;
         return false;
+    }
+
+    public void ResetPositionAndScale()
+    {
+        this.ResetTeeth();
+        this.cooldown = 0;
+        this.canSnap = false;
     }
 
 
