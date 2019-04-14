@@ -15,6 +15,7 @@ public class Main : MonoBehaviour
 
     public Plane plane;
     public Player player;
+    public Transition transition;
 
     [Range(0.05f, 1f)]
     public float freezeTimeDuration;
@@ -71,6 +72,7 @@ public class Main : MonoBehaviour
         {
             this.isFreezing = true;
             this.isGameUp = false;
+            transition.inTransition = true;
             player.Freeze();
             this.freezeTimeElapsed = 0;
             CameraShake.Shake(0.1f, 0.75f);

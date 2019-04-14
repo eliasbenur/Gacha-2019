@@ -6,70 +6,72 @@ using UnityEngine;
 
 public class Transition : MonoBehaviour
 {
+
+    public Main main;
     public GameObject player1;
     public GameObject player2;
-    private Renderer p2Renderer;
+    private Renderer p2Renderer1;
+    private Renderer p2Renderer2;
     private Renderer p1Renderer;
     public Material white;
     public Material black;
 
-    public bool player1IsHunter;
-    public bool transition;
+    [Tooltip("increase value for slow transtion")]
+    [Range(0.1f,0.5f)]
+    public float smoothTransition;
+
+    private bool player1IsHunter;
+    public bool inTransition;
     private Vector3 vecVelocitySmooth;
     private float velocitySmooth;
     private Camera cam;
     private Vector3 camPosition;
-    private float camOrthographicSize;
+    private float camFieldOfView;
 
  
     void Start()
     {
+        main = FindObjectOfType<Main>();
         player1IsHunter = true;
-        transition = false;
+        inTransition = false;
         vecVelocitySmooth = Vector3.zero;
         velocitySmooth = 0;
         cam = Camera.main;
         camPosition = cam.transform.position;
-        camOrthographicSize = cam.orthographicSize;
+        camFieldOfView = cam.fieldOfView;
 
         p1Renderer = player1.GetComponent<Renderer>();
-        p2Renderer = player2.GetComponent<Renderer>();
+        p2Renderer1 = player2.transform.GetChild(0).GetComponent<Renderer>();
+        p2Renderer2 = player2.transform.GetChild(1).GetComponent<Renderer>();
         p1Renderer.material = white;
-        p2Renderer.material = black;
+        p2Renderer1.material = black;
+        p2Renderer2.material = black;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transition == true)
+        if (inTransition == true)
         {
-            float newOrthographicSize = 0.2f;
+            float newFieldOfView = 0.2f;
             Vector3 camTargetPosition;
-            if (player1IsHunter)
-            {
-                camTargetPosition = new Vector3(player2.transform.position.x, player2.transform.position.y, transform.position.z);
-                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, newOrthographicSize, ref velocitySmooth, 1.2f);
-                transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, 0.5f, 5);
-            }
-            else
-            {
-                camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
-                cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, newOrthographicSize, ref velocitySmooth, 1.2f);
-                transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, 0.5f, 5);
-            }
+            camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
 
-            if (cam.orthographicSize <= newOrthographicSize + 0.005f && transition)
+            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
+            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, 0.2f, 5);
+            
+            if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
-                Debug.Log("YO");
                 ChangePlayerColor();
+                //charger la map
             }
             
         }
 
-        if(cam.transform.position != camPosition && !transition)
+        if(cam.transform.position != camPosition && !inTransition)
         {
-            cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, camOrthographicSize, ref velocitySmooth, 1.2f);
-            transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, 0.5f, 5);
+            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
+            transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, 0.2f, 5);
         }
     }
 
@@ -77,17 +79,17 @@ public class Transition : MonoBehaviour
     {
         if (player1IsHunter)
         {
-            Debug.Log("p1BLACK");
             p1Renderer.material = white;
-            p2Renderer.material = black;
+            p2Renderer1.material = black;
+            p2Renderer2.material = black;
         }
         else
         {
-            Debug.Log("p1WHITE");
             p1Renderer.material = black;
-            p2Renderer.material = white;
+            p2Renderer1.material = white;
+            p2Renderer2.material = white;
         }
-        transition = false;
+        inTransition = false;
         player1IsHunter = !player1IsHunter;
     }
 }
