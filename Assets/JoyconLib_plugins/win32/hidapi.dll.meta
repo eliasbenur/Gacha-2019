@@ -1,7 +1,6 @@
 fileFormatVersion: 2
-guid: f735e311710bf4dff9c88fc40dde6fc8
-folderAsset: yes
-timeCreated: 1440740276
+guid: ee0f84db49b44d7448a02c2d48ba6060
+timeCreated: 1428024569
 licenseType: Free
 PluginImporter:
   serializedVersion: 1
@@ -14,26 +13,26 @@ PluginImporter:
       settings:
         CPU: AnyCPU
     Any:
-      enabled: 1
+      enabled: 0
       settings: {}
     Editor:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: AnyCPU
+        CPU: x86
         DefaultValueInitialized: true
-        OS: OSX
+        OS: Windows
     Linux:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86
     Linux64:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86_64
     LinuxUniversal:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: None
+        CPU: AnyCPU
     OSXIntel:
       enabled: 1
       settings:
@@ -50,14 +49,27 @@ PluginImporter:
       enabled: 0
       settings:
         STV_MODEL: STANDARD_13
-    Win:
+    WP8:
       enabled: 0
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+    Win:
+      enabled: 1
       settings:
         CPU: AnyCPU
     Win64:
       enabled: 0
       settings:
+        CPU: None
+    WindowsStoreApps:
+      enabled: 0
+      settings:
         CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+        SDK: AnySDK
     iOS:
       enabled: 0
       settings:
