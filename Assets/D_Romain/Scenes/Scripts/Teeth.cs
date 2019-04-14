@@ -71,21 +71,7 @@ public class Teeth : MonoBehaviour
 
     void Snap()
     {
-        plane.GetComponent<Plane>().StopPlaneRotation();
-        if (transform.localScale.y < 8)
-        {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + Time.deltaTime*7*(1/snapTravelTime), transform.localScale.z);
-        }
-        else
-        {
-            if(snaping)
-            {
-                snaping = false;
-                canSnap = false;
-                main.TriggerFreeze();
-            }
-            
-        }
+        
     }
 
     void ResetTeeth()

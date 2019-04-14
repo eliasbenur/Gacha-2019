@@ -14,7 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB = 2959533290U;
+        static const AkUniqueID PLAY_FTPS = 3079036743U;
+        static const AkUniqueID PLAY_JAWCLOSE = 3061594324U;
+        static const AkUniqueID PLAY_MOUTH_TRANSITION = 4273929195U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PLAYER_KILLED = 1115105435U;
     } // namespace EVENTS
 
     namespace STATES
@@ -42,6 +46,11 @@ namespace AK
         } // namespace PLAYER_MUSIC
 
     } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MUSIC_SPEED = 2537816454U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

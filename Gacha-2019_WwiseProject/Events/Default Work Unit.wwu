@@ -31,6 +31,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_jawclose" ID="{E2CA65D7-7CAA-4AA3-A721-55516E611CDC}">
+					<ChildrenList>
+						<Action Name="" ID="{29757E2C-8D19-4557-9806-DCDC02A73FCF}" ShortID="84107207">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_JawClose" ID="{18FCE103-8CF0-4535-80F1-0EFA7B62FF0C}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_player_killed" ID="{A656222F-373E-41C9-BB8D-6A616B2A48BF}">
+					<ChildrenList>
+						<Action Name="" ID="{59048CED-CB60-4035-B275-A8FA19133766}" ShortID="658214031">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_PlayerKilled" ID="{74E70F6D-2E4B-4869-B46A-B2B08FAC873D}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FTPS" ID="{D66C9B0A-53FE-4600-ADC0-A8EFC1EB767D}">
+					<ChildrenList>
+						<Action Name="" ID="{233DDB1D-ADD1-45D0-9AB6-4DAEB8A86032}" ShortID="439281901">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_FTPS" ID="{19C26CEA-6401-4D94-B4E2-67690E1ACC4D}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_mouth_transition" ID="{01B88156-7868-4800-879B-7287C505952B}">
+					<ChildrenList>
+						<Action Name="" ID="{69CDEAD6-ED29-4C90-8D69-7F33B50EEBE0}" ShortID="954482550">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_TransitionWhoosh" ID="{6F9435EF-31B4-41EE-B44B-12CA1C9C86ED}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

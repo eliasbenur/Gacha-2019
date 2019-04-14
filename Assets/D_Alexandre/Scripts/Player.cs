@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
             if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
             {
                 rBody.velocity += Vector2.up * jumpVelocity;
+                this.GetComponentsInChildren<ParticleSystem>()[1].Play();
             }
 
             if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
@@ -94,6 +95,8 @@ public class Player : MonoBehaviour
 
             if (this.transform.position.y <= -10) this.ResetPos();
 
+
+            //Gauche
             if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
             {
                 if(rBody.velocity.x < 0)
@@ -107,6 +110,7 @@ public class Player : MonoBehaviour
                 
             }
 
+            //Droite
             if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
             {
 
@@ -119,6 +123,15 @@ public class Player : MonoBehaviour
                     rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
                 }
 
+            }
+
+            //Descente
+            if((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.8f) || (main.currentJoyconPlayer == 0 && j.GetStick()[0] < -0.8f))
+            {
+                this.GetComponent<BoxCollider2D>().enabled = false;
+            }
+            else {
+                this.GetComponent<BoxCollider2D>().enabled = true;
             }
 
             //MaxSpeed

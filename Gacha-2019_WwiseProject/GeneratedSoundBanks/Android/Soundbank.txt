@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1115105435	Play_player_killed			\Default Work Unit\Play_player_killed	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
+	3061594324	Play_jawclose			\Default Work Unit\Play_jawclose	
+	3079036743	Play_FTPS			\Default Work Unit\Play_FTPS	
+	4273929195	Play_mouth_transition			\Default Work Unit\Play_mouth_transition	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	889723386	Player_Music			\Default Work Unit\Player_Music	
@@ -28,23 +32,38 @@ Custom State	ID	Name	State Group	Owner		Notes
 	801538531	Player1	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player2		
 	893328576	Player2	Player_Music	\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_Player1		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2537816454	music_speed			\Default Work Unit\music_speed	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	36852275	GA_MUSIC_v1_Player1	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_Player1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player1		829504
 	53033994	GA_MUSIC_v1_menu_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_menu_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_02\GA_MUSIC_v1_menu_02		1658944
 	58704475	GA_MUSIC_v1_in_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_08_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_in_08		944704
 	97042972	GA_MUSIC_v1_in_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_04_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_in_04		898624
+	170212737	GA_SFX_FTPS_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_02		39332
 	178620403	GA_MUSIC_v1_in_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_in_01		852544
-	285680283	GA_MUSIC_v1_transition_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_05_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_05\GA_MUSIC_v1_transition_05		783424
+	245330878	GA_SFX_FTPS_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_04		35412
+	285680283	GA_MUSIC_v1_transition_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_05_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_05\GA_MUSIC_v1_transition_05		783424
 	400563250	GA_MUSIC_v1_in_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_06_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_06\GA_MUSIC_v1_in_06		898624
-	611297345	GA_MUSIC_v1_transition_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_04_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_04\GA_MUSIC_v1_transition_04		898624
-	697803136	AMB_Weather_Wind_Low	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\AMB_Weather_Wind_Low_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Weather_Wind_Low		1920064
+	501454262	GA_SFX_Transition_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_TransitionWhoosh\GA_SFX_Transition_01		221980
+	532852529	GA_SFX_PlayerKilled_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\GA_SFX_PlayerKilled_01		105350
+	539702168	GA_SFX_JawClose_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_JawClose_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_JawClose\GA_SFX_JawClose_01		175028
+	611297345	GA_MUSIC_v1_transition_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_04_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_04\GA_MUSIC_v1_transition_04		898624
+	667452568	GA_SFX_Transition_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_TransitionWhoosh\GA_SFX_Transition_04		243802
+	697803136	AMB_Weather_Wind_Low	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\AMB_Weather_Wind_Low_0593455E.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Weather_Wind_Low		1920064
+	719292701	GA_SFX_FTPS_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_01		33764
 	733781981	GA_MUSIC_v1_in_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_07_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_07\GA_MUSIC_v1_in_07		3179584
-	840522946	GA_MUSIC_v1_transition_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_03\GA_MUSIC_v1_transition_03		829504
+	805908936	GA_SFX_FTPS_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_05		49748
+	837608740	GA_SFX_Transition_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_TransitionWhoosh\GA_SFX_Transition_03		305696
+	840522946	GA_MUSIC_v1_transition_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_03_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_03\GA_MUSIC_v1_transition_03		829504
 	893421024	GA_MUSIC_v1_in_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_in_03		898624
+	947657869	GA_SFX_Transition_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_TransitionWhoosh\GA_SFX_Transition_02		199732
 	955665088	GA_MUSIC_v1_menu_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_menu_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_01\GA_MUSIC_v1_menu_01		2396224
 	958391167	GA_MUSIC_v1_in_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_05_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_05\GA_MUSIC_v1_in_05		921664
 	961190498	GA_MUSIC_v1_in_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_02\GA_MUSIC_v1_in_02		898624
+	964357775	GA_SFX_FTPS_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_03		38372
 	975651553	GA_MUSIC_v1_Player2	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_Player2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player2		829504
-	1006458871	GA_MUSIC_v1_transition_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_02\GA_MUSIC_v1_transition_02		737344
-	1025773147	GA_MUSIC_v1_transition_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_01\GA_MUSIC_v1_transition_01		1474624
+	1006458871	GA_MUSIC_v1_transition_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_02_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_02\GA_MUSIC_v1_transition_02		737344
+	1024214974	GA_SFX_FTPS_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_06		37444
+	1025773147	GA_MUSIC_v1_transition_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_01_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_01\GA_MUSIC_v1_transition_01		1474624
 

@@ -10,6 +10,7 @@ public class Transition : MonoBehaviour
     public Main main;
     public GameObject player1;
     public GameObject player2;
+    public GameObject colorInversor;
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
@@ -32,7 +33,7 @@ public class Transition : MonoBehaviour
 
     public IEnumerator delay()
     {
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.3f);
         inTransition = true;
     }
 
@@ -49,11 +50,12 @@ public class Transition : MonoBehaviour
         cameraIsOnInitialPosition = true;
         cameraIsReset = true;
         p1Renderer = player1.GetComponent<Renderer>();
-        p2Renderer1 = player2.transform.GetChild(0).GetComponent<Renderer>();
-        p2Renderer2 = player2.transform.GetChild(1).GetComponent<Renderer>();
+        main.blackT.SetActive(false);
+        main.whiteT.SetActive(true);
+        main.blackPlBack.SetActive(false);
+        main.whitePlBack.SetActive(true);
+        cam.backgroundColor = new Color(255, 255, 255);
         p1Renderer.material = black;
-        p2Renderer1.material = white;
-        p2Renderer2.material = white;
     }
 
     // Update is called once per frame
@@ -74,37 +76,19 @@ public class Transition : MonoBehaviour
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
                 ChangePlayerColor();
+               // if(colorInversor.activeSelf) colorInversor.SetActive(false);
+                //else colorInversor.SetActive(true);
+
                 //charger la map
             }
 
         }
         else if (!cameraIsOnInitialPosition)
         {
+
             if(cameraIsReset == false) ResetCamera();
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
         }
-
-        
-        
-
-        /*//Zoom out
-        else
-        {
-
-            if (cam.fieldOfView >= camFieldOfView - 0.5f)
-            {
-                cam.fieldOfView = camFieldOfView;
-            }
-            else
-            {
-                cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, smoothTransition);
-            }
-            if (cam.transform.position != camPosition)
-            {
-                    Debug.Log(camFieldOfView);
-                    transform.position = Vector3.SmoothDamp(transform.position, camPosition, ref vecVelocitySmooth, smoothTransition);
-            }
-        }  */
     }
 
     public void StartTransition()
@@ -123,15 +107,21 @@ public class Transition : MonoBehaviour
     {
         if (player1IsHunter)
         {
+            main.blackT.SetActive(true);
+            main.whiteT.SetActive(false);
+            main.blackPlBack.SetActive(true);
+            main.whitePlBack.SetActive(false);
+            cam.backgroundColor = new Color(0, 0, 0);
             p1Renderer.material = white;
-            p2Renderer1.material = black;
-            p2Renderer2.material = black;
         }
         else
         {
+            main.blackT.SetActive(false);
+            main.whiteT.SetActive(true);
+            main.blackPlBack.SetActive(false);
+            main.whitePlBack.SetActive(true);
+            cam.backgroundColor = new Color(255, 255, 255);
             p1Renderer.material = black;
-            p2Renderer1.material = white;
-            p2Renderer2.material = white;
         }
         inTransition = false;
         player1IsHunter = !player1IsHunter;
