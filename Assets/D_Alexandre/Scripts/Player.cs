@@ -196,4 +196,13 @@ public class Player : MonoBehaviour
         this.isFrozen = false;
         this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0?0:3].Play();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Si ça touche une dent
+        if(collision.otherCollider.gameObject.name == "Tooth_UP" || collision.otherCollider.gameObject.name == "Tooth_DOWN")
+        {
+            Debug.Log("Lol t mor");
+        }
+    }
 }
