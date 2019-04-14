@@ -1,6 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	53033994	GA_MUSIC_v1_menu_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_menu_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_02\GA_MUSIC_v1_menu_02		1658944
+	58704475	GA_MUSIC_v1_in_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_08_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_in_08		944704
+	97042972	GA_MUSIC_v1_in_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_04_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_in_04		898624
+	178620403	GA_MUSIC_v1_in_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_in_01		852544
+	400563250	GA_MUSIC_v1_in_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_06_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_06\GA_MUSIC_v1_in_06		898624
 	697803136	AMB_Weather_Wind_Low	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\AMB_Weather_Wind_Low_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Weather_Wind_Low		1920064
+	733781981	GA_MUSIC_v1_in_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_07_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_07\GA_MUSIC_v1_in_07		3179584
+	893421024	GA_MUSIC_v1_in_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_in_03		898624
+	955665088	GA_MUSIC_v1_menu_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_menu_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_01\GA_MUSIC_v1_menu_01		2396224
+	958391167	GA_MUSIC_v1_in_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_05_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_05\GA_MUSIC_v1_in_05		921664
+	961190498	GA_MUSIC_v1_in_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_in_02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_02\GA_MUSIC_v1_in_02		898624
+	1025773147	GA_MUSIC_v1_transition_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Mac\SFX\GA_MUSIC_v1_transition_01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_01\GA_MUSIC_v1_transition_01		1474624
 
