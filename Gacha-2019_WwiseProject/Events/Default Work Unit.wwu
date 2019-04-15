@@ -146,6 +146,18 @@
 				</Event>
 				<Event Name="Play_victory" ID="{7D9E602F-71DA-4F77-8C14-680B21AD2CEB}">
 					<ChildrenList>
+						<Action Name="" ID="{D4BF10A3-BFCF-49FC-BDBC-295B6AA438F1}" ShortID="547544701">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music_speed" ID="{10719F7B-8213-4A2C-86B0-E15737E5F2A2}" WorkUnitID="{858B534A-0EF0-43E8-B118-EFDCC674B9FF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{6A247D52-125B-4B11-BDCD-FF8BD3C55AEE}" ShortID="519795684">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>

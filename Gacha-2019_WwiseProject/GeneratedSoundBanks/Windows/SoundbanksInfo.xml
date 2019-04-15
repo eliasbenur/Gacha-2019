@@ -346,10 +346,6 @@
 					<ShortName>GA_SFX_Playerkilled_voice_03.wav</ShortName>
 					<Path>SFX\GA_SFX_Playerkilled_voice_03_FF107FF4.wem</Path>
 				</File>
-				<File Id="866504204" Language="SFX">
-					<ShortName>GA_SFX_laugh_04.wav</ShortName>
-					<Path>SFX\GA_SFX_laugh_04_FF107FF4.wem</Path>
-				</File>
 				<File Id="893421024" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_03.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_03_99CAC254.wem</Path>

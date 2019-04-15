@@ -10,11 +10,15 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_victory" ID="{7D9E602F-71DA-4F77-8C14-680B21AD2CEB}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Amb" ID="{68E1450D-99C0-4521-8690-56842562D21F}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_miss" ID="{3D89A825-DD94-486A-A6DA-ACE2A8610B6D}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<ObjectRef Name="Play_UI" ID="{7481F368-3FB3-40E6-9E1F-9200EC17D04F}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
@@ -24,6 +28,10 @@
 						<Module>
 							<ObjectRef Name="Play_player_killed" ID="{A656222F-373E-41C9-BB8D-6A616B2A48BF}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_miss" ID="{3D89A825-DD94-486A-A6DA-ACE2A8610B6D}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_mouth_transition" ID="{01B88156-7868-4800-879B-7287C505952B}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
@@ -50,7 +58,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{6F741316-D80E-43FE-AF66-AACC4ECAEF82}"/>
-						<CurrentStateRef Name="Victory" ID="{3524C238-8423-48FE-86EF-90010BDE0592}"/>
+						<CurrentStateRef Name="None" ID="{271BC312-25D4-4E6F-B0B1-0DB8F3D6FEAF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
