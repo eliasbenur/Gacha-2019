@@ -18,6 +18,12 @@ public class Transition : MonoBehaviour
     public Material white;
     public Material black;
 
+
+    public RuntimeAnimatorController contWhite;
+    public RuntimeAnimatorController contBlack;
+    public Sprite spWhite;
+    public Sprite spBlack;
+
     [Tooltip("increase value for slow transtion")]
     [Range(0.1f,0.5f)]
     public float smoothTransition;
@@ -124,7 +130,9 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(true);
             main.whitePlBack.SetActive(false);
             cam.backgroundColor = new Color(0, 0, 0);
-           // p1Renderer.material = white;
+            // p1Renderer.material = white;
+            main.player.gameObject.GetComponent<SpriteRenderer>().sprite = spWhite;
+            main.player.gameObject.GetComponent<Animator>().runtimeAnimatorController = contWhite;
             planeForBlackSfx.SetActive(false);
         }
         else
@@ -134,7 +142,9 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(false);
             main.whitePlBack.SetActive(true);
             cam.backgroundColor = new Color(255, 255, 255);
-          //  p1Renderer.material = black;
+            //  p1Renderer.material = black;
+            main.player.gameObject.GetComponent<SpriteRenderer>().sprite = spBlack;
+            main.player.gameObject.GetComponent<Animator>().runtimeAnimatorController = contBlack;
             planeForBlackSfx.SetActive(true);
         }
         inTransition = false;
