@@ -197,7 +197,7 @@ public class Main : MonoBehaviour
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (scorePerRound + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        this.confrontationScore += (scorePerRound) * (currentJoyconMouth==1?-1:1);
         Debug.Log("Advancement : " + confrontationScore);
         CheckVictory();
     }
