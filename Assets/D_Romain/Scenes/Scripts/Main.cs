@@ -152,7 +152,7 @@ public class Main : MonoBehaviour
         if(!isFreezing)
         {
             //Debug.Log("startFreeze");
-            Invoke("playFeedbacks", 0.23f);
+            Invoke("playFeedbacks", 0.31f);
             this.isFreezing = true;
             this.isGameUp = false;
             if(player.deathSoundIsPlayed == false) AkSoundEngine.PostEvent("Play_miss", Camera.main.gameObject);
@@ -175,6 +175,27 @@ public class Main : MonoBehaviour
         AkSoundEngine.PostEvent("Play_jawclose", cam.gameObject);
         CameraShake.Shake(0.1f, 0.75f);
         player.Freeze();
+
+        Joycon j = joycons[this.currentJoyconMouth];
+        j.SetRumble(0.2f, 0.3f, 1f);
+
+
+        if (player.deathSoundIsPlayed)
+        {
+            j = joycons[this.currentJoyconPlayer];
+            j.SetRumble(0.2f, 0.3f, 1f);
+        }
+
+        Invoke("BreakRumbles", 0.1f);
+    }
+
+    void BreakRumbles()
+    {
+        Joycon j = joycons[this.currentJoyconMouth];
+        j.SetRumble(0f, 0f, 0f);
+
+        j = joycons[this.currentJoyconPlayer];
+        j.SetRumble(0f, 0f, 0f);
     }
 
     public void PlayerEaten()
