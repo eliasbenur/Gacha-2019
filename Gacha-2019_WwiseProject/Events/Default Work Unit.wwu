@@ -158,6 +158,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_game" ID="{EB00BDC0-0816-41B6-89BD-4ACE8F1E2588}">
+					<ChildrenList>
+						<Action Name="" ID="{6C6B33D3-8722-4AF7-A7E7-191DEFC2DCDC}" ShortID="842840106">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_game_name" ID="{FEBC2585-B3CA-41AD-8607-6C610BD794F3}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
