@@ -69,6 +69,7 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AkSoundEngine.SetState("Music_state", "InGame");
         cam = Camera.main;
         player = FindObjectOfType<Player>();
         plane = FindObjectOfType<Plane>();

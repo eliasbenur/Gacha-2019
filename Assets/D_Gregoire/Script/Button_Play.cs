@@ -10,6 +10,12 @@ public class Button_Play : MonoBehaviour
     public Slider slider;
     private int sceneIndex = 0;
 
+    public void Start()
+    {
+        AkSoundEngine.SetState("Music_state", "Menu");
+        AkSoundEngine.PostEvent("Play_Music", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Amb", this.gameObject);
+    }
     public void changeScene()
     {
         sceneIndex += 1;
