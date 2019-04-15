@@ -2159,7 +2159,7 @@ MonoBehaviour:
   plane: {fileID: 2074669282}
   player: {fileID: 705885643}
   transition: {fileID: 1717198039}
-  cooldownGnack: 1
+  cooldownGnack: 1.5
   confrontationScore: 0
   scoreforBWin: 0
   scoreforWWin: 0
