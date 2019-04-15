@@ -17,6 +17,10 @@ public class EventMouth : MonoBehaviour
         
     }
 
+    public void jawClose()
+    {
+        AkSoundEngine.PostEvent("Play_jawclose", Camera.main.gameObject);
+    }
     public void OnEvent()
     {
         if (playerScript.deathSoundIsPlayed == false)
