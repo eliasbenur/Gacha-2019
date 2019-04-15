@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1115105435	Play_player_killed			\Default Work Unit\Play_player_killed	
+	1631400290	Play_miss			\Default Work Unit\Play_miss	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
 	3061594324	Play_jawclose			\Default Work Unit\Play_jawclose	
@@ -38,19 +39,24 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2537816454	music_speed			\Default Work Unit\music_speed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2372610	GA_SFX_laugh_17	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_17_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_17		74184
 	15144229	GA_SFX_Playerkilled_voice_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_02		53390
 	15283821	GA_SFX_transition_voice_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_01		146206
+	31053140	GA_SFX_laugh_09	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_09_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_09		74378
 	36852275	GA_MUSIC_v1_Player1	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_Player1_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player1		64716
 	53033994	GA_MUSIC_v1_menu_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_menu_02_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\Menu\GA_MUSIC_v1_menu_02\GA_MUSIC_v1_menu_02		150414
 	58704475	GA_MUSIC_v1_in_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_08_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_08\GA_MUSIC_v1_in_08		60138
+	62392172	GA_SFX_laugh_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_05		63206
 	68282473	GA_SFX_transition_voice_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_03		122448
 	97042972	GA_MUSIC_v1_in_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_04_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_04\GA_MUSIC_v1_in_04		80639
+	166438037	GA_SFX_laugh_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_08_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_08		72174
 	170212737	GA_SFX_FTPS_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_02		39332
 	178620403	GA_MUSIC_v1_in_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_01_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_in_01		74041
 	184936590	GA_SFX_Playerkilled_voice_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_06		56644
 	193962364	GA_SFX_transition_voice_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_02		145256
 	204977780	GA_SFX_jawclose_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jawclose_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_JawClose\GA_SFX_jawclose_02		135204
 	226292031	GA_SFX_PlayerKilled_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_sfx\GA_SFX_PlayerKilled_04		88216
+	228441421	GA_SFX_laugh_15	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_15_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_15		124564
 	245330878	GA_SFX_FTPS_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_04		35412
 	247231120	GA_SFX_PlayerKilled_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_sfx\GA_SFX_PlayerKilled_01		105350
 	252998223	GA_SFX_bounce_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_01		39040
@@ -62,6 +68,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	346333354	GA_SFX_Transition_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Transition\Transition_Whoosh\GA_SFX_Transition_04		243802
 	359586938	GA_SFX_jump_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_07_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_07		39132
 	367529483	GA_SFX_PlayerKilled_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_sfx\GA_SFX_PlayerKilled_02		94226
+	375193530	GA_SFX_laugh_16	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_16_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_16		48694
 	386813877	GA_SFX_jump_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_01		16624
 	400563250	GA_MUSIC_v1_in_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_06_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_06\GA_MUSIC_v1_in_06		80347
 	412759006	GA_SFX_bounce_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_02		33514
@@ -69,20 +76,27 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	455938859	GA_SFX_bounce_09	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_09_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_09		43300
 	473373245	GA_SFX_jump_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_02		36796
 	486789639	GA_SFX_Transition_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Transition\Transition_Whoosh\GA_SFX_Transition_02		711152
+	494115703	GA_SFX_laugh_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_03		56244
 	500960894	GA_SFX_transition_voice_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_07_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_07		33690
 	503301205	GA_SFX_bounce_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_03		34952
 	512343501	GA_SFX_jump_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_03		30314
 	533074170	GA_SFX_transition_voice_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_06		50760
 	549521575	GA_SFX_Transition_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Transition_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Transition\Transition_Whoosh\GA_SFX_Transition_03		630904
+	571542614	GA_SFX_laugh_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_01		87368
 	582857145	GA_AMB_mouth_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_AMB_mouth_01_0593455E.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Amb\GA_AMB_mouth_01		8608744
 	611297345	GA_MUSIC_v1_transition_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_04_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_04\GA_MUSIC_v1_transition_04		898624
 	644170225	GA_SFX_bounce_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_07_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_07		33050
 	652831322	GA_SFX_jump_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_04		34842
 	668100684	GA_SFX_Playerkilled_voice_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_05		69862
 	672474136	GA_SFX_Playerkilled_voice_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_07_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_07		53744
+	677112929	GA_SFX_laugh_11	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_11_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_11		54474
+	692264697	GA_SFX_laugh_13	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_13_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_13		79656
+	700004023	GA_SFX_laugh_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_02_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_02		118782
 	719292701	GA_SFX_FTPS_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_01		33764
+	724561313	GA_SFX_laugh_10	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_10_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_10		66218
 	733781981	GA_MUSIC_v1_in_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_07_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_07\GA_MUSIC_v1_in_07		287869
 	747156701	GA_SFX_transition_voice_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_04		91590
+	750110411	GA_SFX_laugh_14	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_14_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_14		64664
 	764227063	GA_SFX_bounce_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_04		38362
 	764295448	GA_SFX_transition_voice_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_08_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_08		49686
 	769287057	GA_SFX_Playerkilled_voice_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_04		55330
@@ -92,6 +106,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	829282043	GA_SFX_bounce_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_06		37902
 	840522946	GA_MUSIC_v1_transition_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_03_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_03\GA_MUSIC_v1_transition_03		829504
 	855982049	GA_SFX_Playerkilled_voice_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_03		63054
+	866504204	GA_SFX_laugh_04	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_04_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_04		44870
 	893421024	GA_MUSIC_v1_in_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_in_03_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_03\GA_MUSIC_v1_in_03		72690
 	899783199	GA_SFX_jawclose_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jawclose_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_JawClose\GA_SFX_jawclose_03		162768
 	919213173	GA_SFX_PlayerKilled_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_sfx\GA_SFX_PlayerKilled_06		73190
@@ -103,7 +118,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	964357775	GA_SFX_FTPS_03	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_03_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_03		38372
 	975651553	GA_MUSIC_v1_Player2	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_Player2_541C5068.wem		\Interactive Music Hierarchy\Default Work Unit\MUSIC\InGame\GA_MUSIC_v1_in_01\GA_MUSIC_v1_Player2		86055
 	984866870	GA_SFX_jump_08	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_08_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_08		31870
+	1004112499	GA_SFX_laugh_07	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_07_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_07		76002
+	1006332548	GA_SFX_laugh_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_06		90064
 	1006458871	GA_MUSIC_v1_transition_02	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_MUSIC_v1_transition_02_0593455E.wem		\Interactive Music Hierarchy\Default Work Unit\Transitions\GA_MUSIC_v1_transition_02\GA_MUSIC_v1_transition_02		737344
+	1011407135	GA_SFX_laugh_18	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_18_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_18		54612
 	1020586762	GA_SFX_jump_010	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_jump_010_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_Jump\GA_SFX_jump_010		30086
 	1023533068	GA_SFX_transition_voice_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_transition_voice_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_transition_voice_05		94726
 	1024214974	GA_SFX_FTPS_06	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_FTPS_06_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_FTPS\GA_SFX_FTPS_06		37444
@@ -112,4 +130,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1037740390	GA_SFX_Playerkilled_voice_01	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_Playerkilled_voice_01_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_voice\GA_SFX_Playerkilled_voice_01		44468
 	1047144854	GA_SFX_PlayerKilled_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_PlayerKilled_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_PlayerKilled\PlayerKilled_sfx\GA_SFX_PlayerKilled_05		100208
 	1055740361	GA_SFX_bounce_05	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_bounce_05_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_bounce\GA_SFX_bounce_05		38878
+	1064128023	GA_SFX_laugh_12	F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\.cache\Android\SFX\GA_SFX_laugh_12_FF107FF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\GA_miss\GA_SFX_laugh_12		51408
 

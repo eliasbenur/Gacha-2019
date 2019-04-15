@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_FTPS = 3079036743U;
         static const AkUniqueID PLAY_JAWCLOSE = 3061594324U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_MISS = 1631400290U;
         static const AkUniqueID PLAY_MOUTH_TRANSITION = 4273929195U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PLAYER_KILLED = 1115105435U;
