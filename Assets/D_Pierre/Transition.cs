@@ -8,8 +8,7 @@ public class Transition : MonoBehaviour
 {
 
     public Main main;
-    public GameObject player1;
-    public GameObject player2;
+    public GameObject player;
     public GameObject colorInversor;
     public GameObject planeForBlackSfx;
     private Renderer p2Renderer1;
@@ -51,7 +50,7 @@ public class Transition : MonoBehaviour
         camFieldOfView = cam.fieldOfView;
         cameraIsOnInitialPosition = true;
         cameraIsReset = true;
-        p1Renderer = player1.GetComponent<Renderer>();
+        //p1Renderer = player.GetComponent<Renderer>();
         main.blackT.SetActive(false);
         main.whiteT.SetActive(true);
         main.blackPlBack.SetActive(false);
@@ -72,7 +71,7 @@ public class Transition : MonoBehaviour
             cameraIsOnInitialPosition = false;
            
             Vector3 camTargetPosition;
-            camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
+            camTargetPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
             transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
@@ -92,6 +91,10 @@ public class Transition : MonoBehaviour
 
             if(cameraIsReset == false) ResetCamera();
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
+        }
+        else
+        {
+            cam.transform.position = new Vector3(0, 0, -80);
         }
     }
 

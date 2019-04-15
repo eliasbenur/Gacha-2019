@@ -167,8 +167,6 @@ public class Main : MonoBehaviour
             Invoke("playFeedbacks", 0.31f);
             this.isFreezing = true;
             this.isGameUp = false;
-            if(player.deathSoundIsPlayed == false) AkSoundEngine.PostEvent("Play_miss", Camera.main.gameObject);
-            player.deathSoundIsPlayed = false;
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
         }
@@ -184,7 +182,6 @@ public class Main : MonoBehaviour
     void playFeedbacks()
     {
         plane.GetComponentInChildren<ParticleSystem>().Play();
-        AkSoundEngine.PostEvent("Play_jawclose", cam.gameObject);
         CameraShake.Shake(0.1f, 0.75f);
         player.Freeze();
 

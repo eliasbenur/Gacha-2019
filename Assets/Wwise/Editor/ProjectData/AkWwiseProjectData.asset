@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586463486006377017
+    m_lastTime: -8586462873931575299
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586463486014027414
+    m_lastTime: -8586462873944136795
     List:
     - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
@@ -58,6 +58,18 @@ MonoBehaviour:
       - ElementName: Play_Amb
         ObjectType: 3
       Path: Default Work Unit\Play_Amb
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_bounce
+      guid: e7ec71bfb2512a48aee81c056e9b7248
+      id: 3465618802
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_bounce
+        ObjectType: 3
+      Path: Default Work Unit\Play_bounce
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -82,6 +94,30 @@ MonoBehaviour:
       - ElementName: Play_jawclose
         ObjectType: 3
       Path: Default Work Unit\Play_jawclose
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_jump
+      guid: 8051aaaa58c9bc4c99b5ffb30c5da0bd
+      id: 3689126666
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_jump
+        ObjectType: 3
+      Path: Default Work Unit\Play_jump
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_miss
+      guid: 25a8893d94dd6a48a6daace2a8610b6d
+      id: 1631400290
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_miss
+        ObjectType: 3
+      Path: Default Work Unit\Play_miss
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -121,12 +157,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_UI
+      guid: 68f38174b33fe6409e1f9200ec17d04f
+      id: 2044747472
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI
+        ObjectType: 3
+      Path: Default Work Unit\Play_UI
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_victory
+      guid: 2f609e7dda71774f8c14680b21ad2ceb
+      id: 2453267296
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_victory
+        ObjectType: 3
+      Path: Default Work Unit\Play_victory
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4a538b85f00ee843b118efdcc674b9ff
     GuidInternal: 
-    m_lastTime: -8586463486014007451
+    m_lastTime: -8586463253087613385
     List:
     - name: music_speed
       guid: 7b9f711013822c4a86b0e15737e5f2a2
@@ -142,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 20efeab33ecb7045a486bdfddbcad94b
     GuidInternal: 
-    m_lastTime: -8586463496277978108
+    m_lastTime: -8586462873931555352
     List:
     - name: Music_state
       guid: 6c343a328a1015469ebecbf523dab12d
@@ -171,6 +231,12 @@ MonoBehaviour:
         id: 748895195
         PathAndIcons:
         - ElementName: None
+          ObjectType: 8
+      - name: Victory
+        guid: 38c224352384fe4886ef90010bde0592
+        id: 2716678721
+        PathAndIcons:
+        - ElementName: Victory
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
