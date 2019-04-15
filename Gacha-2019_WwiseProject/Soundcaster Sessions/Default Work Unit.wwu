@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_game" ID="{EB00BDC0-0816-41B6-89BD-4ACE8F1E2588}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Amb" ID="{68E1450D-99C0-4521-8690-56842562D21F}" WorkUnitID="{29A7994C-08BC-4683-A8E3-6C9DD881C09D}"/>
 							<Position X="0" Y="2"/>
 						</Module>
@@ -50,7 +54,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{6F741316-D80E-43FE-AF66-AACC4ECAEF82}"/>
-						<CurrentStateRef Name="Victory" ID="{3524C238-8423-48FE-86EF-90010BDE0592}"/>
+						<CurrentStateRef Name="None" ID="{271BC312-25D4-4E6F-B0B1-0DB8F3D6FEAF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
