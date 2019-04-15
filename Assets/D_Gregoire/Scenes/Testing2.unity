@@ -2429,6 +2429,8 @@ MonoBehaviour:
   planeForBlackSfx: {fileID: 19551443}
   white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}
   black: {fileID: 2100000, guid: 9d3b7e277148ab7419fafd18e5110d31, type: 2}
+  spWhite: {fileID: 21300000, guid: 46a5fed9b50d9c44c8c679291a08f7e2, type: 3}
+  spBlack: {fileID: 21300000, guid: 909f5a71fcad4f7498987db7b69e1b2b, type: 3}
   smoothTransition: 0.2
   inTransition: 0
 --- !u!114 &1717198040
