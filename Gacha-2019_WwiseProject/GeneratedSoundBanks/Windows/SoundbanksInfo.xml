@@ -24,6 +24,7 @@
 				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
 				<Event Id="3465618802" Name="Play_bounce" ObjectPath="\Events\Default Work Unit\Play_bounce"/>
 				<Event Id="3079036743" Name="Play_FTPS" ObjectPath="\Events\Default Work Unit\Play_FTPS"/>
+				<Event Id="216639764" Name="Play_game" ObjectPath="\Events\Default Work Unit\Play_game"/>
 				<Event Id="3061594324" Name="Play_jawclose" ObjectPath="\Events\Default Work Unit\Play_jawclose"/>
 				<Event Id="3689126666" Name="Play_jump" ObjectPath="\Events\Default Work Unit\Play_jump"/>
 				<Event Id="1631400290" Name="Play_miss" ObjectPath="\Events\Default Work Unit\Play_miss"/>
@@ -34,6 +35,10 @@
 				<Event Id="2453267296" Name="Play_victory" ObjectPath="\Events\Default Work Unit\Play_victory"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2370128" Language="SFX">
+					<ShortName>GA_SFX_name_04.wav</ShortName>
+					<Path>SFX\GA_SFX_name_04_FF107FF4.wem</Path>
+				</File>
 				<File Id="2372610" Language="SFX">
 					<ShortName>GA_SFX_laugh_17.wav</ShortName>
 					<Path>SFX\GA_SFX_laugh_17_FF107FF4.wem</Path>
@@ -49,6 +54,10 @@
 				<File Id="15283821" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_01.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="20810395" Language="SFX">
+					<ShortName>GA_SFX_name_05.wav</ShortName>
+					<Path>SFX\GA_SFX_name_05_FF107FF4.wem</Path>
 				</File>
 				<File Id="31053140" Language="SFX">
 					<ShortName>GA_SFX_laugh_09.wav</ShortName>
@@ -73,6 +82,10 @@
 				<File Id="68282473" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_03.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_03_FF107FF4.wem</Path>
+				</File>
+				<File Id="81319835" Language="SFX">
+					<ShortName>GA_SFX_name_03.wav</ShortName>
+					<Path>SFX\GA_SFX_name_03_FF107FF4.wem</Path>
 				</File>
 				<File Id="90523061" Language="SFX">
 					<ShortName>GA_SFX_jaw_04.wav</ShortName>
@@ -206,6 +219,10 @@
 					<ShortName>GA_SFX_jump_02.wav</ShortName>
 					<Path>SFX\GA_SFX_jump_02_FF107FF4.wem</Path>
 				</File>
+				<File Id="484052518" Language="SFX">
+					<ShortName>GA_SFX_name_02.wav</ShortName>
+					<Path>SFX\GA_SFX_name_02_FF107FF4.wem</Path>
+				</File>
 				<File Id="486789639" Language="SFX">
 					<ShortName>GA_SFX_Transition_02.wav</ShortName>
 					<Path>SFX\GA_SFX_Transition_02_FF107FF4.wem</Path>
@@ -281,6 +298,10 @@
 				<File Id="692264697" Language="SFX">
 					<ShortName>GA_SFX_laugh_13.wav</ShortName>
 					<Path>SFX\GA_SFX_laugh_13_FF107FF4.wem</Path>
+				</File>
+				<File Id="696156733" Language="SFX">
+					<ShortName>GA_SFX_name_01.wav</ShortName>
+					<Path>SFX\GA_SFX_name_01_FF107FF4.wem</Path>
 				</File>
 				<File Id="700004023" Language="SFX">
 					<ShortName>GA_SFX_laugh_02.wav</ShortName>

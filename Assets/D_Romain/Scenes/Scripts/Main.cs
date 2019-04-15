@@ -20,7 +20,6 @@ public class Main : MonoBehaviour
     public GameObject whiteT;
     public GameObject whitePlBack;
     public GameObject blackPlBack;
-    public GameObject m_canvas;
     public Material black;
     public Material white;
 
@@ -39,7 +38,7 @@ public class Main : MonoBehaviour
     public int scoreforWWin;
     public int scorePerRound;
 
-    private List<Joycon> joycons;
+    public List<Joycon> joycons;
 
     public float[] stick;
 
@@ -51,7 +50,7 @@ public class Main : MonoBehaviour
 
     public Quaternion orientation;
 
-    [Range(1f, 5f)]
+    [Range(0f, 5f)]
     public int speedGameModifier;
     public int nbGames = 0;
 
@@ -63,8 +62,6 @@ public class Main : MonoBehaviour
     public float delay_Max_ToShake;
     public float delay_Max_ToShake_tmp;
     public Text delay_txt;
-
-    bool cameraShakeTimer = true;
 
     // Start is called before the first frame update
     void Start()
@@ -87,14 +84,6 @@ public class Main : MonoBehaviour
        
         delay_Max_ToShake_tmp -= Time.deltaTime;
         //delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
-
-        if(delay_Max_ToShake_tmp<1.5f && cameraShakeTimer)
-        {
-            cameraShakeTimer = false;
-            Debug.Log("shake");
-            CameraShake.Shake(2f, 0.075f);
-        }
-
         if (delay_Max_ToShake_tmp < 0)
         {
             delay_Max_ToShake_tmp = delay_Max_ToShake;
@@ -155,8 +144,6 @@ public class Main : MonoBehaviour
 
             cd = 0;
             this.canGnack = false;
-
-            this.cameraShakeTimer = true;
         }
     }
 
@@ -210,7 +197,7 @@ public class Main : MonoBehaviour
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (scorePerRound + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        this.confrontationScore += (scorePerRound) * (currentJoyconMouth==1?-1:1);
         Debug.Log("Advancement : " + confrontationScore);
         CheckVictory();
     }
@@ -219,16 +206,12 @@ public class Main : MonoBehaviour
     {
         if(this.confrontationScore<=-scoreforWWin )
         {
-            m_canvas.SendMessage("ManageScoreWhite", SendMessageOptions.RequireReceiver);
             Debug.Log("White wins");
-            
         }
 
         if (this.confrontationScore >= scoreforBWin)
         {
-            m_canvas.SendMessage("ManageScoreBlack", SendMessageOptions.RequireReceiver);
             Debug.Log("Black wins");
-            
         }
     }
 

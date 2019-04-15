@@ -11,12 +11,17 @@ public class Transition : MonoBehaviour
     public GameObject player;
     public GameObject colorInversor;
     public GameObject planeForBlackSfx;
-    public GameObject m_canvas;
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
     public Material white;
     public Material black;
+
+
+    public RuntimeAnimatorController contWhite;
+    public RuntimeAnimatorController contBlack;
+    public Sprite spWhite;
+    public Sprite spBlack;
 
     [Tooltip("increase value for slow transtion")]
     [Range(0.1f,0.5f)]
@@ -76,7 +81,6 @@ public class Transition : MonoBehaviour
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
             transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
-            
 
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
@@ -103,7 +107,6 @@ public class Transition : MonoBehaviour
     public void StartTransition()
     {
         AkSoundEngine.PostEvent("Play_mouth_transition", cam.gameObject);
-        m_canvas.SendMessage("DisplayScoreYes", SendMessageOptions.RequireReceiver);
         StartCoroutine("delay");
     }
     private void ResetCamera()
@@ -111,7 +114,6 @@ public class Transition : MonoBehaviour
         cam.fieldOfView = camFieldOfView+5;
         cam.transform.position = camPosition;
         cameraIsReset = true;
-        m_canvas.SendMessage("DisplayScoreNope", SendMessageOptions.RequireReceiver);
 
     }
 
@@ -124,7 +126,9 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(true);
             main.whitePlBack.SetActive(false);
             cam.backgroundColor = new Color(0, 0, 0);
-           // p1Renderer.material = white;
+            // p1Renderer.material = white;
+            main.player.gameObject.GetComponent<SpriteRenderer>().sprite = spWhite;
+            main.player.gameObject.GetComponent<Animator>().runtimeAnimatorController = contWhite;
             planeForBlackSfx.SetActive(false);
         }
         else
@@ -134,7 +138,9 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(false);
             main.whitePlBack.SetActive(true);
             cam.backgroundColor = new Color(255, 255, 255);
-          //  p1Renderer.material = black;
+            //  p1Renderer.material = black;
+            main.player.gameObject.GetComponent<SpriteRenderer>().sprite = spBlack;
+            main.player.gameObject.GetComponent<Animator>().runtimeAnimatorController = contBlack;
             planeForBlackSfx.SetActive(true);
         }
         inTransition = false;

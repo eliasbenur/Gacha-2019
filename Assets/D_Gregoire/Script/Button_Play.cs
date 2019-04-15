@@ -7,14 +7,15 @@ using UnityEngine.UI;
 public class Button_Play : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Slider slider;
+
     private int sceneIndex = 0;
+    public Image image_credit;
+    public Button button_ret;
 
     public void changeScene()
     {
         sceneIndex += 1;
-        // SceneManager.LoadScene(sceneIndex);
-        StartCoroutine(loadSceneCustomByPierro(sceneIndex));
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void quitGame()
@@ -22,15 +23,17 @@ public class Button_Play : MonoBehaviour
         Debug.Log("G KITTE LAPLIQACION");
         Application.Quit();
     }
-    IEnumerator loadSceneCustomByPierro(int sceneIndex)
+
+    public void Credit()
     {
-        slider.gameObject.SetActive(true);
-        AsyncOperation async = SceneManager.LoadSceneAsync(sceneIndex);
-        while (!async.isDone)
-        {
-            float pros = Mathf.Clamp01(async.progress / 0.9f);
-            slider.value = pros;
-            yield return null;
-        }
+        image_credit.gameObject.SetActive(true);
+        button_ret.gameObject.SetActive(true);
     }
+
+    public void Exit_Credit()
+    {
+        image_credit.gameObject.SetActive(false);
+        button_ret.gameObject.SetActive(false);
+    }
+
 }
