@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5146718705493283521}
   - component: {fileID: 2107660686344923495}
+  - component: {fileID: 1195786136936927476}
   - component: {fileID: 1541138610870517265}
   m_Layer: 0
   m_Name: Tooth_DOWN
@@ -80,6 +81,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1195786136936927476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238471337225169689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9e842e3f27540be8fa4c3acb042e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1541138610870517265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -116,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 155516973860621918}
   - component: {fileID: 7987214493307450590}
+  - component: {fileID: 3882200636660554370}
   - component: {fileID: 4328368415651790470}
   m_Layer: 0
   m_Name: Tooth_UP
@@ -186,6 +200,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3882200636660554370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336553695576687899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9e842e3f27540be8fa4c3acb042e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &4328368415651790470
 BoxCollider2D:
   m_ObjectHideFlags: 0

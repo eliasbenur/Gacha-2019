@@ -437,196 +437,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Transition_voice" ID="{DD8F767B-3D5F-47CC-9273-DCEC2720B16C}" ShortID="128322247">
-							<PropertyList>
-								<Property Name="InitialDelay" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="GA_SFX_transition_voice_01" ID="{0329FADC-D84B-45A3-B85F-1A7349312288}" ShortID="17421135">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_01" ID="{DC9DD728-2DA7-489B-867B-F502B0AEBE8F}" ShortID="15283821">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_01" ID="{DC9DD728-2DA7-489B-867B-F502B0AEBE8F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_02" ID="{69693822-5344-4AA1-8CB3-530923A31051}" ShortID="234669385">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_02" ID="{6B449B5F-E1A2-43E5-A38B-1194DC4573BA}" ShortID="193962364">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_02" ID="{6B449B5F-E1A2-43E5-A38B-1194DC4573BA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_03" ID="{1F6EBA63-C8F6-4A2C-9500-BD3BB83781E5}" ShortID="1065959465">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_03" ID="{FB47C294-0C8A-4F7F-AB17-6EA2FCB23A44}" ShortID="68282473">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_03.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_03" ID="{FB47C294-0C8A-4F7F-AB17-6EA2FCB23A44}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_04" ID="{BFD240BE-7F1D-4778-BC0D-30818F328290}" ShortID="138223391">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_04" ID="{043CB4BD-3F09-4A74-9FDD-F54D7426703A}" ShortID="747156701">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_04.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_04" ID="{043CB4BD-3F09-4A74-9FDD-F54D7426703A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_05" ID="{74029E1F-77CA-4E38-8A23-C5FABECD98F4}" ShortID="86835022">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_05" ID="{71578960-9570-4CD0-88D5-130A253759B8}" ShortID="1023533068">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_05.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_05" ID="{71578960-9570-4CD0-88D5-130A253759B8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_06" ID="{BB7E8220-A977-4E7F-8153-8B6DFE0CFE9D}" ShortID="136513206">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_06" ID="{5B304588-9992-417C-B84A-EA8BFC367356}" ShortID="533074170">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_06.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_06" ID="{5B304588-9992-417C-B84A-EA8BFC367356}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_07" ID="{E28927D8-C19F-4AE3-8534-22BE97DFA9ED}" ShortID="827536994">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_07" ID="{4D727D0D-C028-4733-9E7F-ACB49F27A7E2}" ShortID="500960894">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_07.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_07" ID="{4D727D0D-C028-4733-9E7F-ACB49F27A7E2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_08" ID="{20D5CB9E-BE03-44F1-A3AB-B03F6A43B473}" ShortID="587045096">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_08" ID="{34156AE7-0CEE-42F2-968A-D0C40060DA05}" ShortID="764295448">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_08.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_08" ID="{34156AE7-0CEE-42F2-968A-D0C40060DA05}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GA_SFX_transition_voice_09" ID="{F63B3224-D71A-4652-A47F-FD5E61A8D77F}" ShortID="390092120">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GA_SFX_transition_voice_09" ID="{058B7488-98E2-4AF4-B472-0C5ED8AD98FF}" ShortID="951327798">
-											<Language>SFX</Language>
-											<AudioFile>GA_SFX_transition_voice_09.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GA_SFX_transition_voice_09" ID="{058B7488-98E2-4AF4-B472-0C5ED8AD98FF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="GA_PlayerKilled" ID="{77DA9E36-40DA-444F-8787-D0C9D86760CA}" ShortID="710942593">
@@ -834,6 +644,177 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="GA_SFX_Playerkilled_voice_08" ID="{88F4DE36-F446-417D-84F0-05BD4869C4CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_01" ID="{0329FADC-D84B-45A3-B85F-1A7349312288}" ShortID="17421135">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_01" ID="{DC9DD728-2DA7-489B-867B-F502B0AEBE8F}" ShortID="15283821">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_01" ID="{DC9DD728-2DA7-489B-867B-F502B0AEBE8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_03" ID="{1F6EBA63-C8F6-4A2C-9500-BD3BB83781E5}" ShortID="1065959465">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_03" ID="{FB47C294-0C8A-4F7F-AB17-6EA2FCB23A44}" ShortID="68282473">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_03" ID="{FB47C294-0C8A-4F7F-AB17-6EA2FCB23A44}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_04" ID="{BFD240BE-7F1D-4778-BC0D-30818F328290}" ShortID="138223391">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_04" ID="{043CB4BD-3F09-4A74-9FDD-F54D7426703A}" ShortID="747156701">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_04" ID="{043CB4BD-3F09-4A74-9FDD-F54D7426703A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_05" ID="{74029E1F-77CA-4E38-8A23-C5FABECD98F4}" ShortID="86835022">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_05" ID="{71578960-9570-4CD0-88D5-130A253759B8}" ShortID="1023533068">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_05" ID="{71578960-9570-4CD0-88D5-130A253759B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_02" ID="{69693822-5344-4AA1-8CB3-530923A31051}" ShortID="234669385">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_02" ID="{6B449B5F-E1A2-43E5-A38B-1194DC4573BA}" ShortID="193962364">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_02" ID="{6B449B5F-E1A2-43E5-A38B-1194DC4573BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_06" ID="{BB7E8220-A977-4E7F-8153-8B6DFE0CFE9D}" ShortID="136513206">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_06" ID="{5B304588-9992-417C-B84A-EA8BFC367356}" ShortID="533074170">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_06" ID="{5B304588-9992-417C-B84A-EA8BFC367356}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_09" ID="{F63B3224-D71A-4652-A47F-FD5E61A8D77F}" ShortID="390092120">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_09" ID="{058B7488-98E2-4AF4-B472-0C5ED8AD98FF}" ShortID="951327798">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_09" ID="{058B7488-98E2-4AF4-B472-0C5ED8AD98FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_07" ID="{E28927D8-C19F-4AE3-8534-22BE97DFA9ED}" ShortID="827536994">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_07" ID="{4D727D0D-C028-4733-9E7F-ACB49F27A7E2}" ShortID="500960894">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_07" ID="{4D727D0D-C028-4733-9E7F-ACB49F27A7E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_transition_voice_08" ID="{20D5CB9E-BE03-44F1-A3AB-B03F6A43B473}" ShortID="587045096">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_transition_voice_08" ID="{34156AE7-0CEE-42F2-968A-D0C40060DA05}" ShortID="764295448">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_transition_voice_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_transition_voice_08" ID="{34156AE7-0CEE-42F2-968A-D0C40060DA05}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1243,6 +1224,16 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="GA_bounce" ID="{CB0800FC-8D1C-4AD1-986A-55B4F4849048}" ShortID="510478393">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+						</Reference>
+					</ReferenceList>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>

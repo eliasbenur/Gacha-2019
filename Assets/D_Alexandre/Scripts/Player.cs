@@ -203,11 +203,17 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("OUT");
         if (collision.gameObject.name == "Tooth_UP" || collision.gameObject.name == "Tooth_DOWN" && !deathSoundIsPlayed)
         {
-            Debug.Log("Lol t mor");
-            AkSoundEngine.PostEvent("Play_player_killed", Camera.main.gameObject);
-            deathSoundIsPlayed = true;
+            Debug.Log("IN");
+            if (main.isFreezing || main.isSwapping)
+            {
+                AkSoundEngine.PostEvent("Play_player_killed", Camera.main.gameObject);
+                deathSoundIsPlayed = true;
+                main.PlayerEaten();
+            }
         }
+
     }
 }
