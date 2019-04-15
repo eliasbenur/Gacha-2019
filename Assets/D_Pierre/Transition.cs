@@ -77,18 +77,25 @@ public class Transition : MonoBehaviour
             cameraIsOnInitialPosition = false;
            
             Vector3 camTargetPosition;
-            camTargetPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+            camTargetPosition.x = player.transform.position.x;
+            camTargetPosition.y = player.transform.position.y;
+            camTargetPosition.z = player.transform.position.z-0.2f;
 
-            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
-            transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
 
-            if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
+
+            //cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(camTargetPosition.x, camTargetPosition.y, camTargetPosition.z), ref vecVelocitySmooth, smoothTransition);
+
+
+            if (transform.position.z >= -0.3f)
             {
-                ChangePlayerColor();
-               // if(colorInversor.activeSelf) colorInversor.SetActive(false);
-                //else colorInversor.SetActive(true);
 
-                //charger la map
+                ChangePlayerColor();
+
+            }
+            else
+            {
+                //transform.Translate(0, 0, 10 * Time.deltaTime);
             }
 
         }
@@ -96,7 +103,7 @@ public class Transition : MonoBehaviour
         {
 
             if(cameraIsReset == false) ResetCamera();
-            cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
+           // cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
         }
         else
         {
