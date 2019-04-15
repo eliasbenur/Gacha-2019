@@ -137,10 +137,10 @@ public class Main : MonoBehaviour
             Invoke("playFeedbacks", 0.23f);
             this.isFreezing = true;
             this.isGameUp = false;
+            if(player.deathSoundIsPlayed == false) AkSoundEngine.PostEvent("Play_miss", Camera.main.gameObject);
             player.deathSoundIsPlayed = false;
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
-
         }
         
     }

@@ -1744,8 +1744,8 @@ MonoBehaviour:
   speedGameModifier: 0
   nbGames: 0
   ShakeSensitivity: 1.4
-  delay_Max_ToShake: 0
-  delay_Max_ToShake_tmp: 0
+  delay_Max_ToShake: 60
+  delay_Max_ToShake_tmp: 60
   delay_txt: {fileID: 0}
 --- !u!114 &1741784020
 MonoBehaviour:
