@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-    m_lastTime: -8586462893476119728
+    m_lastTime: -8586462873931575299
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-    m_lastTime: -8586462917728007342
+    m_lastTime: -8586462873944136795
     List:
     - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
@@ -157,6 +157,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_UI
+      guid: 68f38174b33fe6409e1f9200ec17d04f
+      id: 2044747472
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI
+        ObjectType: 3
+      Path: Default Work Unit\Play_UI
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_victory
+      guid: 2f609e7dda71774f8c14680b21ad2ceb
+      id: 2453267296
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_victory
+        ObjectType: 3
+      Path: Default Work Unit\Play_victory
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -178,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 20efeab33ecb7045a486bdfddbcad94b
     GuidInternal: 
-    m_lastTime: -8586463253080622065
+    m_lastTime: -8586462873931555352
     List:
     - name: Music_state
       guid: 6c343a328a1015469ebecbf523dab12d
@@ -207,6 +231,12 @@ MonoBehaviour:
         id: 748895195
         PathAndIcons:
         - ElementName: None
+          ObjectType: 8
+      - name: Victory
+        guid: 38c224352384fe4886ef90010bde0592
+        id: 2716678721
+        PathAndIcons:
+        - ElementName: Victory
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []

@@ -170,7 +170,6 @@ public class Main : MonoBehaviour
     void playFeedbacks()
     {
         plane.GetComponentInChildren<ParticleSystem>().Play();
-        AkSoundEngine.PostEvent("Play_jawclose", cam.gameObject);
         CameraShake.Shake(0.1f, 0.75f);
         player.Freeze();
 

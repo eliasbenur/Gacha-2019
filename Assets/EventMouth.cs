@@ -19,6 +19,7 @@ public class EventMouth : MonoBehaviour
 
     public void jawClose()
     {
+        Debug.Log("JawClose");
         AkSoundEngine.PostEvent("Play_jawclose", Camera.main.gameObject);
     }
     public void OnEvent()

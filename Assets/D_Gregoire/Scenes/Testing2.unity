@@ -272,6 +272,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 955684006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &70012013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70012010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7246f3d5cd0e8db4aa36c91abbac9a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &77713436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +756,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1404152898}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &382476123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382476120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7246f3d5cd0e8db4aa36c91abbac9a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &468666077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3194608876515035933, guid: 1ceca1c7e626c8246989982a6dab0399,
@@ -2315,8 +2339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 1741784019}
-  player1: {fileID: 1971020675}
-  player2: {fileID: 2074669281}
+  player: {fileID: 1971020675}
   colorInversor: {fileID: 0}
   planeForBlackSfx: {fileID: 19551443}
   white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}
