@@ -17,23 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e32a22d65601b64f9942a41d6edab287
     GuidInternal: 
-    m_lastTime: -8586464405080672760
+    m_lastTime: -8586464210289221243
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 570724c09653754890f9bff5d11c5376
     GuidInternal: 
-    m_lastTime: -8586463496277998071
+    m_lastTime: -8586463530468648404
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5632801e43ed434da37ee5ae9ea0ec17
     GuidInternal: 
-
-    m_lastTime: -8586462873931575299
-60b6d893c452ee17418f0c1ed3ce001d03e24e49
+    m_lastTime: -8586462845410780697
     List:
     - name: Soundbank
       guid: 490718225536904da76031f4f17372df
@@ -49,9 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4c99a729bc088346a8e36c9dd881c09d
     GuidInternal: 
-
-    m_lastTime: -8586462873944136795
-60b6d893c452ee17418f0c1ed3ce001d03e24e49
+    m_lastTime: -8586462785295302794
     List:
     - name: Play_Amb
       guid: 0d45e168c0992145869056842562d21f
@@ -190,7 +186,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4a538b85f00ee843b118efdcc674b9ff
     GuidInternal: 
-    m_lastTime: -8586463253087613385
+    m_lastTime: -8586463240252054095
     List:
     - name: music_speed
       guid: 7b9f711013822c4a86b0e15737e5f2a2
@@ -206,9 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 20efeab33ecb7045a486bdfddbcad94b
     GuidInternal: 
-
-    m_lastTime: -8586462873931555352
-60b6d893c452ee17418f0c1ed3ce001d03e24e49
+    m_lastTime: -8586462845410740467
     List:
     - name: Music_state
       guid: 6c343a328a1015469ebecbf523dab12d
@@ -283,18 +277,15 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 48d807216ab52e45a89043555f234dc5
     GuidInternal: 
-    m_lastTime: -8586463719634948259
+    m_lastTime: -8586464210289250858
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8a1c6c2e5de0ca4193d59b61e0f25f9e
     GuidInternal: 
-    m_lastTime: -8586464405080682996
+    m_lastTime: -8586464210289231224
     List: []
-  ExpandedItems:
-  - /Gacha-2019_WwiseProject
-  - /Gacha-2019_WwiseProject/Events
-  - /Gacha-2019_WwiseProject/Events/Default Work Unit
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
