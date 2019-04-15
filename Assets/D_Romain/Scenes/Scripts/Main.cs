@@ -20,6 +20,7 @@ public class Main : MonoBehaviour
     public GameObject whiteT;
     public GameObject whitePlBack;
     public GameObject blackPlBack;
+    public GameObject victoryAffiche;
     public Material black;
     public Material white;
 
@@ -84,22 +85,35 @@ public class Main : MonoBehaviour
        
         delay_Max_ToShake_tmp -= Time.deltaTime;
         //delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
-        if (delay_Max_ToShake_tmp < 0)
+        if (delay_Max_ToShake_tmp < 0 && this.isGameUp)
         {
             delay_Max_ToShake_tmp = delay_Max_ToShake;
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
             TriggerFreeze();
         }
-        
-        if (Input.GetKeyDown(KeyCode.A))
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            this.confrontationScore = 10;
+            CheckVictory();
+        }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            this.confrontationScore = -10;
+            CheckVictory();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.A) && this.isGameUp)
         {
             TriggerFreeze();
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
         }
 
-        if(CheckShake() && !this.isFreezing && cd >= cooldownGnack)
+        if(CheckShake() && !this.isFreezing && cd >= cooldownGnack && this.isGameUp)
         {
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
@@ -207,12 +221,25 @@ public class Main : MonoBehaviour
         if(this.confrontationScore<=-scoreforWWin )
         {
             Debug.Log("White wins");
+            victoryAffiche.GetComponent<Animator>().SetBool("isBlackWinner", false);
+            Invoke("popVictory", 0.05f);
+            
+            this.isGameUp = false;
         }
 
         if (this.confrontationScore >= scoreforBWin)
         {
             Debug.Log("Black wins");
+            victoryAffiche.GetComponent<Animator>().SetBool("isBlackWinner", true);
+            Invoke("popVictory", 0.05f);
+
+            this.isGameUp = false;
         }
+    }
+
+    void popVictory()
+    {
+        victoryAffiche.transform.position = new Vector3(-0.1f, 0, -58f);
     }
 
     bool CheckShake()
