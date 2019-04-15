@@ -216,6 +216,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="GA_SFX_jawclose_01" ID="{87C365DF-51FD-440D-8A71-816A40909592}" ShortID="1053613492">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
@@ -235,6 +242,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="GA_SFX_jawclose_02" ID="{BA20B19F-4AC4-4629-A359-EE88ACEEA803}" ShortID="425950732">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
@@ -254,6 +268,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="GA_SFX_jawclose_03" ID="{5682FF2D-A321-49B2-9581-7ACBCA6A9B9F}" ShortID="780645410">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
@@ -273,6 +294,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="GA_SFX_jawclose_04" ID="{A9316CEF-13C8-4CCE-8C21-AAE1E18B12BC}" ShortID="552032772">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
@@ -289,6 +317,82 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="GA_SFX_jawclose_04" ID="{D26A9048-268A-4D70-A194-325C5C1CB1B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GA_SFX_jaw_01" ID="{CDA980FE-65F6-4B60-93B3-03675D84B4B7}" ShortID="495790939">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GA_SFX_jaw_01" ID="{4D9C93F9-3F0C-4254-834A-ED788650DB09}" ShortID="160477061">
+									<Language>SFX</Language>
+									<AudioFile>GA_SFX_jaw_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GA_SFX_jaw_01" ID="{4D9C93F9-3F0C-4254-834A-ED788650DB09}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GA_SFX_jaw_02" ID="{9F65AB51-258C-4F5E-92FB-0460CEBAA760}" ShortID="905114609">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GA_SFX_jaw_02" ID="{BF898526-6075-4951-9956-0B6F2DFF33A4}" ShortID="201778882">
+									<Language>SFX</Language>
+									<AudioFile>GA_SFX_jaw_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GA_SFX_jaw_02" ID="{BF898526-6075-4951-9956-0B6F2DFF33A4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GA_SFX_jaw_03" ID="{83441DE0-99AD-42AD-A447-E718647118DE}" ShortID="323678752">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GA_SFX_jaw_03" ID="{DA816D24-E44A-4CD8-87EF-CB4C1B25F44E}" ShortID="674165512">
+									<Language>SFX</Language>
+									<AudioFile>GA_SFX_jaw_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GA_SFX_jaw_03" ID="{DA816D24-E44A-4CD8-87EF-CB4C1B25F44E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GA_SFX_jaw_04" ID="{3CD4C5D6-D554-4CFC-A1FC-AECDA6D2A3A2}" ShortID="523025399">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GA_SFX_jaw_04" ID="{3BAF428D-DD54-4B2D-9A2D-CD76E5B70E8D}" ShortID="90523061">
+									<Language>SFX</Language>
+									<AudioFile>GA_SFX_jaw_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GA_SFX_jaw_04" ID="{3BAF428D-DD54-4B2D-9A2D-CD76E5B70E8D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1227,6 +1331,17 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="GA_bounce" ID="{CB0800FC-8D1C-4AD1-986A-55B4F4849048}" ShortID="510478393">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -1417,6 +1532,17 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="GA_miss" ID="{7BF7BC83-7A98-48EF-B702-DCB9706449F0}" ShortID="710952485">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-7</Value>
@@ -1775,6 +1901,248 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="GA_Victory" ID="{194EA32F-ABE2-4EA1-865F-F4A01081F08E}" ShortID="489152830">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="victory_voice" ID="{87875784-0DFE-4E70-8153-D30E128FE211}" ShortID="722831824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GA_SFX_victory_voice_01" ID="{F7D49BDF-FBF3-46DF-8961-F9871B3F6260}" ShortID="931849959">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_01" ID="{A003D5F1-3B75-4ADE-96F9-2E66ADE8558E}" ShortID="988970102">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_01" ID="{A003D5F1-3B75-4ADE-96F9-2E66ADE8558E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_02" ID="{1DF118A2-DC77-463B-8748-3AD021449416}" ShortID="404989821">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_02" ID="{40D1A2C5-5AC3-4717-BE8C-E25584B7D333}" ShortID="363291172">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_02" ID="{40D1A2C5-5AC3-4717-BE8C-E25584B7D333}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_03" ID="{21097C23-92EA-4A8D-A470-20215964FD8A}" ShortID="578080417">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_03" ID="{0623DCA3-E915-4676-8069-41F2102E8591}" ShortID="815893651">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_03" ID="{0623DCA3-E915-4676-8069-41F2102E8591}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_04" ID="{9B1F165E-1EB8-42FB-94BF-1D7852ED32A5}" ShortID="698351265">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_04" ID="{A11F0A02-5264-4EF1-9BA8-1C52D1149C0B}" ShortID="472157406">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_04" ID="{A11F0A02-5264-4EF1-9BA8-1C52D1149C0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_05" ID="{6B4B7D6D-0FAF-46A3-89A5-4980BDFBFF79}" ShortID="644926299">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_05" ID="{F8F00C36-265E-413A-BDE0-C3A055711695}" ShortID="182573594">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_05" ID="{F8F00C36-265E-413A-BDE0-C3A055711695}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_06" ID="{5E4EC0FD-2260-45D3-B47D-FE953ABB5F02}" ShortID="745292833">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_06" ID="{B6E28CFA-8860-4A3C-9A85-FDF6F509FA62}" ShortID="230556087">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_06" ID="{B6E28CFA-8860-4A3C-9A85-FDF6F509FA62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_07" ID="{8C50C49F-2CB1-48E9-830F-2677E0066F02}" ShortID="281169078">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_07" ID="{6204E9BF-2875-4F03-BAD9-281AEB6C67E8}" ShortID="744089627">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_07" ID="{6204E9BF-2875-4F03-BAD9-281AEB6C67E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_08" ID="{541B9A6F-1671-4F47-B3F5-ED7D82DF5E77}" ShortID="753540510">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_08" ID="{3C322AA1-C979-4C8F-B077-C695C0D299F2}" ShortID="410101005">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_08" ID="{3C322AA1-C979-4C8F-B077-C695C0D299F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_09" ID="{6B42DF56-4DC3-4876-B0E4-54B2904957D6}" ShortID="566823075">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_09" ID="{F59C637C-6435-4A9D-910D-E5C8E9D03240}" ShortID="618751546">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_09" ID="{F59C637C-6435-4A9D-910D-E5C8E9D03240}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GA_SFX_victory_voice_10" ID="{5CA5B8DD-2C15-4BAF-8C35-92F332B32411}" ShortID="887816301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GA_SFX_victory_voice_10" ID="{02F5EC38-91F5-4E5B-9DE0-42F6201F3C34}" ShortID="597164755">
+											<Language>SFX</Language>
+											<AudioFile>GA_SFX_victory_voice_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GA_SFX_victory_voice_10" ID="{02F5EC38-91F5-4E5B-9DE0-42F6201F3C34}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<RandomSequenceContainer Name="GA_UI" ID="{15A4359F-EA4A-488C-B50D-C2CA451D2A61}" ShortID="756579992">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A899D506-1544-4C37-B465-79E2C9FA8ECF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0240757-5396-4875-90F9-BFF5D11C5376}"/>
+						</Reference>
+					</ReferenceList>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
