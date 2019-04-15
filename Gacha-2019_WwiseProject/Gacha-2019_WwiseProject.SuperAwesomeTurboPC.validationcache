@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
+	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555276950" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1555166908" DateHigh="0"/>
@@ -9,8 +9,8 @@
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Effects\Factory Effects.wwu" DateLow="1555162251" DateHigh="0"/>
-	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
-	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Gacha-2019_WwiseProject.SuperAwesomeTurboPC.wsettings" DateLow="1555273626" DateHigh="0"/>
+	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555276950" DateHigh="0"/>
+	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Gacha-2019_WwiseProject.SuperAwesomeTurboPC.wsettings" DateLow="1555285703" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Gacha-2019_WwiseProject.wproj" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
@@ -20,8 +20,8 @@
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Queries\Factory Queries.wwu" DateLow="1555162251" DateHigh="0"/>
-	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1555273599" DateHigh="0"/>
-	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
+	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1555277356" DateHigh="0"/>
+	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555276950" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\States\Default Work Unit.wwu" DateLow="1555273581" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1555234921" DateHigh="0"/>
 	<ValidationCacheItem File="F:\GameJam2019\Gacha\Gacha-2019\Gacha-2019_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1555162251" DateHigh="0"/>

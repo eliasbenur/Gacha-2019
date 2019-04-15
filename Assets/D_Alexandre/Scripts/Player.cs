@@ -97,6 +97,7 @@ public class Player : MonoBehaviour
             if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
             {
                 rBody.velocity += Vector2.up * jumpVelocity;
+                AkSoundEngine.PostEvent("Play_jump", Camera.main.gameObject);
                 this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0 ? 2 : 1].Play();
             }
 
