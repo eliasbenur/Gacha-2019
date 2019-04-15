@@ -1629,6 +1629,61 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3838334257684517522, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838334257684517522, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270080136098474544, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914807328463866795, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914807328463866795, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914807328463866795, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522455619304106307, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 501225502356985722, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 501225502356985722, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 501225502356985722, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740641638029893888, guid: 7dba4bc9ca8e9dc42a79a83b02e46624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dba4bc9ca8e9dc42a79a83b02e46624, type: 3}
 --- !u!1001 &1473191397
@@ -2315,8 +2370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 1741784019}
-  player1: {fileID: 1971020675}
-  player2: {fileID: 2074669281}
+  player: {fileID: 1971020675}
   colorInversor: {fileID: 0}
   planeForBlackSfx: {fileID: 19551443}
   white: {fileID: 2100000, guid: 72aa357cc2f71af42a608e8622953730, type: 2}

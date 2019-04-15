@@ -50,7 +50,7 @@ public class Transition : MonoBehaviour
         camFieldOfView = cam.fieldOfView;
         cameraIsOnInitialPosition = true;
         cameraIsReset = true;
-        p1Renderer = player.GetComponent<Renderer>();
+        //p1Renderer = player.GetComponent<Renderer>();
         main.blackT.SetActive(false);
         main.whiteT.SetActive(true);
         main.blackPlBack.SetActive(false);
@@ -91,6 +91,10 @@ public class Transition : MonoBehaviour
 
             if(cameraIsReset == false) ResetCamera();
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, camFieldOfView, ref velocitySmooth, 0.5f);
+        }
+        else
+        {
+            cam.transform.position = new Vector3(0, 0, -80);
         }
     }
 
