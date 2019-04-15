@@ -38,7 +38,7 @@ public class Main : MonoBehaviour
     public int scoreforWWin;
     public int scorePerRound;
 
-    private List<Joycon> joycons;
+    public List<Joycon> joycons;
 
     public float[] stick;
 
@@ -50,7 +50,7 @@ public class Main : MonoBehaviour
 
     public Quaternion orientation;
 
-    [Range(1f, 5f)]
+    [Range(0f, 5f)]
     public int speedGameModifier;
     public int nbGames = 0;
 
@@ -197,7 +197,7 @@ public class Main : MonoBehaviour
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (scorePerRound + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        this.confrontationScore += (scorePerRound) * (currentJoyconMouth==1?-1:1);
         Debug.Log("Advancement : " + confrontationScore);
         CheckVictory();
     }
