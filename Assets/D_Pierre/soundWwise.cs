@@ -9,7 +9,7 @@ public class soundWwise : MonoBehaviour
     {
         AkSoundEngine.SetState("Music_state","InGame");
         AkSoundEngine.PostEvent("Play_Music", this.gameObject);
-
+        AkSoundEngine.PostEvent("Play_Amb", this.gameObject);
     }
 
     // Update is called once per frame

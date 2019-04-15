@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {
@@ -52,6 +53,10 @@ public class Main : MonoBehaviour
 
     public ResourceLoader rs;
 
+    public float delay_Max_ToShake;
+    public float delay_Max_ToShake_tmp;
+    public Text delay_txt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,15 +68,29 @@ public class Main : MonoBehaviour
         joycons = JoyconManager.Instance.j;
         animBTooth = blackT.GetComponent<Animator>();
         animWTooth = whiteT.GetComponent<Animator>();
+
+        delay_Max_ToShake_tmp = delay_Max_ToShake;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.A))
+       
+        delay_Max_ToShake_tmp -= Time.deltaTime;
+        //delay_txt.text = ((int)delay_Max_ToShake_tmp).ToString();
+        if (delay_Max_ToShake_tmp < 0)
+        {
+            delay_Max_ToShake_tmp = delay_Max_ToShake;
+            Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
+            a.SetTrigger("Gnack");
+            TriggerFreeze();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();
+            Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
+            a.SetTrigger("Gnack");
         }
 
         if(CheckShake() && !this.isFreezing || Input.GetKey(KeyCode.Space))
@@ -88,6 +107,8 @@ public class Main : MonoBehaviour
         {
             this.isSwapping = true;
             this.isFreezing = false;
+
+            delay_Max_ToShake_tmp = delay_Max_ToShake;
 
             player.UnFreeze();
             this.nbGames++;
@@ -116,10 +137,10 @@ public class Main : MonoBehaviour
             Invoke("playFeedbacks", 0.23f);
             this.isFreezing = true;
             this.isGameUp = false;
-           
+            if(player.deathSoundIsPlayed == false) AkSoundEngine.PostEvent("Play_miss", Camera.main.gameObject);
+            player.deathSoundIsPlayed = false;
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
-
         }
         
     }
@@ -140,19 +161,21 @@ public class Main : MonoBehaviour
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (20 + (speedGameModifier)) * (-1 * currentJoyconMouth);
+        this.confrontationScore += (20 + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        Debug.Log("Advancement : " + confrontationScore);
+        CheckVictory();
     }
 
     private void CheckVictory()
     {
         if(this.confrontationScore<=-100 )
         {
-            Debug.Log("Black wins");
+            Debug.Log("White wins");
         }
 
         if (this.confrontationScore >= 100)
         {
-            Debug.Log("White wins");
+            Debug.Log("Black wins");
         }
     }
 
