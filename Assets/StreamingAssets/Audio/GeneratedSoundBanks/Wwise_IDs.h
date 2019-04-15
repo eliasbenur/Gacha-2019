@@ -22,6 +22,8 @@ namespace AK
         static const AkUniqueID PLAY_MOUTH_TRANSITION = 4273929195U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PLAYER_KILLED = 1115105435U;
+        static const AkUniqueID PLAY_UI = 2044747472U;
+        static const AkUniqueID PLAY_VICTORY = 2453267296U;
     } // namespace EVENTS
 
     namespace STATES
@@ -34,6 +36,7 @@ namespace AK
             {
                 static const AkUniqueID INGAME = 984691642U;
                 static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID VICTORY = 2716678721U;
             } // namespace STATE
         } // namespace MUSIC_STATE
 
