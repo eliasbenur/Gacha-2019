@@ -26,11 +26,22 @@
 				<Event Id="3079036743" Name="Play_FTPS" ObjectPath="\Events\Default Work Unit\Play_FTPS"/>
 				<Event Id="3061594324" Name="Play_jawclose" ObjectPath="\Events\Default Work Unit\Play_jawclose"/>
 				<Event Id="3689126666" Name="Play_jump" ObjectPath="\Events\Default Work Unit\Play_jump"/>
+				<Event Id="1631400290" Name="Play_miss" ObjectPath="\Events\Default Work Unit\Play_miss"/>
 				<Event Id="4273929195" Name="Play_mouth_transition" ObjectPath="\Events\Default Work Unit\Play_mouth_transition"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="1115105435" Name="Play_player_killed" ObjectPath="\Events\Default Work Unit\Play_player_killed"/>
+				<Event Id="2044747472" Name="Play_UI" ObjectPath="\Events\Default Work Unit\Play_UI"/>
+				<Event Id="2453267296" Name="Play_victory" ObjectPath="\Events\Default Work Unit\Play_victory"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2372610" Language="SFX">
+					<ShortName>GA_SFX_laugh_17.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_17_FF107FF4.wem</Path>
+				</File>
+				<File Id="3870849" Language="SFX">
+					<ShortName>GA_MUSIC_v1_victory.wav</ShortName>
+					<Path>SFX\GA_MUSIC_v1_victory_99CAC254.wem</Path>
+				</File>
 				<File Id="15144229" Language="SFX">
 					<ShortName>GA_SFX_Playerkilled_voice_02.wav</ShortName>
 					<Path>SFX\GA_SFX_Playerkilled_voice_02_FF107FF4.wem</Path>
@@ -38,6 +49,10 @@
 				<File Id="15283821" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_01.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="31053140" Language="SFX">
+					<ShortName>GA_SFX_laugh_09.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_09_FF107FF4.wem</Path>
 				</File>
 				<File Id="36852275" Language="SFX">
 					<ShortName>GA_MUSIC_v1_Player1.wav</ShortName>
@@ -51,13 +66,29 @@
 					<ShortName>GA_MUSIC_v1_in_08.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_08_99CAC254.wem</Path>
 				</File>
+				<File Id="62392172" Language="SFX">
+					<ShortName>GA_SFX_laugh_05.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_05_FF107FF4.wem</Path>
+				</File>
 				<File Id="68282473" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_03.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_03_FF107FF4.wem</Path>
 				</File>
+				<File Id="90523061" Language="SFX">
+					<ShortName>GA_SFX_jaw_04.wav</ShortName>
+					<Path>SFX\GA_SFX_jaw_04_FF107FF4.wem</Path>
+				</File>
 				<File Id="97042972" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_04.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_04_99CAC254.wem</Path>
+				</File>
+				<File Id="160477061" Language="SFX">
+					<ShortName>GA_SFX_jaw_01.wav</ShortName>
+					<Path>SFX\GA_SFX_jaw_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="166438037" Language="SFX">
+					<ShortName>GA_SFX_laugh_08.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_08_FF107FF4.wem</Path>
 				</File>
 				<File Id="170212737" Language="SFX">
 					<ShortName>GA_SFX_FTPS_02.wav</ShortName>
@@ -67,6 +98,10 @@
 					<ShortName>GA_MUSIC_v1_in_01.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_01_99CAC254.wem</Path>
 				</File>
+				<File Id="182573594" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_05.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_05_FF107FF4.wem</Path>
+				</File>
 				<File Id="184936590" Language="SFX">
 					<ShortName>GA_SFX_Playerkilled_voice_06.wav</ShortName>
 					<Path>SFX\GA_SFX_Playerkilled_voice_06_FF107FF4.wem</Path>
@@ -75,13 +110,21 @@
 					<ShortName>GA_SFX_transition_voice_02.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_02_FF107FF4.wem</Path>
 				</File>
-				<File Id="204977780" Language="SFX">
-					<ShortName>GA_SFX_jawclose_02.wav</ShortName>
-					<Path>SFX\GA_SFX_jawclose_02_FF107FF4.wem</Path>
+				<File Id="201778882" Language="SFX">
+					<ShortName>GA_SFX_jaw_02.wav</ShortName>
+					<Path>SFX\GA_SFX_jaw_02_FF107FF4.wem</Path>
 				</File>
 				<File Id="226292031" Language="SFX">
 					<ShortName>GA_SFX_PlayerKilled_04.wav</ShortName>
 					<Path>SFX\GA_SFX_PlayerKilled_04_FF107FF4.wem</Path>
+				</File>
+				<File Id="228441421" Language="SFX">
+					<ShortName>GA_SFX_laugh_15.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_15_FF107FF4.wem</Path>
+				</File>
+				<File Id="230556087" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_06.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_06_FF107FF4.wem</Path>
 				</File>
 				<File Id="245330878" Language="SFX">
 					<ShortName>GA_SFX_FTPS_04.wav</ShortName>
@@ -94,10 +137,6 @@
 				<File Id="252998223" Language="SFX">
 					<ShortName>GA_SFX_bounce_01.wav</ShortName>
 					<Path>SFX\GA_SFX_bounce_01_FF107FF4.wem</Path>
-				</File>
-				<File Id="265436161" Language="SFX">
-					<ShortName>GA_SFX_jawclose_01.wav</ShortName>
-					<Path>SFX\GA_SFX_jawclose_01_FF107FF4.wem</Path>
 				</File>
 				<File Id="285680283" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_05.wav</ShortName>
@@ -123,9 +162,17 @@
 					<ShortName>GA_SFX_jump_07.wav</ShortName>
 					<Path>SFX\GA_SFX_jump_07_FF107FF4.wem</Path>
 				</File>
+				<File Id="363291172" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_02.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_02_FF107FF4.wem</Path>
+				</File>
 				<File Id="367529483" Language="SFX">
 					<ShortName>GA_SFX_PlayerKilled_02.wav</ShortName>
 					<Path>SFX\GA_SFX_PlayerKilled_02_FF107FF4.wem</Path>
+				</File>
+				<File Id="375193530" Language="SFX">
+					<ShortName>GA_SFX_laugh_16.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_16_FF107FF4.wem</Path>
 				</File>
 				<File Id="386813877" Language="SFX">
 					<ShortName>GA_SFX_jump_01.wav</ShortName>
@@ -134,6 +181,10 @@
 				<File Id="400563250" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_06.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_06_99CAC254.wem</Path>
+				</File>
+				<File Id="410101005" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_08.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_08_FF107FF4.wem</Path>
 				</File>
 				<File Id="412759006" Language="SFX">
 					<ShortName>GA_SFX_bounce_02.wav</ShortName>
@@ -147,6 +198,10 @@
 					<ShortName>GA_SFX_bounce_09.wav</ShortName>
 					<Path>SFX\GA_SFX_bounce_09_FF107FF4.wem</Path>
 				</File>
+				<File Id="472157406" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_04.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_04_FF107FF4.wem</Path>
+				</File>
 				<File Id="473373245" Language="SFX">
 					<ShortName>GA_SFX_jump_02.wav</ShortName>
 					<Path>SFX\GA_SFX_jump_02_FF107FF4.wem</Path>
@@ -154,6 +209,10 @@
 				<File Id="486789639" Language="SFX">
 					<ShortName>GA_SFX_Transition_02.wav</ShortName>
 					<Path>SFX\GA_SFX_Transition_02_FF107FF4.wem</Path>
+				</File>
+				<File Id="494115703" Language="SFX">
+					<ShortName>GA_SFX_laugh_03.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_03_FF107FF4.wem</Path>
 				</File>
 				<File Id="500960894" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_07.wav</ShortName>
@@ -175,13 +234,25 @@
 					<ShortName>GA_SFX_Transition_03.wav</ShortName>
 					<Path>SFX\GA_SFX_Transition_03_FF107FF4.wem</Path>
 				</File>
+				<File Id="571542614" Language="SFX">
+					<ShortName>GA_SFX_laugh_01.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_01_FF107FF4.wem</Path>
+				</File>
 				<File Id="582857145" Language="SFX">
 					<ShortName>GA_AMB_mouth_01.wav</ShortName>
 					<Path>SFX\GA_AMB_mouth_01_0593455E.wem</Path>
 				</File>
+				<File Id="597164755" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_10.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_10_FF107FF4.wem</Path>
+				</File>
 				<File Id="611297345" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_04.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_transition_04_0593455E.wem</Path>
+				</File>
+				<File Id="618751546" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_09.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_09_FF107FF4.wem</Path>
 				</File>
 				<File Id="644170225" Language="SFX">
 					<ShortName>GA_SFX_bounce_07.wav</ShortName>
@@ -199,17 +270,45 @@
 					<ShortName>GA_SFX_Playerkilled_voice_07.wav</ShortName>
 					<Path>SFX\GA_SFX_Playerkilled_voice_07_FF107FF4.wem</Path>
 				</File>
+				<File Id="674165512" Language="SFX">
+					<ShortName>GA_SFX_jaw_03.wav</ShortName>
+					<Path>SFX\GA_SFX_jaw_03_FF107FF4.wem</Path>
+				</File>
+				<File Id="677112929" Language="SFX">
+					<ShortName>GA_SFX_laugh_11.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_11_FF107FF4.wem</Path>
+				</File>
+				<File Id="692264697" Language="SFX">
+					<ShortName>GA_SFX_laugh_13.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_13_FF107FF4.wem</Path>
+				</File>
+				<File Id="700004023" Language="SFX">
+					<ShortName>GA_SFX_laugh_02.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_02_FF107FF4.wem</Path>
+				</File>
 				<File Id="719292701" Language="SFX">
 					<ShortName>GA_SFX_FTPS_01.wav</ShortName>
 					<Path>SFX\GA_SFX_FTPS_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="724561313" Language="SFX">
+					<ShortName>GA_SFX_laugh_10.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_10_FF107FF4.wem</Path>
 				</File>
 				<File Id="733781981" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_07.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_07_99CAC254.wem</Path>
 				</File>
+				<File Id="744089627" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_07.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_07_FF107FF4.wem</Path>
+				</File>
 				<File Id="747156701" Language="SFX">
 					<ShortName>GA_SFX_transition_voice_04.wav</ShortName>
 					<Path>SFX\GA_SFX_transition_voice_04_FF107FF4.wem</Path>
+				</File>
+				<File Id="750110411" Language="SFX">
+					<ShortName>GA_SFX_laugh_14.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_14_FF107FF4.wem</Path>
 				</File>
 				<File Id="764227063" Language="SFX">
 					<ShortName>GA_SFX_bounce_04.wav</ShortName>
@@ -227,13 +326,13 @@
 					<ShortName>GA_SFX_jump_09.wav</ShortName>
 					<Path>SFX\GA_SFX_jump_09_FF107FF4.wem</Path>
 				</File>
-				<File Id="798788743" Language="SFX">
-					<ShortName>GA_SFX_jawclose_04.wav</ShortName>
-					<Path>SFX\GA_SFX_jawclose_04_FF107FF4.wem</Path>
-				</File>
 				<File Id="805908936" Language="SFX">
 					<ShortName>GA_SFX_FTPS_05.wav</ShortName>
 					<Path>SFX\GA_SFX_FTPS_05_FF107FF4.wem</Path>
+				</File>
+				<File Id="815893651" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_03.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_03_FF107FF4.wem</Path>
 				</File>
 				<File Id="829282043" Language="SFX">
 					<ShortName>GA_SFX_bounce_06.wav</ShortName>
@@ -247,13 +346,13 @@
 					<ShortName>GA_SFX_Playerkilled_voice_03.wav</ShortName>
 					<Path>SFX\GA_SFX_Playerkilled_voice_03_FF107FF4.wem</Path>
 				</File>
+				<File Id="866504204" Language="SFX">
+					<ShortName>GA_SFX_laugh_04.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_04_FF107FF4.wem</Path>
+				</File>
 				<File Id="893421024" Language="SFX">
 					<ShortName>GA_MUSIC_v1_in_03.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_in_03_99CAC254.wem</Path>
-				</File>
-				<File Id="899783199" Language="SFX">
-					<ShortName>GA_SFX_jawclose_03.wav</ShortName>
-					<Path>SFX\GA_SFX_jawclose_03_FF107FF4.wem</Path>
 				</File>
 				<File Id="919213173" Language="SFX">
 					<ShortName>GA_SFX_PlayerKilled_06.wav</ShortName>
@@ -291,9 +390,25 @@
 					<ShortName>GA_SFX_jump_08.wav</ShortName>
 					<Path>SFX\GA_SFX_jump_08_FF107FF4.wem</Path>
 				</File>
+				<File Id="988970102" Language="SFX">
+					<ShortName>GA_SFX_victory_voice_01.wav</ShortName>
+					<Path>SFX\GA_SFX_victory_voice_01_FF107FF4.wem</Path>
+				</File>
+				<File Id="1004112499" Language="SFX">
+					<ShortName>GA_SFX_laugh_07.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_07_FF107FF4.wem</Path>
+				</File>
+				<File Id="1006332548" Language="SFX">
+					<ShortName>GA_SFX_laugh_06.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_06_FF107FF4.wem</Path>
+				</File>
 				<File Id="1006458871" Language="SFX">
 					<ShortName>GA_MUSIC_v1_transition_02.wav</ShortName>
 					<Path>SFX\GA_MUSIC_v1_transition_02_0593455E.wem</Path>
+				</File>
+				<File Id="1011407135" Language="SFX">
+					<ShortName>GA_SFX_laugh_18.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_18_FF107FF4.wem</Path>
 				</File>
 				<File Id="1020586762" Language="SFX">
 					<ShortName>GA_SFX_jump_010.wav</ShortName>
@@ -326,6 +441,10 @@
 				<File Id="1055740361" Language="SFX">
 					<ShortName>GA_SFX_bounce_05.wav</ShortName>
 					<Path>SFX\GA_SFX_bounce_05_FF107FF4.wem</Path>
+				</File>
+				<File Id="1064128023" Language="SFX">
+					<ShortName>GA_SFX_laugh_12.wav</ShortName>
+					<Path>SFX\GA_SFX_laugh_12_FF107FF4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

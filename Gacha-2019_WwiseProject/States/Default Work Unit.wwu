@@ -8,6 +8,7 @@
 						<State Name="None" ID="{271BC312-25D4-4E6F-B0B1-0DB8F3D6FEAF}"/>
 						<State Name="Menu" ID="{BE5E4E48-247F-47A8-A2A0-5B57B69B95CE}"/>
 						<State Name="InGame" ID="{78AC626B-7E62-4D7B-92F7-9D5D906F63E9}"/>
+						<State Name="Victory" ID="{3524C238-8423-48FE-86EF-90010BDE0592}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Player_Music" ID="{24E129D8-6F98-4289-8E77-30261741FB84}">

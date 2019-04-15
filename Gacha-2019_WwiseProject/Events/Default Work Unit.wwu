@@ -120,10 +120,39 @@
 						<Action Name="" ID="{603CDBE2-1634-465E-A61F-D38B716CFB0F}" ShortID="1060141294">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="GA_miss" ID="{7BF7BC83-7A98-48EF-B702-DCB9706449F0}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI" ID="{7481F368-3FB3-40E6-9E1F-9200EC17D04F}">
+					<ChildrenList>
+						<Action Name="" ID="{B310197F-4C78-4535-A029-8D8EFEFD4D06}" ShortID="352311241">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_UI" ID="{15A4359F-EA4A-488C-B50D-C2CA451D2A61}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_victory" ID="{7D9E602F-71DA-4F77-8C14-680B21AD2CEB}">
+					<ChildrenList>
+						<Action Name="" ID="{6A247D52-125B-4B11-BDCD-FF8BD3C55AEE}" ShortID="519795684">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_Victory" ID="{194EA32F-ABE2-4EA1-865F-F4A01081F08E}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
