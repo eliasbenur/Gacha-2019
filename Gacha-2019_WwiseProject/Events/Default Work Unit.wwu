@@ -115,6 +115,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_miss" ID="{3D89A825-DD94-486A-A6DA-ACE2A8610B6D}">
+					<ChildrenList>
+						<Action Name="" ID="{603CDBE2-1634-465E-A61F-D38B716CFB0F}" ShortID="1060141294">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GA_miss" ID="{7BF7BC83-7A98-48EF-B702-DCB9706449F0}" WorkUnitID="{61945BD2-95C7-4808-80B7-C72419E2E2BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

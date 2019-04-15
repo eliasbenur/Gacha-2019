@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
 
     public Vector3 accel;
 
+    private Animator anim;
 
     public Vector3[] v3Spawns;
     public float spawnDistSquare = 2;
@@ -66,6 +67,10 @@ public class Player : MonoBehaviour
         v3Spawns[4] = new Vector3(spawnDistSquare, spawnDistSquare, 0);
 
         deathSoundIsPlayed = false;
+
+        anim = GetComponent<Animator>();
+
+
     }
 
     // Update is called once per frame
@@ -87,6 +92,7 @@ public class Player : MonoBehaviour
             {
                 this.isJumping = false;
             }
+
 
             //Basic impulsion
             if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
@@ -146,6 +152,8 @@ public class Player : MonoBehaviour
 
                 rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
             }
+
+            this.RenderAnimations();
         }
     }
 
@@ -194,6 +202,7 @@ public class Player : MonoBehaviour
         this.rBody.velocity = new Vector3();
         this.GetComponentsInChildren<ParticleSystem>()[0].Pause();
         this.GetComponentsInChildren<ParticleSystem>()[3].Pause();
+        this.anim.enabled = false; 
     }
 
     public void UnFreeze()
@@ -201,6 +210,7 @@ public class Player : MonoBehaviour
         this.GetComponent<Rigidbody2D>().isKinematic = false;
         this.isFrozen = false;
         this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0?0:3].Play();
+        this.anim.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -217,5 +227,44 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    private void RenderAnimations()
+    {
+        if (rBody.velocity.x != 0)
+        {
+            if(rBody.velocity.y == 0)//Sol
+            {
+                anim.SetBool("ismoving", true);
+                anim.SetFloat("velocity", 0);
+            }
+            else//Airs
+            {
+                anim.SetBool("ismoving", false);
+                if(rBody.velocity.y > 0)
+                {
+                    anim.SetFloat("velocity", 1);
+
+                }
+                else
+                {
+                    anim.SetFloat("velocity", -1);
+                }
+            }
+
+            if(rBody.velocity.x >= 0)
+            {
+                this.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().flipX = true;
+            }
+        }
+        else
+        {
+            anim.SetFloat("velocity", 0);
+            anim.SetBool("ismoving", false);
+        }
     }
 }

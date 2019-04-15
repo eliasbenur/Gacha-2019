@@ -57,7 +57,7 @@ public class Transition : MonoBehaviour
         main.blackPlBack.SetActive(false);
         main.whitePlBack.SetActive(true);
         cam.backgroundColor = new Color(255, 255, 255);
-        p1Renderer.material = black;
+       // p1Renderer.material = black;
         planeForBlackSfx.SetActive(true);
         newFieldOfView = 0.2f;
     }
@@ -117,7 +117,7 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(true);
             main.whitePlBack.SetActive(false);
             cam.backgroundColor = new Color(0, 0, 0);
-            p1Renderer.material = white;
+           // p1Renderer.material = white;
             planeForBlackSfx.SetActive(false);
         }
         else
@@ -127,7 +127,7 @@ public class Transition : MonoBehaviour
             main.blackPlBack.SetActive(false);
             main.whitePlBack.SetActive(true);
             cam.backgroundColor = new Color(255, 255, 255);
-            p1Renderer.material = black;
+          //  p1Renderer.material = black;
             planeForBlackSfx.SetActive(true);
         }
         inTransition = false;

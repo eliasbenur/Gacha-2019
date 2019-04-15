@@ -28,9 +28,15 @@ public class Main : MonoBehaviour
     public Player player;
     public Transition transition;
 
+    [Range(1f,3f)]
+    public float cooldownGnack;
+    private float cd;
+    private bool canGnack = true;
 
-
-    public float confrontationScore = 0;
+    public int confrontationScore = 0;
+    public int scoreforBWin;
+    public int scoreforWWin;
+    public int scorePerRound;
 
     private List<Joycon> joycons;
 
@@ -44,8 +50,8 @@ public class Main : MonoBehaviour
 
     public Quaternion orientation;
 
-    [Range(0.2f, 5f)]
-    public float speedGameModifier;
+    [Range(1f, 5f)]
+    public int speedGameModifier;
     public int nbGames = 0;
 
     [SerializeField]
@@ -93,11 +99,20 @@ public class Main : MonoBehaviour
             a.SetTrigger("Gnack");
         }
 
-        if(CheckShake() && !this.isFreezing)
+        if(CheckShake() && !this.isFreezing && cd >= cooldownGnack)
         {
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
             this.TriggerFreeze();
+        }
+
+        if(cd < cooldownGnack)
+        {
+            cd += Time.deltaTime;
+        }
+        else
+        {
+            this.canGnack = true;
         }
     }
 
@@ -126,6 +141,9 @@ public class Main : MonoBehaviour
             FindObjectOfType<GeneracionAle_ale>().New_Generation(this.currentJoyconPlayer == 0 ? black : white);
 
             this.isSwapping = false;
+
+            cd = 0;
+            this.canGnack = false;
         }
     }
 
@@ -134,7 +152,7 @@ public class Main : MonoBehaviour
         if(!isFreezing)
         {
             //Debug.Log("startFreeze");
-            Invoke("playFeedbacks", 0.23f);
+            Invoke("playFeedbacks", 0.31f);
             this.isFreezing = true;
             this.isGameUp = false;
             if(player.deathSoundIsPlayed == false) AkSoundEngine.PostEvent("Play_miss", Camera.main.gameObject);
@@ -157,23 +175,44 @@ public class Main : MonoBehaviour
         AkSoundEngine.PostEvent("Play_jawclose", cam.gameObject);
         CameraShake.Shake(0.1f, 0.75f);
         player.Freeze();
+
+        Joycon j = joycons[this.currentJoyconMouth];
+        j.SetRumble(0.2f, 0.3f, 1f);
+
+
+        if (player.deathSoundIsPlayed)
+        {
+            j = joycons[this.currentJoyconPlayer];
+            j.SetRumble(0.2f, 0.3f, 1f);
+        }
+
+        Invoke("BreakRumbles", 0.1f);
+    }
+
+    void BreakRumbles()
+    {
+        Joycon j = joycons[this.currentJoyconMouth];
+        j.SetRumble(0f, 0f, 0f);
+
+        j = joycons[this.currentJoyconPlayer];
+        j.SetRumble(0f, 0f, 0f);
     }
 
     public void PlayerEaten()
     {
-        this.confrontationScore += (20 + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
+        this.confrontationScore += (scorePerRound + (speedGameModifier*nbGames)) * (currentJoyconMouth==1?-1:1);
         Debug.Log("Advancement : " + confrontationScore);
         CheckVictory();
     }
 
     private void CheckVictory()
     {
-        if(this.confrontationScore<=-100 )
+        if(this.confrontationScore<=-scoreforWWin )
         {
             Debug.Log("White wins");
         }
 
-        if (this.confrontationScore >= 100)
+        if (this.confrontationScore >= scoreforBWin)
         {
             Debug.Log("Black wins");
         }
