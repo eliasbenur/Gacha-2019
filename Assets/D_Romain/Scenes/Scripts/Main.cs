@@ -38,7 +38,7 @@ public class Main : MonoBehaviour
     public int scoreforWWin;
     public int scorePerRound;
 
-    private List<Joycon> joycons;
+    public List<Joycon> joycons;
 
     public float[] stick;
 
@@ -50,7 +50,7 @@ public class Main : MonoBehaviour
 
     public Quaternion orientation;
 
-    [Range(1f, 5f)]
+    [Range(0f, 5f)]
     public int speedGameModifier;
     public int nbGames = 0;
 
