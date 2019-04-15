@@ -92,7 +92,7 @@ public class ScoreManager : MonoBehaviour
                     imagelist[11].enabled = false;
                     imagelist[12].enabled = false;
                     Debug.Log("Joueur 1 gagné !!");
-                    Debug.Break();
+                    AkSoundEngine.PostEvent("Play_victory", Camera.main.gameObject);
                     break;
                 case -1:
                     imagelist[7].enabled = true;
@@ -158,6 +158,7 @@ public class ScoreManager : MonoBehaviour
                     imagelist[4].enabled = false;
                     imagelist[5].enabled = false;
                     imagelist[12].enabled = false;
+                    AkSoundEngine.PostEvent("Play_victory", Camera.main.gameObject);
                     break;
 
             }
@@ -169,12 +170,6 @@ public class ScoreManager : MonoBehaviour
                 imagelist[i].enabled = false;
             }
         }
-
-    }
-
-    void displayScoreView()
-    {
-        //Vas refresh le score avant l'animation et l'afficher 
 
     }
 
