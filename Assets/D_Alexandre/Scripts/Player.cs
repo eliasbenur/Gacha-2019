@@ -47,6 +47,8 @@ public class Player : MonoBehaviour
 
     public Main main;
 
+    public bool deathSoundIsPlayed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,8 @@ public class Player : MonoBehaviour
         v3Spawns[2] = new Vector3(-spawnDistSquare, spawnDistSquare, 0);
         v3Spawns[3] = new Vector3(spawnDistSquare, -spawnDistSquare, 0);
         v3Spawns[4] = new Vector3(spawnDistSquare, spawnDistSquare, 0);
+
+        deathSoundIsPlayed = false;
     }
 
     // Update is called once per frame
@@ -197,12 +201,13 @@ public class Player : MonoBehaviour
         this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0?0:3].Play();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Si ça touche une dent
-        if(collision.otherCollider.gameObject.name == "Tooth_UP" || collision.otherCollider.gameObject.name == "Tooth_DOWN")
+        if (collision.gameObject.name == "Tooth_UP" || collision.gameObject.name == "Tooth_DOWN" && !deathSoundIsPlayed)
         {
             Debug.Log("Lol t mor");
+            AkSoundEngine.PostEvent("Play_player_killed", Camera.main.gameObject);
+            deathSoundIsPlayed = true;
         }
     }
 }

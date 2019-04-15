@@ -31,6 +31,7 @@ public class Transition : MonoBehaviour
     private Camera cam;
     private Vector3 camPosition;
     private float camFieldOfView;
+    float newFieldOfView;
 
     public IEnumerator delay()
     {
@@ -58,6 +59,7 @@ public class Transition : MonoBehaviour
         cam.backgroundColor = new Color(255, 255, 255);
         p1Renderer.material = black;
         planeForBlackSfx.SetActive(true);
+        newFieldOfView = 0.2f;
     }
 
     // Update is called once per frame
@@ -65,11 +67,10 @@ public class Transition : MonoBehaviour
     {
         //Zoom in
         if (inTransition == true)
-        {
-            AkSoundEngine.PostEvent("Play_mouth_transition", cam.gameObject);
+        { 
             cameraIsReset = false;
             cameraIsOnInitialPosition = false;
-            float newFieldOfView = 0.2f;
+           
             Vector3 camTargetPosition;
             camTargetPosition = new Vector3(player1.transform.position.x, player1.transform.position.y, transform.position.z);
 
@@ -96,6 +97,7 @@ public class Transition : MonoBehaviour
 
     public void StartTransition()
     {
+        AkSoundEngine.PostEvent("Play_mouth_transition", cam.gameObject);
         StartCoroutine("delay");
     }
     private void ResetCamera()

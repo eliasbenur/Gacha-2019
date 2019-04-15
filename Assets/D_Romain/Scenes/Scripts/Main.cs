@@ -87,6 +87,8 @@ public class Main : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             TriggerFreeze();
+            Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
+            a.SetTrigger("Gnack");
         }
 
         if(CheckShake() && !this.isFreezing)
@@ -131,7 +133,7 @@ public class Main : MonoBehaviour
             Invoke("playFeedbacks", 0.23f);
             this.isFreezing = true;
             this.isGameUp = false;
-           
+            player.deathSoundIsPlayed = false;
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
 
