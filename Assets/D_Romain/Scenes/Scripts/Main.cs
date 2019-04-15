@@ -74,7 +74,7 @@ public class Main : MonoBehaviour
             TriggerFreeze();
         }
 
-        if(CheckShake() && !this.isFreezing)
+        if(CheckShake() && !this.isFreezing || Input.GetKey(KeyCode.Space))
         {
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
