@@ -24,8 +24,10 @@ public class Bounce : MonoBehaviour
             float xTarget = Random.Range(-2f, 2f);
             float yTarget = Random.Range(-2f, 2f);
             Vector3 target = new Vector3(xTarget, yTarget, 0);
+            collision.transform.parent.GetComponent<Player>().isBouncing = true;
             collision.transform.parent.GetComponent<Rigidbody2D>().velocity = (target - collision.transform.position).normalized*bang;
             AkSoundEngine.PostEvent("Play_bounce", Camera.main.gameObject);
+
             Debug.Log(((target - collision.transform.position).normalized * bang).magnitude);
         }
         

@@ -22,6 +22,7 @@ public class FTPS_Trigger : MonoBehaviour
         if (collision.gameObject.name == "BounceCollider")
         {
             AkSoundEngine.PostEvent("Play_FTPS", Camera.main.gameObject);
+            collision.transform.parent.GetComponent<Player>().isBouncing = false;
         }
     }
 }
