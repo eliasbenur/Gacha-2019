@@ -20,6 +20,7 @@ public class Main : MonoBehaviour
     public GameObject whiteT;
     public GameObject whitePlBack;
     public GameObject blackPlBack;
+    public GameObject m_canvas;
     public Material black;
     public Material white;
 
@@ -209,12 +210,16 @@ public class Main : MonoBehaviour
     {
         if(this.confrontationScore<=-scoreforWWin )
         {
+            m_canvas.SendMessage("ManageScoreWhite", SendMessageOptions.RequireReceiver);
             Debug.Log("White wins");
+            
         }
 
         if (this.confrontationScore >= scoreforBWin)
         {
+            m_canvas.SendMessage("ManageScoreBlack", SendMessageOptions.RequireReceiver);
             Debug.Log("Black wins");
+            
         }
     }
 

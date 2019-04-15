@@ -12,6 +12,7 @@ public class Transition : MonoBehaviour
     public GameObject player2;
     public GameObject colorInversor;
     public GameObject planeForBlackSfx;
+    public GameObject m_canvas;
     private Renderer p2Renderer1;
     private Renderer p2Renderer2;
     private Renderer p1Renderer;
@@ -76,6 +77,7 @@ public class Transition : MonoBehaviour
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
             transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);
+            
 
             if (cam.fieldOfView <= newFieldOfView + 0.005f && inTransition)
             {
@@ -98,6 +100,7 @@ public class Transition : MonoBehaviour
     public void StartTransition()
     {
         AkSoundEngine.PostEvent("Play_mouth_transition", cam.gameObject);
+        m_canvas.SendMessage("DisplayScoreYes", SendMessageOptions.RequireReceiver);
         StartCoroutine("delay");
     }
     private void ResetCamera()
@@ -105,6 +108,7 @@ public class Transition : MonoBehaviour
         cam.fieldOfView = camFieldOfView+5;
         cam.transform.position = camPosition;
         cameraIsReset = true;
+        m_canvas.SendMessage("DisplayScoreNope", SendMessageOptions.RequireReceiver);
 
     }
 
