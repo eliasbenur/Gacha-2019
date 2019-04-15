@@ -72,7 +72,7 @@ public class Transition : MonoBehaviour
             cameraIsOnInitialPosition = false;
            
             Vector3 camTargetPosition;
-            camTargetPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+            camTargetPosition = new Vector3(player.transform.position.x, player.transform.position.y+0.15f, transform.position.z);
 
             cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, newFieldOfView, ref velocitySmooth, smoothTransition);
             transform.position = Vector3.SmoothDamp(transform.position, camTargetPosition, ref vecVelocitySmooth, smoothTransition);

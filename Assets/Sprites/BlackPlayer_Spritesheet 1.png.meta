@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: cd0e5eea19036f144ae30ce587a681a8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BlackPlayer_Spritesheet 1_0
+    21300002: BlackPlayer_Spritesheet 1_1
+    21300004: BlackPlayer_Spritesheet 1_2
+    21300006: BlackPlayer_Spritesheet 1_3
+    21300008: BlackPlayer_Spritesheet 1_4
+    21300010: BlackPlayer_Spritesheet 1_5
+    21300012: BlackPlayer_Spritesheet 1_6
+    21300014: BlackPlayer_Spritesheet 1_7
+    21300016: BlackPlayer_Spritesheet 1_8
+    21300018: BlackPlayer_Spritesheet 1_9
+    21300020: BlackPlayer_Spritesheet 1_10
+    21300022: BlackPlayer_Spritesheet 1_11
+    21300024: BlackPlayer_Spritesheet 1_12
+    21300026: BlackPlayer_Spritesheet 1_13
+    21300028: BlackPlayer_Spritesheet 1_14
+    21300030: BlackPlayer_Spritesheet 1_15
+    21300032: BlackPlayer_Spritesheet 1_16
+    21300034: BlackPlayer_Spritesheet 1_17
+    21300036: BlackPlayer_Spritesheet 1_18
+    21300038: BlackPlayer_Spritesheet 1_19
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 3112
+        width: 647
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143b13358fd03464ab961415ef84296c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 3112
+        width: 650
+        height: 813
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30125a72d2b9bcf4e90ff571c75c68e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3112
+        width: 648
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5d494b57bff874585541850fc341b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 3112
+        width: 663
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc49671e20b5b9342abc72854cd29901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 4271
+        y: 3112
+        width: 663
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb9cea1acb9bcd439678e2d135c1666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2087
+        width: 662
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19b5158f00efcb4d88bf5f06773da92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2087
+        width: 662
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2c285d4cc413a4fbb492f9a0b82191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2087
+        width: 648
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3ffed34bcd97a41a32f78de1e7cd89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 2089
+        width: 715
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89abf5690f507be41b241d77757bdf71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 4219
+        y: 2094
+        width: 717
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767a6a96e24c671419630ec80567ad8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1119
+        width: 720
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d93f1435572f24bb6b373372f5cc6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 1069
+        width: 718
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c49b938191d8f14ea53aa49742bf6c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1064
+        width: 717
+        height: 813
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa043f2b88758d4497d481792273b3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 1069
+        width: 717
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8435e9e7491fb1f4c834420ab6610334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 4219
+        y: 1127
+        width: 717
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efe8f4b4d3f7b64d934a71074853a78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 54
+        width: 720
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799462523c2246345b7a988f2902f1fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 36
+        width: 684
+        height: 955
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac7d0f1c2e522e4bb5a0e856391bef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 64
+        width: 945
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bac6c59b6f7be4f9c3ab595c1c6266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 39
+        width: 775
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572e767a7e4fec34d9892331b6dcded1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackPlayer_Spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 4291
+        y: 54
+        width: 650
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0681abd13e52fd4fa9b4327fe05c82a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b881fcc5d8c43d4f8322b2a080aafad
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
