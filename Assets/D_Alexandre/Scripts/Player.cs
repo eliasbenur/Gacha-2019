@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
     public Main main;
 
     public bool deathSoundIsPlayed;
+    public bool isBouncing;
 
     // Start is called before the first frame update
     void Start()
@@ -146,10 +147,10 @@ public class Player : MonoBehaviour
             }
 
             //MaxSpeed
-            if (Mathf.Abs(rBody.velocity.x) > maxSpeed)
+            if (Mathf.Abs(rBody.velocity.x) > maxSpeed && !isBouncing)
             {
-                rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
 
+                rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
             }
 
             this.RenderAnimations();
