@@ -47,9 +47,14 @@
 							</RTPCList>
 						</Property>
 						<Property Name="Tempo" Type="Real64" Value="125"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
