@@ -36,23 +36,41 @@ public class Plane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Joycon j = joycons[main.currentJoyconMouth];
         if (joycons.Count > 0)
         {
-            stick = j.GetStick();
+            Joycon j = joycons[main.currentJoyconMouth];
+            if (joycons.Count > 0)
+            {
+                stick = j.GetStick();
+                if (planeCanRotate == true)
+                {
+                    if (/*Droite*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
+                    {
+                        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0, Space.Self);
+                    }
+                    if (/*Gauche*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
+                    {
+                        transform.Rotate(0, rotationSpeed * Time.deltaTime * -1, 0, Space.Self);
+                    }
+                }
+
+            }
+        }
+        else
+        {
             if (planeCanRotate == true)
             {
-                if (/*Droite*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
+                if (/*Droite*/(main.currentJoyconMouth == 1 && Input.GetAxis("JoystickX_P2") > 0.6f) || (main.currentJoyconMouth == 0 && Input.GetAxis("JoystickX_P1") > 0.6f))
                 {
                     transform.Rotate(0, rotationSpeed * Time.deltaTime, 0, Space.Self);
                 }
-                if (/*Gauche*/(main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
+                if (/*Gauche*/(main.currentJoyconMouth == 1 && Input.GetAxis("JoystickX_P2") < -0.6f) || (main.currentJoyconMouth == 0 && Input.GetAxis("JoystickX_P1") < -0.6f))
                 {
                     transform.Rotate(0, rotationSpeed * Time.deltaTime * -1, 0, Space.Self);
                 }
             }
-
         }
+
 
     }
 

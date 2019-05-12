@@ -31,11 +31,13 @@ public class Bounce : MonoBehaviour
             collision.transform.parent.GetComponent<Rigidbody2D>().velocity = (target - collision.transform.position).normalized*bang;
             AkSoundEngine.PostEvent("Play_bounce", Camera.main.gameObject);
 
-            Debug.Log(((target - collision.transform.position).normalized * bang).magnitude);
+            if (main.joycons.Count > 0)
+            {
+                Joycon j = main.joycons[main.currentJoyconPlayer];
+                j.SetRumble(0.05f, 0.1f, 0.5f);
+                Invoke("BreakRumbles", 0.05f);
+            }
 
-            Joycon j = main.joycons[main.currentJoyconPlayer];
-            j.SetRumble(0.05f, 0.1f, 0.5f);
-            Invoke("BreakRumbles", 0.05f);
         }
         
     }

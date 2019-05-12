@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/D_Gregoire/Scenes/Main_Menu.unity
+    path: Assets/Master/Scenes/Main_Menu.unity
     guid: 5e4cdef61a9a2ca45812f35263686996
-  - enabled: 1
+  - enabled: 0
     path: Assets/D_Gregoire/Scenes/Testing2.unity
     guid: fc2e7ba70977ae7459fb9720f47e6cc8
+  - enabled: 1
+    path: Assets/Master/Scenes/MainScene.unity
+    guid: c34a6c82744cac9409883b88752f7d50
   m_configObjects: {}

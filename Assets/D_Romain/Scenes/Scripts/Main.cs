@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Main : MonoBehaviour
@@ -64,6 +65,11 @@ public class Main : MonoBehaviour
     public float delay_Max_ToShake_tmp;
     public Text delay_txt;
 
+    public Slider slider_points;
+    public Button bt_resetGame;
+
+    public GameObject wise_prefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -115,9 +121,9 @@ public class Main : MonoBehaviour
 
         if(CheckShake() && !this.isFreezing && cd >= cooldownGnack && this.isGameUp)
         {
+            TriggerFreeze();
             Animator a = this.currentJoyconMouth == 0 ? animBTooth : animWTooth;
             a.SetTrigger("Gnack");
-            this.TriggerFreeze();
         }
 
         if(cd < cooldownGnack)
@@ -158,6 +164,8 @@ public class Main : MonoBehaviour
 
             cd = 0;
             this.canGnack = false;
+
+            player.Reset_num_mouths_coll();
         }
     }
 
@@ -168,7 +176,7 @@ public class Main : MonoBehaviour
             //Debug.Log("startFreeze");
             Invoke("playFeedbacks", 0.31f);
             this.isFreezing = true;
-            this.isGameUp = false;
+            //this.isGameUp = false;
             transition.StartTransition();
             // this.freezeTimeElapsed = 0;
         }
@@ -187,17 +195,21 @@ public class Main : MonoBehaviour
         CameraShake.Shake(0.1f, 0.75f);
         player.Freeze();
 
-        Joycon j = joycons[this.currentJoyconMouth];
-        j.SetRumble(0.2f, 0.3f, 1f);
-
-
-        if (player.deathSoundIsPlayed)
+        if (joycons.Count > 0)
         {
-            j = joycons[this.currentJoyconPlayer];
+            Joycon j = joycons[this.currentJoyconMouth];
             j.SetRumble(0.2f, 0.3f, 1f);
+
+
+            if (player.deathSoundIsPlayed)
+            {
+                j = joycons[this.currentJoyconPlayer];
+                j.SetRumble(0.2f, 0.3f, 1f);
+            }
+
+            Invoke("BreakRumbles", 0.1f);
         }
 
-        Invoke("BreakRumbles", 0.1f);
     }
 
     void BreakRumbles()
@@ -213,47 +225,68 @@ public class Main : MonoBehaviour
     {
         this.confrontationScore += (scorePerRound) * (currentJoyconMouth==1?-1:1);
         Debug.Log("Advancement : " + confrontationScore);
+        slider_points.value = confrontationScore;
         CheckVictory();
     }
 
     private void CheckVictory()
     {
-        if(this.confrontationScore<=-scoreforWWin )
+        if(this.confrontationScore <= scoreforWWin )
         {
             Debug.Log("White wins");
             victoryAffiche.GetComponent<Animator>().SetBool("isBlackWinner", false);
-            Invoke("popVictory", 0.05f);
+            Invoke("popVictory", 1f);
             
             this.isGameUp = false;
+            bt_resetGame.gameObject.SetActive(true);
         }
 
         if (this.confrontationScore >= scoreforBWin)
         {
             Debug.Log("Black wins");
             victoryAffiche.GetComponent<Animator>().SetBool("isBlackWinner", true);
-            Invoke("popVictory", 0.05f);
+            Invoke("popVictory", 1f);
 
             this.isGameUp = false;
+            bt_resetGame.gameObject.SetActive(true);
         }
     }
 
     void popVictory()
     {
         victoryAffiche.transform.position = new Vector3(-0.1f, 0, -58f);
+        player.gameObject.SetActive(false);
     }
 
     bool CheckShake()
     {
-        Joycon j = joycons[this.currentJoyconMouth];
         if (joycons.Count > 0)
         {
-            if (j.GetAccel().y > ShakeSensitivity || j.GetAccel().x > ShakeSensitivity || j.GetAccel().z > ShakeSensitivity)
+            Joycon j = joycons[this.currentJoyconMouth];
+            if (joycons.Count > 0)
             {
-                Debug.Log("SHAKE IT OFF !");
+                if (j.GetAccel().y > ShakeSensitivity || j.GetAccel().x > ShakeSensitivity || j.GetAccel().z > ShakeSensitivity)
+                {
+                    Debug.Log("SHAKE IT OFF !");
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            if ((Input.GetButton("Shake_P2") && currentJoyconMouth == 1) || (Input.GetButton("Shake_P1") && currentJoyconMouth == 0))
+            {
                 return true;
             }
         }
+
         return false;
+    }
+    
+    public void ResetGame()
+    {
+        AkSoundEngine.StopAll();
+        SceneManager.LoadScene("Main_Menu");
     }
 
 }

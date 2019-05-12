@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
     public bool deathSoundIsPlayed;
     public bool isBouncing;
 
+    private int num_mouths_coll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,88 +75,173 @@ public class Player : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         this.ProceedJump();
-        Joycon j = joycons[main.currentJoyconPlayer];
 
-        if (joycons.Count > 0 && !isFrozen)
+        if (joycons.Count > 0)
         {
-            CheckShake();
-            
-            stick = j.GetStick();
-            if ((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || (j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))
+            Joycon j = joycons[main.currentJoyconPlayer];
+
+            if (joycons.Count > 0 && !isFrozen)
             {
-                this.isJumping = true;
-            }
-            else
-            {
-                this.isJumping = false;
-            }
+                CheckShake();
 
-
-            //Basic impulsion
-            if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
-            {
-                rBody.velocity += Vector2.up * jumpVelocity;
-                AkSoundEngine.PostEvent("Play_jump", Camera.main.gameObject);
-                this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0 ? 2 : 1].Play();
-            }
-
-            if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
-            if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
-
-            if (this.transform.position.y <= -10) this.ResetPos();
-
-
-            //Gauche
-            if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
-            {
-                if(rBody.velocity.x < 0)
+                stick = j.GetStick();
+                if ((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || (j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))
                 {
-                    rBody.velocity += Vector2.left * acceleration * Time.deltaTime * directionMultiplier;
+                    this.isJumping = true;
                 }
                 else
                 {
-                    rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+                    this.isJumping = false;
+                }
+
+
+                //Basic impulsion
+                if (((j.GetButton(Joycon.Button.DPAD_UP) && main.currentJoyconPlayer == 1) || ((j.GetButton(Joycon.Button.DPAD_DOWN) && main.currentJoyconPlayer == 0))) && rBody.velocity.y == 0)
+                {
+                    rBody.velocity += Vector2.up * jumpVelocity;
+                    AkSoundEngine.PostEvent("Play_jump", Camera.main.gameObject);
+                    this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0 ? 2 : 1].Play();
+                }
+
+                if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
+                if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
+
+                if (this.transform.position.y <= -10) this.ResetPos();
+
+
+                //Gauche
+                if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] < -0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] > 0.6f))
+                {
+                    if (rBody.velocity.x < 0)
+                    {
+                        rBody.velocity += Vector2.left * acceleration * Time.deltaTime * directionMultiplier;
+                    }
+                    else
+                    {
+                        rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+                    }
+
+                }
+
+                //Droite
+                if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
+                {
+
+                    if (rBody.velocity.x > 0)
+                    {
+                        rBody.velocity += Vector2.right * acceleration * Time.deltaTime * directionMultiplier;
+                    }
+                    else
+                    {
+                        rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+                    }
+
+                }
+
+                //Descente
+                if ((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.8f) || (main.currentJoyconPlayer == 0 && j.GetStick()[0] < -0.8f))
+                {
+                    this.GetComponent<BoxCollider2D>().enabled = false;
+                }
+                else
+                {
+                    this.GetComponent<BoxCollider2D>().enabled = true;
+                }
+
+                //MaxSpeed
+                if (Mathf.Abs(rBody.velocity.x) > maxSpeed && !isBouncing)
+                {
+
+                    rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
+                }
+
+                this.RenderAnimations();
+            }
+        }
+        else
+        {
+            if (!isFrozen)
+            {
+
+                if ((Input.GetButton("Jump_P2") && main.currentJoyconPlayer == 1) || (Input.GetButton("Jump_P1") && main.currentJoyconPlayer == 0))
+                {
+                    this.isJumping = true;
+                }
+                else
+                {
+                    this.isJumping = false;
+                }
+
+                
+                //Basic impulsion
+                if (((Input.GetButton("Jump_P2") && main.currentJoyconPlayer == 1) || (Input.GetButton("Jump_P1") && main.currentJoyconPlayer == 0)) && rBody.velocity.y == 0)
+                {
+                    rBody.velocity += Vector2.up * jumpVelocity;
+                    AkSoundEngine.PostEvent("Play_jump", Camera.main.gameObject);
+                    this.GetComponentsInChildren<ParticleSystem>()[main.currentJoyconPlayer == 0 ? 2 : 1].Play();
+                }
+
+                if (rBody.velocity.x >= -this.velocityThreshold && rBody.velocity.x <= this.velocityThreshold && rBody.velocity.x != 0) rBody.velocity = new Vector2(rBody.velocity.x, 0);
+                if (rBody.velocity.y >= -this.velocityThreshold && rBody.velocity.y <= this.velocityThreshold && rBody.velocity.y != 0) rBody.velocity = new Vector2(0, rBody.velocity.y);
+
+                if (this.transform.position.y <= -10) this.ResetPos();
+
+                
+                //Gauche
+                if ((main.currentJoyconPlayer == 1 && Input.GetAxis("JoystickX_P2") < -0.6f) || (main.currentJoyconPlayer == 0 && Input.GetAxis("JoystickX_P1") < -0.6f))
+                {
+                    if (rBody.velocity.x < 0)
+                    {
+                        rBody.velocity += Vector2.left * acceleration * Time.deltaTime * directionMultiplier;
+                    }
+                    else
+                    {
+                        rBody.velocity += Vector2.left * acceleration * Time.deltaTime;
+                    }
+
                 }
                 
-            }
-
-            //Droite
-            if ((main.currentJoyconPlayer == 1 && j.GetStick()[1] > 0.6f) || (main.currentJoyconPlayer == 0 && j.GetStick()[1] < -0.6f))
-            {
-
-                if (rBody.velocity.x > 0)
+                //Droite
+                if ((main.currentJoyconPlayer == 1 && Input.GetAxis("JoystickX_P2") > 0.6f) || (main.currentJoyconPlayer == 0 && Input.GetAxis("JoystickX_P1") > 0.6f))
                 {
-                    rBody.velocity += Vector2.right * acceleration * Time.deltaTime * directionMultiplier;
+
+                    if (rBody.velocity.x > 0)
+                    {
+                        rBody.velocity += Vector2.right * acceleration * Time.deltaTime * directionMultiplier;
+                    }
+                    else
+                    {
+                        rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+                    }
+
+                }
+
+                //Descente
+                if ((main.currentJoyconPlayer == 1 && Input.GetAxis("JoystickY_P2") > 0.8f) || (main.currentJoyconPlayer == 0 && Input.GetAxis("JoystickY_P1") > 0.8f))
+                {
+
+                    this.GetComponent<BoxCollider2D>().enabled = false;
                 }
                 else
                 {
-                    rBody.velocity += Vector2.right * acceleration * Time.deltaTime;
+                    this.GetComponent<BoxCollider2D>().enabled = true;
                 }
+                
+                //MaxSpeed
+                if (Mathf.Abs(rBody.velocity.x) > maxSpeed && !isBouncing)
+                {
 
+                    rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
+                }
+                
+                this.RenderAnimations();
             }
-
-            //Descente
-            if((main.currentJoyconPlayer == 1 && j.GetStick()[0] > 0.8f) || (main.currentJoyconPlayer == 0 && j.GetStick()[0] < -0.8f))
-            {
-                this.GetComponent<BoxCollider2D>().enabled = false;
-            }
-            else {
-                this.GetComponent<BoxCollider2D>().enabled = true;
-            }
-
-            //MaxSpeed
-            if (Mathf.Abs(rBody.velocity.x) > maxSpeed && !isBouncing)
-            {
-
-                rBody.velocity = new Vector2(maxSpeed * (rBody.velocity.x > 0 ? 1 : -1), rBody.velocity.y);
-            }
-
-            this.RenderAnimations();
         }
+
+        
     }
 
     bool CheckShake()
@@ -168,13 +255,19 @@ public class Player : MonoBehaviour
                 return true;
             }
         }
+        else
+        {
+            if ((Input.GetButton("Shake_P2") && main.currentJoyconMouth == 1) || (Input.GetButton("Shake_P1") && main.currentJoyconMouth == 0))
+            {
+                return true;
+            }
+        }
         return false;
     }
 
     //Kinectic jump modulation
     private void ProceedJump()
     {
-        //Debug.Log("Y = "+ rBody.velocity.y);
         if(!isFrozen)
         {
             if (rBody.velocity.y < 0)
@@ -193,6 +286,11 @@ public class Player : MonoBehaviour
     public void ResetPos()
     {
         this.transform.position = v3Spawns[Random.Range(0, 5)];
+    }
+
+    public void Reset_num_mouths_coll()
+    {
+        num_mouths_coll = 0;
     }
 
     public void Freeze()
@@ -215,15 +313,17 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OUT");
         if (collision.gameObject.name == "Tooth_UP" || collision.gameObject.name == "Tooth_DOWN" && !deathSoundIsPlayed)
         {
-            Debug.Log("IN");
             if (main.isFreezing || main.isSwapping)
             {
-                AkSoundEngine.PostEvent("Play_player_killed", Camera.main.gameObject);
-                deathSoundIsPlayed = true;
-                main.PlayerEaten();
+                if (num_mouths_coll == 0)
+                {
+                    AkSoundEngine.PostEvent("Play_player_killed", Camera.main.gameObject);
+                    deathSoundIsPlayed = true;
+                    main.PlayerEaten();
+                    num_mouths_coll++;
+                }
             }
         }
 
